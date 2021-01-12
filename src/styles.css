@@ -146,33 +146,38 @@ hr {
 
 .fondo {
     background: url(assets/img/fondo.jpg);
-    height: 60rem;
+    height: 30rem;
     background-position: center center;
     background-size: cover;
 }
 
-.header-texto {
-    text-align: center;
-    padding-top: 2rem;
-}
-
-.header-imagen img {
-    display: block;
-    margin: auto;
-    padding-top: 10rem;
-    width: 30%;
-}
-
-.h1-banner-inicio {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 4rem;
-}
-
-.h4-banner-inicio {
-    color: #ffffff;
-    text-transform: uppercase;
+@media(min-width:768px) {
+    .fondo {
+        background: url(assets/img/fondo.jpg);
+        height: 60rem;
+        background-position: center center;
+        background-size: cover;
+    }
+    .header-texto {
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .header-imagen img {
+        display: block;
+        margin: auto;
+        padding-top: 10rem;
+        width: 30%;
+    }
+    .h1-banner-inicio {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 4rem;
+    }
+    .h4-banner-inicio {
+        color: #ffffff;
+        text-transform: uppercase;
+    }
 }
 
 
@@ -186,72 +191,7 @@ hr {
 } */
 
 
-/* .imagen-inicio {
-    background-image: url(assets/img/fondo.jpg);
-    background-position: top center;
-    background-size: cover;
-    height: 27rem;
-} */
-
-
-/* @media(min-width:768px) {
-    .imagen-inicio {
-        background-image: url(assets/img/imagen2.jpg);
-        background-position: top center;
-        background-size: cover;
-        height: 27rem;
-    }
-} */
-
-
-/* .contenido-header {
-    padding-top: 40px;
-}
-
-.titulo-inicio {
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-    color: #000000;
-} */
-
-
-/* @media (min-width:768px) {
-    .titulo-inicio {
-        text-align: center;
-        text-transform: uppercase;
-        padding-top: 9rem;
-        color: #000000;
-    }
-}
-
-p.slogan {
-    text-transform: none!important;
-    text-align: center;
-    font-size: 22px;
-}
-
-@media(min-width:768px) {
-    p.slogan {
-        font-size: 30px;
-        color: #000000;
-    }
-}
-
-p.slogan span {
-    font-weight: bold;
-}
-
-h1.nombre-empresa {
-    font-size: 8vw;
-}
-
-@media(min-width:768px) {
-    h1.nombre-empresa {
-        font-size: 5vw;
-    }
-} */
+/********* CONTENIDO INSTRUCCIONES *********/
 
 
 /********* CONTENIDO NOSOTROS *********/
@@ -262,16 +202,13 @@ h1.nombre-empresa {
         grid-template-columns: 40% 60%;
         grid-column-gap: 4rem;
         margin-bottom: 2rem;
-        /* font-family: 'Oswald', sans-serif; */
     }
 }
 
 .imagen img {
-    /* border-radius: 50%; */
     height: 100%;
     width: 100%;
     margin-bottom: 1rem;
-    /* opacity: 0.1; */
 }
 
 .texto-nosotros blockquote {
@@ -280,7 +217,6 @@ h1.nombre-empresa {
     margin: 0;
     text-align: center;
     padding: 1rem 0 3rem 0;
-    /* color: #000000; */
 }
 
 .texto-nosotros {
@@ -290,14 +226,12 @@ h1.nombre-empresa {
 @media(min-width:768px) {
     .texto-nosotros {
         box-shadow: 10px 10px 8px black;
-        /* border: 1px solid #ffffff; */
         border-radius: 1.5%;
         margin-bottom: 9rem;
     }
 }
 
 .texto-nosotros p {
-    /* font-family: 'Oswald', sans-serif; */
     text-align: center;
     padding: 5px;
     color: #ffffff;
@@ -564,28 +498,28 @@ h1.contacto {
 
 /********* BANNER SOLUCIÓN INICIO *********/
 
-.imga-banner-inicio img {
-    width: 450px;
-    height: 450px;
-    margin-bottom: 1rem;
-    border-radius: 150%;
-}
-
-.contenido-banner-inicio {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 10rem;
-    margin-bottom: 2rem;
-    /* font-family: 'Oswald', sans-serif; */
-}
-
-.resumen-banner-inicio li {
-    width: 100%;
-    float: left;
-    /* text-align: center; */
-    /* text-transform: uppercase; */
-    font-size: 25px;
-    /* list-style: none; */
+@media (min-width:768px) {
+    .imga-banner-inicio img {
+        width: 450px;
+        height: 450px;
+        margin-bottom: 1rem;
+        border-radius: 150%;
+    }
+    .contenido-banner-inicio {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* grid-column-gap: 7rem; */
+        margin-bottom: 2rem;
+        /* font-family: 'Oswald', sans-serif; */
+    }
+    .resumen-banner-inicio li {
+        width: 100%;
+        float: left;
+        /* text-align: center; */
+        /* text-transform: uppercase; */
+        font-size: 25px;
+        /* list-style: none; */
+    }
 }
 
 .resumen-banner-inicio {
@@ -597,9 +531,8 @@ h1.contacto {
     .resumen-banner-inicio li {
         /* width: 100%; */
     }
-}
-
-.h4-banner-inicio {
-    /* margin-top: 4rem; */
-    padding-top: 4rem;
+    .h4-banner-inicio {
+        /* margin-top: 4rem; */
+        padding-top: 4rem;
+    }
 }
