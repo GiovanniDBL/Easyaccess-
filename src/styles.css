@@ -144,17 +144,45 @@ hr {
 
 /********* INICIO HEADER *********/
 
-
-/* .fondo {
-    background-position: top center;
+.fondo {
+    background: url(assets/img/fondo.jpg);
+    height: 60rem;
+    background-position: center center;
     background-size: cover;
-    height: 100vh;
-    background: url(assets/img//fondo.jpg);
 }
 
-.imagen-centro {
-    display: grid;
-    width: 50%;
+.header-texto {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.header-imagen img {
+    display: block;
+    margin: auto;
+    padding-top: 10rem;
+    width: 30%;
+}
+
+.h1-banner-inicio {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.h4-banner-inicio {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+/* .redondeado img {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    max-width: 100%;
+    margin-bottom: 1rem;
 } */
 
 
@@ -175,7 +203,8 @@ hr {
     }
 } */
 
-.contenido-header {
+
+/* .contenido-header {
     padding-top: 40px;
 }
 
@@ -185,9 +214,10 @@ hr {
     padding-top: 5rem;
     padding-bottom: 2rem;
     color: #000000;
-}
+} */
 
-@media (min-width:768px) {
+
+/* @media (min-width:768px) {
     .titulo-inicio {
         text-align: center;
         text-transform: uppercase;
@@ -221,7 +251,7 @@ h1.nombre-empresa {
     h1.nombre-empresa {
         font-size: 5vw;
     }
-}
+} */
 
 
 /********* CONTENIDO NOSOTROS *********/
@@ -507,6 +537,15 @@ h1.contacto {
     content: '';
 }
 
+.resumen-evento li {
+    width: 100%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    list-style: none;
+}
+
 .resumen-evento {
     position: relative;
     padding: 120px 0;
@@ -522,12 +561,6 @@ h1.contacto {
     list-style: none;
 } */
 
-@media(min-width:768px) {
-    .resumen-evento li {
-        width: 25%;
-    }
-}
-
 
 /********* BANNER SOLUCIÓN INICIO *********/
 
@@ -541,16 +574,32 @@ h1.contacto {
 .contenido-banner-inicio {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-column-gap: 4rem;
+    grid-column-gap: 10rem;
     margin-bottom: 2rem;
     /* font-family: 'Oswald', sans-serif; */
 }
 
-.resumen-evento li {
-    width: 50%;
+.resumen-banner-inicio li {
+    width: 100%;
     float: left;
-    text-align: center;
-    text-transform: uppercase;
+    /* text-align: center; */
+    /* text-transform: uppercase; */
     font-size: 25px;
     /* list-style: none; */
+}
+
+.resumen-banner-inicio {
+    position: relative;
+    padding: 120px 0;
+}
+
+@media(min-width:768px) {
+    .resumen-banner-inicio li {
+        /* width: 100%; */
+    }
+}
+
+.h4-banner-inicio {
+    /* margin-top: 4rem; */
+    padding-top: 4rem;
 }
