@@ -18,8 +18,55 @@ body {
 
 /********* NAVBAR *********/
 
-a {
-    color: #1565C0;
+.navbar-nav a {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-brand {
+    font-size: 25px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .navbar-link {
+    color: #ffffff;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-link {
+    padding: .2rem 1rem;
+}
+
+.nav-link.active,
+.nav-link:focus,
+.navbar-dark .navbar-nav .navbar-link:hover {
+    color: #ffffff !important;
+}
+
+.w-100 {
+    /* height: 100vh; */
+}
+
+@media only screen and (max-width:768px) {
+    .navbar-nav.ml-auto {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        /* background-color: gray !important; */
+    }
 }
 
 .easy-span {
@@ -30,6 +77,8 @@ a {
     letter-spacing: 4px;
     font-weight: 800;
 }
+
+@media only screen and (max-width:768px) {}
 
 .empezar {
     /* background-color: rgba( 0, 0, 0, .3); */
@@ -67,7 +116,6 @@ a {
 /* background-color: transparent !important; */
 
 .header-navbar .navbar {
-    /* background-color: transparent !important; */
     background-color: rgba(0, 0, 0, .6) !important;
     font-size: 20px;
 }
@@ -151,7 +199,8 @@ hr {
     background-size: cover;
 }
 
-@media(min-width:768px) {
+
+/* @media(min-width:768px) {
     .fondo {
         background: url(assets/img/fondo.jpg);
         height: 60rem;
@@ -166,7 +215,7 @@ hr {
         display: block;
         margin: auto;
         padding-top: 10rem;
-        width: 30%;
+        width: 50%;
     }
     .h1-banner-inicio {
         color: #ffffff;
@@ -178,7 +227,7 @@ hr {
         color: #ffffff;
         text-transform: uppercase;
     }
-}
+} */
 
 
 /* .redondeado img {
@@ -535,4 +584,67 @@ h1.contacto {
         /* margin-top: 4rem; */
         padding-top: 4rem;
     }
+}
+
+
+/* ****************** CAROUSELES ******************** */
+
+
+/* *****CAROUSEL INICIO*****  */
+
+.carousel-item {
+    /* width: 100%; */
+    height: 100vh;
+    min-height: 300px;
+    background-image: url(assets/img/fondo.jpg);
+    background-repeat: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+    /* -moz-background-size: cover;
+    -o-background-size: cover; */
+}
+
+.carousel-caption {
+    margin-bottom: 210px;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9px;
+}
+
+
+/* @media(min-width:768px) { */
+
+.header-texto {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.header-imagen img {
+    display: block;
+    margin: auto;
+    padding-top: 10rem;
+    width: 50%;
+}
+
+.h1-banner-inicio {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 4rem;
+}
+
+.h4-banner-inicio {
+    color: #ffffff;
+    text-transform: uppercase;
 }
