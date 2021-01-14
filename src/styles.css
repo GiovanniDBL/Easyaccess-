@@ -1,18 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
-
 body {
     /* font-family: 'Oswald', sans-serif !important; */
     font-family: 'Roboto', sans-serif !important;
-    background: #b92b27;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1565C0, #b92b27);
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to right, #1565C0, #1a1919); */
-    background: linear-gradient(to right, #080808, #07173a);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
 }
 
 
@@ -28,10 +43,10 @@ body {
     font-size: 25px;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
     color: #fff;
 }
 
@@ -116,7 +131,7 @@ body {
 /* background-color: transparent !important; */
 
 .header-navbar .navbar {
-    background-color: rgba(0, 0, 0, .6) !important;
+    background-color: rgba(0, 0, 0, .9) !important;
     font-size: 20px;
 }
 
@@ -172,12 +187,13 @@ hr {
 /********* UTILIDADES *********/
 
 .titulo {
-    color: #ffffff;
+    color: #000000;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .fw-300 {
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .centrar-texto {
@@ -248,8 +264,8 @@ hr {
 @media(min-width:768px) {
     .contenido-nosotros {
         display: grid;
-        grid-template-columns: 40% 60%;
-        grid-column-gap: 4rem;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 2rem;
         margin-bottom: 2rem;
     }
 }
@@ -529,6 +545,10 @@ h1.contacto {
     list-style: none;
 }
 
+.banner-store h1 {
+    color: blue;
+}
+
 .resumen-evento {
     position: relative;
     padding: 120px 0;
@@ -587,25 +607,31 @@ h1.contacto {
 }
 
 
-/* ****************** CAROUSELES ******************** */
+/* ****************** INICIO CAROUSELES ******************** */
 
 
 /* *****CAROUSEL INICIO*****  */
 
+@media(min-width:768px) {}
+
 .carousel-item {
-    /* width: 100%; */
-    height: 100vh;
-    min-height: 300px;
-    background-image: url(assets/img/fondo.jpg);
+    width: 100%;
+    height: 300px;
+    /* background-image: url(assets/img/fondo.jpg); */
     background-repeat: no-repeat center center scroll;
     -webkit-background-size: cover;
     background-size: cover;
-    /* -moz-background-size: cover;
-    -o-background-size: cover; */
+}
+
+@media(min-width:768px) {
+    .carousel-item {
+        width: 100%;
+        height: 100vh;
+    }
 }
 
 .carousel-caption {
-    margin-bottom: 23px;
+    margin-bottom: 270px;
 }
 
 .carousel-caption h5 {
@@ -616,7 +642,7 @@ h1.contacto {
 }
 
 .carousel-caption p {
-    width: 60%;
+    width: 75%;
     margin: auto;
     font-size: 18px;
     line-height: 1.9px;
@@ -625,82 +651,126 @@ h1.contacto {
 
 /* @media(min-width:768px) { */
 
-.header-texto {
+
+/* .header-texto {
     text-align: center;
     padding-top: 2rem;
-}
+} */
 
-.header-imagen img {
+
+/* .header-imagen img {
     display: block;
     margin: auto;
-    padding-top: 10rem;
-    width: 50%;
-}
-
-.header-imagen-fondos img {
-    display: block;
-    margin: auto;
-    padding-top: 10rem;
+    
     width: 100vh;
-    height: 30rem;
-}
+} */
 
-.h1-banner-inicio {
+
+/* .h1-banner-inicio {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 4rem;
-}
+} */
 
-.h4-banner-inicio {
+
+/* .h4-banner-inicio {
     color: #ffffff;
     text-transform: uppercase;
-}
+} */
 
 .video {
-    position: relative;
+    position: sticky;
     max-height: 70rem;
     overflow: hidden;
 }
 
 video {
     display: block;
-    width: 100%;
+    width: 100vh;
 }
 
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba(0, 0, 0, .5); */
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#891c1e+0,9e37f2+67,ffffff+100&0.8+0,0.5+100 */
-    background: -moz-linear-gradient(-45deg, rgba(137, 28, 30, 0.8) 0%, rgba(158, 55, 242, 0.6) 67%, rgba(255, 255, 255, 0.5) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(137, 28, 30, 0.8) 0%, rgba(158, 55, 242, 0.6) 67%, rgba(255, 255, 255, 0.5) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(137, 28, 30, 0.8) 0%, rgba(158, 55, 242, 0.6) 67%, rgba(255, 255, 255, 0.5) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cc891c1e', endColorstr='#80ffffff', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+@media (min-width:768px) {
+    video {
+        width: 100%;
+    }
 }
 
-.contenido-video {
-    display: flex;
-    align-items: center;
-    height: 100%;
+
+/********* BANNER SECCION INICIAL *********/
+
+.fondo-banners {
+    background-color: #f9f9fa;
+}
+
+.banner {
     position: relative;
-    z-index: 1;
+    padding: 50px 26px;
+    /* border-radius: 1%; */
 }
 
-.contenido-video h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 7rem;
+.texto-inicial {
+    /* box-shadow: 10px 10px 8px black; */
+    border-radius: 1.5%;
+    margin-bottom: 9rem;
 }
 
-.contenido-video span {
-    background-color: #E344A4;
-    font-size: 2rem;
-    padding: 1rem 2rem;
+.texto-inicial p {
+    text-align: center;
+    color: #000000;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-banner-inicial {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/** Habilidades **/
+
+@media (min-width: 768px) {
+    .habilidades {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.habilidad {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .habilidad {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.habilidad img {
+    height: 30%;
+    width: 30%;
+}
+
+.habilidad h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card-body {
+    background-color: #f9f9fa;
+}
+
+.card-body:hover {
+    background-color: #1e1e444d;
+    transition: all .6s ease-in-out;
+}
+
+.shadow-cards {
+    box-shadow: inset 0 0 25px rgba(84, 167, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.2);
 }
