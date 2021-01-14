@@ -21,19 +21,19 @@
 
 
 
-<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade  animated fadeIn" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
-        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
 
     </ol>
     <div class="carousel-inner">
 
-        <div class="carousel-item active video">
-            <video src="assets/videos/Bacteria-video.mp4" controls autoplay muted loop class="d-block"></video>
-            <div class="carousel-caption header-imagen-fondos d-none d-md-block">
+        <div class="carousel-item carousel-item-inicio active  video">
+            <video src="assets/videos/seguridad-video.mp4" controls autoplay muted loop class="d-block"></video>
+            <div class="carousel-caption carousel-caption-inicio header-imagen-fondos d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
@@ -41,7 +41,7 @@
 
         <!-- <div class="carousel-item ">
 
-            <div class="carousel-caption header-imagen  d-none d-md-block">
+            <div class="carousel-caption carousel-caption-inicio header-imagen  d-none d-md-block">
                 <img src="assets/img/handeasy.png" alt="IMAGEN-CENTRO">
                 <h5 class="animated bounceInRight">Bienvenido</h5>
                 <p>Easyaccess ten el control</p>
@@ -49,9 +49,9 @@
             </div>
         </div> -->
 
-        <div class="carousel-item  header-imagen ">
+        <div class="carousel-item carousel-item-inicio  header-imagen contenedor-video ">
             <img src="assets/img/seguridad-header.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption carousel-caption-inicio d-none d-md-block">
 
                 <h5>Second slide label</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -59,17 +59,17 @@
             </div>
         </div>
 
-        <div class="carousel-item header-imagen">
+        <div class="carousel-item carousel-item-inicio header-imagen">
             <img src="assets/img/seguridad2-header.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption   d-none d-md-block">
+            <div class="carousel-caption carousel-caption-inicio   d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
             </div>
         </div>
-        <div class="carousel-item header-imagen ">
+        <div class="carousel-item carousel-item-inicio header-imagen ">
             <img src="assets/img/seguridad3-header.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption  d-none d-md-block">
+            <div class="carousel-caption carousel-caption-inicio  d-none d-md-block">
                 <h5>Fourt slide label</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
@@ -78,11 +78,11 @@
 
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
         <span class="visually-hidden"></span>
     </a>
     <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
         <span class="visually-hidden"></span>
     </a>
 
@@ -138,35 +138,134 @@
     </div>
 </section>
 
+<!-- ****** SECTION FUNCIONES ****** -->
 
 <section class="container seccion animated fadeIn">
-    <h1 class="titulo centrar-texto margin">FUNCIONES</h1>
+    <h1 class="titulo centrar-texto seccion ">Control de entradas y salidas</h1>
+
     <hr>
-    <div class="card-deck habilidad">
+    <div class="card-deck habilidad ">
+        <p>Control de entradas y salidas te permitirá llevar el registro de los accesos que realicen tus usuarios registrados en el sistema y cuenta con las validaciones necesarias de seguridad.
+        </p>
         <div class="card card2">
-            <div class="card-body shadow-cards">
-                <img src="assets/img/frontend.png" alt="frontend">
-                <h3 class="card-title">validación de horario</h3>
+            <div class="card-body shadow-cards efecto-card">
+                <img src="assets/img/frontend.png" class="redondeado-relleno" alt="frontend">
+                <h3 class="card-title seccion">validación de horario</h3>
                 <p class="card-text">La aplicación verifica que el usuario cumpla con las reglas de horario establecidas para su ingreso o salida. </p>
             </div>
         </div>
         <div class="card card2">
-            <div class="card-body shadow-cards">
-                <img src="assets/img/backend.png" alt="backend">
-                <h3 class="card-title">validación de status de usuario</h3>
+            <div class="card-body shadow-cards efecto-card">
+                <img src="assets/img/backend.png" class="redondeado-relleno" alt="backend">
+                <h3 class="card-title seccion">validación de status de usuario</h3>
                 <p class="card-text">Se valida que el usuario que intenta acceder este activo en el sistema.</p>
             </div>
         </div>
         <div class="card card2">
-            <div class="card-body shadow-cards">
-                <img src="assets/img/soporte.png" alt="soporte">
-                <h3 class="card-title">Anti-passback</h3>
+            <div class="card-body shadow-cards efecto-card">
+                <img src="assets/img/soporte.png" class="redondeado-relleno" alt="soporte">
+                <h3 class="card-title seccion">Anti-passback</h3>
                 <p class="card-text">Esta función permitirá el acceso a tus usuarios solo si se ha registrado una salida previamente, lo cual es de gran utilidad para impedir varios ingresos con el mismo acceso.</p>
             </div>
         </div>
 
     </div>
 </section>
+
+
+<!-- ****** SECTION FUNCIONES GESTION DE USUARIOS ****** -->
+
+<section id="home" class=" banner fondo-banners  animated fadeIn">
+    <div class="contenido-banner-gestion">
+
+        <div class="imga-banner-gestion">
+            <img src="assets/img/gestion-usuarios.png" alt="imagen-nosotros">
+        </div>
+        <div class="texto-inicial">
+            <h1 class="titulo centrar-texto seccion ">Gestion de usuarios</h1>
+            <hr>
+            <p>Easyaccess te permite gestionar distintos tipos de usuarios y te muestra día a día cuantos de estos han ingresado.
+            </p>
+            <ul class="">
+                <li>Proveedores</li>
+                <li>Residentes</li>
+                <li>Empleados domésticos</li>
+                <li>Obreros</li>
+                <li>Personal Administrativo</li>
+                <li>Guardias</li>
+                <li>Mantenimiento</li>
+                <li>Visitantes</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- ****** SECTION FUNCIONES INFORMACION MEDIANTE QR, SLIDER ****** -->
+<div class="container">
+    <h1 class="titulo centrar-texto seccion ">Información completa mediante QR</h1>
+    <p class="centrar-texto">En proceso... <br> c:</p>
+    <hr>
+</div>
+<div id="carouselExampleCaptionss" class="carousel slide carousel-fade animated dadeIn" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+        <li data-target="#carouselExampleCaptions" data-bs-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item carousel-item-QR carousel-itemm active">
+            <img src="assets/img/QR-1.jpg" class="d-block carousel-imagen-QR" alt="...">
+            <div class="carousel-caption carousel-caption-QR d-none d-md-block">
+                <h5>Escáner QR</h5>
+
+                <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+            </div>
+        </div>
+
+        <div class="carousel-item carousel-item-QR">
+            <img src="assets/img/QR-2.jpg" class="d-block carousel-imagen-QR" alt="...">
+            <div class="carousel-caption carousel-caption-QR d-none d-md-block">
+                <h5>Presionar botón escanear</h5>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+            </div>
+        </div>
+        <div class="carousel-item carousel-item-QR">
+            <img src="assets/img/QR-3.jpg" class="d-block carousel-imagen-QR" alt="...">
+            <div class="carousel-caption carousel-caption-QR d-none d-md-block">
+                <h5>Escanear QR</h5>
+                <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+            </div>
+        </div>
+        <div class="carousel-item carousel-item-QR">
+            <img src="assets/img/QR-4.jpg" class="d-block carousel-imagen-QR" alt="...">
+            <div class="carousel-caption carousel-caption-QR d-none d-md-block">
+                <h5>Obtener información</h5>
+                <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+            </div>
+        </div>
+        <div class="carousel-item carousel-item-QR">
+            <img src="assets/img/QR-5.jpg" class="d-block carousel-imagen-QR" alt="...">
+            <div class="carousel-caption carousel-caption-QR d-none d-md-block">
+                <h5>Five slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptionss" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptionss" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+
 
 
 <!-- BANNER SOLUCION-INICIO -->
@@ -266,7 +365,7 @@
 
 <!-- BANNER GOOGLE-STORE -->
 
-<div class="banner-store parallax">
+<!-- <div class="banner-store parallax">
     <div class="container">
         <ul class="resumen-evento clearfix">
             <h1 class="centrar-texto">¡Descarga la app! <br>
@@ -275,4 +374,4 @@
         </ul>
 
     </div>
-</div>
+</div> -->
