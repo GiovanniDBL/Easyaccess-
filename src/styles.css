@@ -39,14 +39,6 @@ body {
     font-weight: bold;
 }
 
-.navbar-dark .navbar-brand {
-    font-size: 25px;
-}
-
-.navbar-dark .navbar-nav .navbar-link {
-    color: #ffffff;
-}
-
 .navbar-nav {
     text-align: center;
 }
@@ -55,26 +47,8 @@ body {
     padding: .2rem 1rem;
 }
 
-.nav-link.active,
-.nav-link:focus,
-.navbar-dark .navbar-nav .navbar-link:hover {
-    color: #ffffff !important;
-}
-
 .w-100 {
     height: 100vh;
-}
-
-@media only screen and (max-width:768px) {
-    .navbar-nav.ml-auto {
-        background: rgba(0, 0, 0, 0.5);
-    }
-    .navbar-toggler {
-        padding: 1px 5px;
-        font-size: 18px;
-        line-height: 0.3;
-        /* background-color: gray !important; */
-    }
 }
 
 .easy-span {
@@ -86,8 +60,6 @@ body {
     font-weight: 800;
 }
 
-@media only screen and (max-width:768px) {}
-
 .empezar {
     /* background-color: rgba( 0, 0, 0, .3); */
     /* padding-right: 10px;
@@ -97,7 +69,7 @@ body {
     font-weight: 800;
     letter-spacing: 1.6px;
     text-transform: uppercase;
-    padding: 14px 28px;
+    /* padding: 14px 28px; */
     border-radius: 3%;
     border: 1px solid #4591e7;
     white-space: nowrap;
@@ -125,28 +97,8 @@ body {
 
 .header-navbar .navbar {
     background-color: rgba(0, 0, 0, .9) !important;
+    /* background: rgba(245, 222, 179, 0.397) !important; */
     font-size: 20px;
-}
-
-
-/* .sticky-top {
-    position: -webkit-sticky;
-    position: static;
-    top: 56px;
-    z-index: 1030;
-} */
-
-
-/* .navbar-nav {
-    position: absolute;
-    justify-content: center;
-    left: 42%;
-    grid-column-gap: 4rem;
-} */
-
-.nav-item:hover {
-    border-radius: 10%;
-    transition: all .4s ease-in-out;
 }
 
 
@@ -695,8 +647,10 @@ video {
 }
 
 .habilidad img {
-    height: 30%;
-    width: 30%;
+    height: 40%;
+    width: 50%;
+    border-radius: 50%;
+    background-color: #33a3fb;
 }
 
 .habilidad h3 {
@@ -707,6 +661,7 @@ video {
 
 .card-body {
     background-color: #f9f9fa;
+    border: 3px solid #7388a1;
 }
 
 .card-body:hover {
@@ -723,7 +678,8 @@ video {
     /* -webkit-filter: grayscale(1); */
     /* -webkit-transform: scale(1.1); */
     transform: rotate(1deg);
-    background-color: #A9F308;
+    background-color: #33a3fb;
+    border-radius: 0%;
     border-radius: 1%;
 }
 
@@ -764,50 +720,92 @@ video {
 /********* SECTION INFORMACION COMPLETA MEDIANTE QR *********/
 
 .carousel-item-QR {
+    position: relative;
+    height: auto;
+    background-image: url(assets/img/QR2-imagen.png);
+}
+
+.carousel-item-QR::before {
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    height: 500px;
-    /* background-image: url(assets/img/fondo.jpg); */
-    background-repeat: no-repeat center center scroll;
+    height: 800px;
+    /* background-repeat: no-repeat center center scroll;
     -webkit-background-size: cover;
-    background-size: cover;
-    background-color: #f9f9fa;
+    background-size: cover; */
+    content: '';
 }
 
 @media(min-width:768px) {
-    .carousel-item-inicio-QR {
+    .carousel-item-QR::before {
         width: 100%;
-        height: 100vh;
+        height: 800px;
     }
+    .carousel-caption-QR h5 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-top: 25px;
+    }
+}
+
+.carousel-caption-QR h5 {
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+
+/* .carousel-caption-QR p {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9px;
+} */
+
+.carousel-item-QR {
+    background-repeat: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .carousel-caption-QR {
     /* margin-bottom: 100px; */
 }
 
-.carousel-caption-QR h5 {
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-    color: #3d5a80;
-}
-
-.carousel-caption-QR p {
-    width: 75%;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.9px;
-}
-
 .carousel-imagen-QR {
     display: block;
     margin: auto;
     padding-top: 2rem;
-    width: 15%;
+    padding-bottom: 8rem;
+    width: 60%;
 }
 
-.carousel-control-prev.carousel-control-prev-icon {
-    color: darkblue;
+@media(min-width:768px) {
+    .carousel-imagen-QR {
+        display: block;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+        width: 18%;
+    }
+}
+
+
+/* .carousel .carousel-indicators li {
+    background-color: rgb(140, 0, 255)!important;
+} */
+
+
+/********* SECTION INFORMACION CONTROL DE VISITAS *********/
+
+.decoracion-li-visitas li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.lista-span span {
+    font-weight: bold;
 }
 
 
