@@ -33,10 +33,24 @@ body {
 
 /********* NAVBAR *********/
 
+.header_change {
+    /* position: fixed; */
+    background-color: rgba(0, 0, 0, .9) !important;
+    transition: all .7s;
+    /* width: 100%; */
+    /* z-index: 1; */
+}
+
 .navbar-nav a {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
+    color: #fff !important;
+}
+
+.navbar-nav a:hover {
+    cursor: pointer;
+    color: #33a3fb !important;
 }
 
 .navbar-nav {
@@ -88,18 +102,21 @@ body {
     transition-property: border, box-shadow; */
 }
 
-.header-navbar {
+
+/* .header-navbar {
     background-size: cover;
 }
+ */
 
 
 /* background-color: transparent !important; */
 
-.header-navbar .navbar {
+
+/* .header-navbar .navbar {
     background-color: rgba(0, 0, 0, .9) !important;
-    /* background: rgba(245, 222, 179, 0.397) !important; */
+    background: rgba(245, 222, 179, 0.397) !important;
     font-size: 20px;
-}
+} */
 
 
 /********* GLOBALES *********/
@@ -629,6 +646,9 @@ video {
 
 /************ FUNCIONES **************/
 
+
+/************ FUNCION CONTROL DE ENTRADA Y SALIDA **************/
+
 @media (min-width: 768px) {
     .habilidades {
         display: flex;
@@ -647,25 +667,44 @@ video {
 }
 
 .habilidad img {
-    height: 40%;
-    width: 50%;
-    border-radius: 50%;
-    background-color: #33a3fb;
+    height: 30%;
+    width: 30%;
 }
 
 .habilidad h3 {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 400;
+    color: #000000;
+}
+
+.card-text {
+    color: #ffffff;
 }
 
 .card-body {
-    background-color: #f9f9fa;
-    border: 3px solid #7388a1;
+    border-radius: 5%;
+}
+
+.card-deck {
+    border-radius: 5%;
+}
+
+.card-body-card1 {
+    background: linear-gradient(to right, #005ae0, #15a3c7);
+}
+
+.card-body-card2 {
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+}
+
+.card-body-card3 {
+    background: linear-gradient(to right, #e05a00, #e29a2d);
 }
 
 .card-body:hover {
-    /* background-color: #0c0ce94d; */
+    background: linear-gradient(to right, #1acebf, #4b93a5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: all .6s ease-in-out;
 }
 
@@ -676,11 +715,10 @@ video {
 
 .efecto-card:hover {
     /* -webkit-filter: grayscale(1); */
-    /* -webkit-transform: scale(1.1); */
-    transform: rotate(1deg);
-    background-color: #33a3fb;
+    -webkit-transform: scale(1.1);
+    /* transform: rotate(1deg); */
     border-radius: 0%;
-    border-radius: 1%;
+    border-radius: 5%;
 }
 
 
