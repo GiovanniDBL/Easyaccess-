@@ -41,9 +41,25 @@ export class NavbarComponent implements OnInit {
     // tslint:disable-next-line:no-unused-expression
     
   }
-  // toFunctions(){
-  //   document.getElementById('funciones')?.scrollIntoView({behavior: 'smooth'});
-  // }
+  // tslint:disable-next-line:typedef
+  toFunction1(){
+    document.getElementById('funcion1')?.scrollIntoView({behavior: 'smooth'});
+  }
+  toFunction2(){
+    document.getElementById('funcion2')?.scrollIntoView({behavior: 'smooth'});
+  }
+  toFunction3(){
+    document.getElementById('funcion3')?.scrollIntoView({behavior: 'smooth'});
+  }
+  toFunction4(){
+    document.getElementById('funcion4')?.scrollIntoView({behavior: 'smooth'});
+  }
+  toFunction5(){
+    document.getElementById('funcion5')?.scrollIntoView({behavior: 'smooth'});
+  }
+  toFunction6(){
+    document.getElementById('funcion6')?.scrollIntoView({behavior: 'smooth'});
+  }
 
 }
 

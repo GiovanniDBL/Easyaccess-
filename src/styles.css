@@ -41,11 +41,31 @@ body {
     /* z-index: 1; */
 }
 
+.navbar-nav {
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 1%;
+}
+
+@media(min-width:768px) {
+    .navbar-nav {
+        background-color: unset;
+    }
+}
+
 .navbar-nav a {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
     color: #fff !important;
+}
+
+
+/* .navbar-nav .dropdown-item {
+    color: black !important;
+} */
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, .9) !important;
 }
 
 .navbar-nav a:hover {
@@ -420,6 +440,7 @@ h1.contacto {
 .footer-home p {
     text-align: center;
     padding-top: 2.5rem;
+    color: #ffffff;
 }
 
 
@@ -525,12 +546,50 @@ h1.contacto {
 
 /* *****CAROUSEL INICIO*****  */
 
-@media(min-width:768px) {}
-
 .carousel-item-inicio {
+    position: relative;
+    height: auto;
+}
+
+.carousel-item-inicio::before {
+    background-color: rgba(0, 0, 0, 0.8);
+    content: '';
+    width: 100%;
+    height: 800px;
+}
+
+.carousel-caption-inicio h5 {
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* margin-top: 25px; */
+}
+
+@media(min-width:768px) {
+    .carousel-item-inicio::before {
+        width: 100%;
+        height: 800px;
+    }
+    .carousel-caption-inicio h5 {
+        font-size: 45px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 25px;
+    }
+    .carousel-caption-inicio p {
+        width: 75%;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.9px;
+    }
+}
+
+
+/* .carousel-item-inicio {
     width: 100%;
     height: 300px;
-    /* background-image: url(assets/img/fondo.jpg); */
+    background-image: url(assets/img/fondo.jpg);
     background-repeat: no-repeat center center scroll;
     -webkit-background-size: cover;
     background-size: cover;
@@ -541,24 +600,21 @@ h1.contacto {
         width: 100%;
         height: 100vh;
     }
-}
+} */
+
+
+/* .carousel-caption-inicio {
+    margin-bottom: 20px;
+} */
 
 .carousel-caption-inicio {
-    margin-bottom: 270px;
+    margin-bottom: 100px;
 }
 
-.carousel-caption-inicio h5 {
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-}
-
-.carousel-caption-inicio p {
-    width: 75%;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.9px;
+@media(min-width:768px) {
+    .carousel-caption-inicio {
+        margin-bottom: 270px;
+    }
 }
 
 
@@ -593,7 +649,7 @@ h1.contacto {
 
 .video {
     position: sticky;
-    max-height: 70rem;
+    max-height: 90rem;
     overflow: hidden;
 }
 
@@ -755,7 +811,7 @@ video {
 }
 
 
-/********* SECTION INFORMACION COMPLETA MEDIANTE QR *********/
+/********* SECTION FUNCIONES COMPLETA MEDIANTE QR *********/
 
 .carousel-item-QR {
     position: relative;
@@ -835,15 +891,233 @@ video {
 } */
 
 
-/********* SECTION INFORMACION CONTROL DE VISITAS *********/
+/********* SECTION FUNCIONES CONTROL DE VISITAS *********/
 
-.decoracion-li-visitas li {
-    list-style: none;
-    padding-top: 10px;
+.list-group-item:hover {
+    /* background-color: #0e314c; */
+    background-color: #ffffff;
+    transition: all .5s;
 }
 
 .lista-span span {
     font-weight: bold;
+    color: #0e314c;
+    text-transform: uppercase;
+}
+
+.texto-control-visitas p {
+    text-align: center;
+    color: #000000;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.texto-control-visitas {
+    margin-bottom: 1rem;
+}
+
+.imga-banner-control-visitas img {
+    border-radius: 1%;
+}
+
+@media (min-width:768px) {
+    .imga-banner-control-visitas img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1%;
+    }
+    .contenido-banner-control-visitas {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-column-gap: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.control-visitas img {
+    display: block;
+    margin: auto;
+    height: 30%;
+    width: 30%;
+}
+
+
+/********* SECTION FUNCIONES PROGRAMAR VISITA *********/
+
+.carousel-item-pvisita {
+    position: relative;
+    height: auto;
+    background-image: url(assets/img/agendar-cita.jpg);
+}
+
+.carousel-item-pvisita::before {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 800px;
+    /* background-repeat: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover; */
+    content: '';
+}
+
+@media(min-width:768px) {
+    .carousel-item-pvisita::before {
+        width: 100%;
+        height: 800px;
+    }
+    .carousel-caption-pvisita h5 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-top: 22px;
+    }
+}
+
+.carousel-caption-pvisita h5 {
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+
+/* .carousel-caption-QR p {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9px;
+} */
+
+.carousel-item-pvisita {
+    background-repeat: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-imagen-pvisita {
+    display: block;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    width: 60%;
+}
+
+@media(min-width:768px) {
+    .carousel-imagen-pvisita {
+        display: block;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+        width: 25%;
+    }
+}
+
+
+/********* SECTION FUNCIONES CONTROL DE INCIDENCIAS *********/
+
+.texto-control-incidencias p {
+    text-align: center;
+    color: #000000;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.texto-control-incidencias {
+    margin-bottom: 1rem;
+}
+
+.imga-banner-control-incidencias img {
+    border-radius: 1%;
+}
+
+@media (min-width:768px) {
+    .imga-banner-control-incidencias img {
+        width: 100%;
+        height: 50%;
+        border-radius: 1%;
+    }
+    .contenido-banner-control-incidencias {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-column-gap: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/********* SECTION INSTRUCCIONES *********/
+
+@media (min-width: 768px) {
+    .habilidades {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.instrucciones {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .instrucciones {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.instrucciones img {
+    height: 40%;
+    width: 40%;
+    border-radius: 2%;
+}
+
+.instrucciones h3 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.card-text {
+    color: #ffffff;
+}
+
+.card-body {
+    border-radius: 5%;
+}
+
+.card-deck {
+    border-radius: 5%;
+}
+
+.card-body-card1 {
+    background: linear-gradient(to right, #005ae0, #15a3c7);
+}
+
+.card-body-card2 {
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+}
+
+.card-body-card3 {
+    background: linear-gradient(to right, #e05a00, #e29a2d);
+}
+
+.card-body:hover {
+    background: linear-gradient(to right, #1acebf, #4b93a5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all .6s ease-in-out;
+}
+
+.efecto-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.efecto-card:hover {
+    /* -webkit-filter: grayscale(1); */
+    -webkit-transform: scale(1.1);
+    /* transform: rotate(1deg); */
+    border-radius: 0%;
+    border-radius: 5%;
 }
 
 
