@@ -60,6 +60,20 @@ export class NavbarComponent implements OnInit {
   toFunction6(){
     document.getElementById('funcion6')?.scrollIntoView({behavior: 'smooth'});
   }
+  toFunction7(){
+    document.getElementById('funcion7')?.scrollIntoView({behavior: 'smooth'});
+  }
+  toFunction8(){
+    document.getElementById('funcion8')?.scrollIntoView({behavior: 'smooth'});
+  }
+  toFunction9(){
+    document.getElementById('funcion9')?.scrollIntoView({behavior: 'smooth'});
+  }
+  // tslint:disable-next-line:typedef
+  toInstructions(){
+    document.getElementById('instrucciones')?.scrollIntoView({behavior: 'smooth'});
+  }
+
 
 }
 
