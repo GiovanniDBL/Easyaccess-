@@ -585,7 +585,7 @@ h1.contacto {
         margin-top: 25px;
     }
     .carousel-caption-inicio p {
-        width: 75%;
+        width: 100%;
         margin: auto;
         font-size: 18px;
         line-height: 1.9px;
@@ -637,7 +637,7 @@ h1.contacto {
 /* .header-imagen img {
     display: block;
     margin: auto;
-    width: 100vh;
+    width: 100%;
 } */
 
 
@@ -654,20 +654,27 @@ h1.contacto {
     text-transform: uppercase;
 } */
 
-.video {
-    position: sticky;
-    max-height: 90rem;
+
+/* .video {
+    position: relative;
+    max-height: 39rem;
     overflow: hidden;
-}
+} */
 
 video {
     display: block;
-    width: 100vh;
+    width: 180vh;
+    height: 100%;
 }
 
 @media (min-width:768px) {
     video {
         width: 100%;
+    }
+    .video {
+        position: relative;
+        max-height: 40rem;
+        overflow: hidden;
     }
 }
 
@@ -1061,7 +1068,7 @@ video {
 }
 
 .carousel-item-informacion-visitas::before {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 800px;
     /* background-repeat: no-repeat center center scroll;
@@ -1188,7 +1195,7 @@ video {
 
 .list-group-item-vistasp:hover {
     /* background-color: #0e314c; */
-    background-color: #381c1c;
+    background-color: #15a3c7;
     transition: all .5s;
 }
 
@@ -1196,7 +1203,7 @@ video {
 /********* SECTION INSTRUCCIONES *********/
 
 @media (min-width: 768px) {
-    .habilidades {
+    .instrucciones {
         display: flex;
         justify-content: space-between;
     }
@@ -1213,10 +1220,10 @@ video {
 }
 
 .instrucciones img {
-    height: 70%;
+    height: 75%;
     width: 75%;
     border-radius: 2%;
-    border: 5px solid rgba(8, 90, 243, .5);
+    border: 5px solid rgba(8, 90, 243, .8);
 }
 
 .instrucciones h3 {
@@ -1265,7 +1272,18 @@ video {
     border-radius: 0%;
     border-radius: 2%;
     transition: all .5s ease-in-out;
-    border: 5px solid rgba(8, 26, 243, .9);
+    border: 5px solid rgb(13, 45, 228);
+}
+
+
+/************************ SECCION CARACTERISTICAS ***************************/
+
+.fa-check-circle {
+    color: rgb(23, 199, 23);
+}
+
+.fa-times-circle {
+    color: rgb(168, 10, 10);
 }
 
 
