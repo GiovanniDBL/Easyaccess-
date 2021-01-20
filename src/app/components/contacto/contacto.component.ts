@@ -25,7 +25,7 @@ export class ContactoComponent implements OnInit {
     
   }
 
-  public phone = '[ +529983009969 ]';
+  public phone = '[ +529988443544 ]' + 'Easyaccess';
   public title = '[ Hola, me interesa su servicio ]';
 
 
@@ -43,7 +43,7 @@ export class ContactoComponent implements OnInit {
 
 if (form.invalid) {
       Swal.fire(
-        'Formulario Contacto',
+        'Error',
         'Ingrese todos los datos al formulario',
         'error'
         );

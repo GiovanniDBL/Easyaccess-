@@ -27,10 +27,7 @@ export class NavbarComponent implements OnInit {
 
 
 
-  // tslint:disable-next-line:typedef
-  toCaracter(){
-    document.getElementById('caracter')?.scrollIntoView({behavior: 'smooth'});
-  }
+
   // tslint:disable-next-line:typedef
   toInicio(){
     document.getElementById('home')?.scrollIntoView({behavior: 'smooth'});
@@ -72,6 +69,12 @@ export class NavbarComponent implements OnInit {
   // tslint:disable-next-line:typedef
   toInstructions(){
     document.getElementById('instrucciones')?.scrollIntoView({behavior: 'smooth'});
+  }
+  toCaracteristicas(){
+    document.getElementById('caracteristicas')?.scrollIntoView({behavior: 'smooth'});
+  }
+  toPlanes(){
+    document.getElementById('planes')?.scrollIntoView({behavior: 'smooth'});
   }
 
 
