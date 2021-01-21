@@ -1157,8 +1157,8 @@ video {
 .informacion-vehicular-icon img {
     display: block;
     margin: auto;
-    height: 40%;
-    width: 40%;
+    height: 30%;
+    width: 30%;
 }
 
 .texto-informacion-vehicular p {
@@ -1378,7 +1378,7 @@ video {
 }
 
 .fa-coloricon-contacto {
-    color: #3498DB;
+    color: #B2BABB;
 }
 
 

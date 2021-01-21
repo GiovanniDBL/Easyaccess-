@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MessageService } from './services/message.service';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { NgxWhastappButtonModule } from 'ngx-whatsapp-button';
+import { FuncionesComponent } from './components/funciones/funciones.component';
 
 
 
@@ -25,7 +26,8 @@ import { NgxWhastappButtonModule } from 'ngx-whatsapp-button';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ContactoComponent
+    ContactoComponent,
+    FuncionesComponent
   ],
   imports: [
     BrowserModule,

@@ -25,8 +25,8 @@ export class ContactoComponent implements OnInit {
     
   }
 
-  public phone = '[ +529988443544 ]' + 'Easyaccess';
-  public title = '[ Hola, me interesa su servicio ]';
+  // public phone = '[ +529988443544 ]' + 'Easyaccess';
+  // public title = '[ Hola, me interesa su servicio ]';
 
 
 
