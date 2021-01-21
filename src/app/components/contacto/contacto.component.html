@@ -16,22 +16,22 @@
                 <form (ngSubmit)="contactForm(form)" #form="ngForm" method="post" onsubmit="return submitUserForm();">
                     <span *ngIf="form.submitted && form.controls['nombre'].errors" class="text-danger">El nombre es obligatorio</span>
                     <div class="form-goup">
-                        <label for="">Nombre</label>
+                        <label for="">Nombre <i class="fas fa-coloricon-contacto fa-user-edit"></i></label>
                         <input type="text" class="form-control" name="nombre" ngModel required minlength="5">
                     </div>
                     <span *ngIf="form.submitted && form.controls['asunto'].errors" class="text-danger">El asunto es obligatorio</span>
                     <div class="form-goup">
-                        <label for="">Asunto</label>
+                        <label for="">Asunto <i class="fas fa-coloricon-contacto fa-exclamation-circle"></i></label>
                         <input type="text" class="form-control" name="asunto" ngModel required minlength="5">
                     </div>
                     <span *ngIf="form.submitted && form.controls['email'].errors" class="text-danger">El correo es obligatorio</span>
                     <div class="form-goup">
-                        <label for="">Correo Electrónico</label>
+                        <label for="">Correo Electrónico <i class="far fa-coloricon-contacto fa-envelope"></i></label>
                         <input type="email" class="form-control" name="email" ngModel required email>
                     </div>
                     <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-danger">El mensaje es obligatorio</span>
                     <div class="form-goup">
-                        <label for="">Mensaje</label>
+                        <label for="">Mensaje <i class="fas fa-coloricon-contacto fa-feather-alt"></i></label>
                         <textarea cols="30" rows="6" class="form-control" name="mensaje" ngModel required minlength="5"></textarea>
                     </div>
 
