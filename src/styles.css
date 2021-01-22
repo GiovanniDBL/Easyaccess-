@@ -169,9 +169,21 @@ hr {
 /********* UTILIDADES *********/
 
 .titulo {
-    color: #0e314c;
-    font-weight: 400;
+    color: #1f3d54;
+    font-weight: 500;
+    font-weight: bold;
     text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+    .titulo {
+        color: #1f3d54;
+        font-weight: 500;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
 }
 
 .fw-300 {
@@ -412,22 +424,6 @@ ul.no-diseño {
 }
 
 
-/********* CONTENIDO CONTACTO *********/
-
-.titulo-contacto {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2rem;
-    padding-top: 2rem;
-    color: #000000;
-}
-
-h1.contacto {
-    font-size: 4vw;
-    color: #ffffff;
-}
-
-
 /******** FOOTER ********/
 
 .footer-home {
@@ -541,7 +537,25 @@ h1.contacto {
 }
 
 
-/* ****************** INICIO CAROUSELES ******************** */
+/* n */
+
+
+/* n */
+
+
+/* n */
+
+
+/* n */
+
+
+/* n */
+
+
+/* n */
+
+
+/******************* INICIO DE CONTENIDO  ******************** */
 
 
 /* *****CAROUSEL INICIO*****  */
@@ -592,28 +606,6 @@ h1.contacto {
     }
 }
 
-
-/* .carousel-item-inicio {
-    width: 100%;
-    height: 300px;
-    background-image: url(assets/img/fondo.jpg);
-    background-repeat: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    background-size: cover;
-}
-
-@media(min-width:768px) {
-    .carousel-item-inicio {
-        width: 100%;
-        height: 100vh;
-    }
-} */
-
-
-/* .carousel-caption-inicio {
-    margin-bottom: 20px;
-} */
-
 .carousel-caption-inicio {
     margin-bottom: 100px;
 }
@@ -623,43 +615,6 @@ h1.contacto {
         margin-bottom: 270px;
     }
 }
-
-
-/* @media(min-width:768px) { */
-
-
-/* .header-texto {
-    text-align: center;
-    padding-top: 2rem;
-} */
-
-
-/* .header-imagen img {
-    display: block;
-    margin: auto;
-    width: 100%;
-} */
-
-
-/* .h1-banner-inicio {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 4rem;
-} */
-
-
-/* .h4-banner-inicio {
-    color: #ffffff;
-    text-transform: uppercase;
-} */
-
-
-/* .video {
-    position: relative;
-    max-height: 39rem;
-    overflow: hidden;
-} */
 
 video {
     display: block;
@@ -676,6 +631,67 @@ video {
         max-height: 44rem;
         overflow: hidden;
     }
+}
+
+
+/********* BANNER SECCION INICIAL 2.0 *********/
+
+.imagen-inicio2 img {
+    /* background-image: url(assets/img/Que-es.jpeg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:768px) {
+    .imagen-inicio2 img {
+        /* background-image: url(assets/img/Que-es.jpeg); */
+        background-size: cover;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+}
+
+
+/********* BANNER SECCION INFORMACIÓN CONTROL 2.0 *********/
+
+.fondo-banners-control {
+    background: #8E2DE2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1d97d1, #0463ac);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1d97d1, #0463ac);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.banner-control {
+    position: relative;
+    padding: 100px 26px;
+    /* border-radius: 1%; */
+    margin-bottom: 5rem;
+    color: white;
+}
+
+@media(min-width: 768px) {
+    .rejilla {
+        grid-gap: 1rem;
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+    }
+    .rejilla2 {
+        grid-gap: 1rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.icon-rejilla img {
+    display: block;
+    margin: auto;
+    height: 40%;
+    width: 40%;
 }
 
 
@@ -714,7 +730,7 @@ video {
 }
 
 
-/************ FUNCIONES **************/
+/************ ******************FUNCIONES **************** **************/
 
 
 /************ FUNCION CONTROL DE ENTRADA Y SALIDA **************/
