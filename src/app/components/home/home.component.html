@@ -160,45 +160,81 @@
 
 <!-- SECCION CATEGORIAS ESCUELA, RESIDENCIAS ETC... -->
 <section class="icon-servicios  banner-servicios">
-    <div class="servicios">
+    <div class="servicios ">
 
 
-        <div class="servicio">
+        <div class="servicio ">
             <h3>Residencial</h3>
-
-            <div class="iconos-service">
-                <img src="assets/img/departamento.png" alt="departamento-img">
-            </div>
+            <a [routerLink]="['/residencial']">
+                <div class="iconos-service efecto-servicio">
+                    <img src="assets/img/departamento.png" alt="departamento-img">
+                </div>
+            </a>
             <P>Mayor control de visitas</P>
         </div>
 
         <div class="servicio">
             <h3>Escolar</h3>
-            <div class="iconos-service">
-                <img src="assets/img/universidad.png" alt="universidad-img">
-            </div>
+            <a [routerLink]="['/escolar']">
+                <div class="iconos-service efecto-servicio">
+                    <img src="assets/img/universidad.png" alt="universidad-img">
+                </div>
+            </a>
             <p>Incrementa la seguridaden tu punto de accesso</p>
         </div>
 
         <div class="servicio">
             <h3>Corporativo</h3>
-            <div class="iconos-service">
-                <img src="assets/img/corporativo.png" alt="corporativo-img">
-            </div>
+            <a [routerLink]="['/corporativo']">
+                <div class="iconos-service efecto-servicio">
+                    <img src="assets/img/corporativo.png" alt="corporativo-img">
+                </div>
+            </a>
             <p>Credencialización de empleados</p>
         </div>
 
         <div class="servicio">
             <h3>Contrucción</h3>
-            <div class="iconos-service">
-                <img src="assets/img/construccion.png" alt="contruccion-img">
-            </div>
+            <a [routerLink]="['/construccion']">
+                <div class="iconos-service efecto-servicio">
+                    <img src="assets/img/construccion.png" alt="contruccion-img">
+                </div>
+            </a>
             <p>Agilidad en ingresos de visitantes y proveedores</p>
         </div>
     </div>
     <br>
 </section>
-<h1>hola</h1>
+
+<!-- SECCIÓN BANNNER DE DESCARGA 2.0 -->
+
+<section class=" banner-descargarapp fondo-banner-descarga animated fadeIn ">
+    <div class="contenido-banner-descargarapp ">
+
+        <div class=" ">
+            <img src="assets/img/iconEAhd.png " class="imga-banner-descargarapp" alt="imagen-nosotros ">
+            <div class="app-descarga">
+                <a href="assets/descargar-aplicacion/EA_1.3.8_PD.apk" download> <img src="assets/img/google-play.png " width="450 " height="200 " alt="Imagen-google-play "></a>
+            </div>
+        </div>
+
+        <div class="texto-descarga ">
+            <h1 class=" centrar-texto seccion ">¡EASYACCESS en tu celular!</h1>
+            <p>Nuestra aplicación móvil cuenta con todas las funciones necesarias para utilizar y disfrutar de los servicios de EASYACCESS
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- BANNER RELLENO  -->
+<section class="  animated fadeIn">
+    <div class="imagen-inicio2">
+        <img src="assets/img/Seguridad3.jpeg" alt="imagen-inicio2.0">
+    </div>
+    <br>
+
+</section>
 
 
 
@@ -206,7 +242,7 @@
 
 
 <!-- BANNER GOOGLE-STORE -->
-
+<!-- 
 <div class="banner-store parallax animated fadeIn ">
     <div class="container ">
         <ul class="resumen-evento clearfix ">
@@ -216,11 +252,11 @@
         </ul>
 
     </div>
-</div>
+</div> -->
 
 
 <!-- ****** SECTION INSTRUCCIONES ****** -->
-
+<!-- 
 <section id="instrucciones" class="container seccion animated fadeIn ">
     <h1 class="titulo centrar-texto seccion ">Controla la seguridad de una manera sencilla</h1>
 
@@ -231,37 +267,37 @@
             <div class="card-body card-body-instruction1 efecto-card-instrucciones ">
                 <img src="assets/img/imagen1-instrucciones.png " class="redondeado-relleno " alt="frontend ">
                 <h3 class="card-title seccion ">Inicia sesión</h3>
-                <!-- <p class="card-text ">La aplicación verifica que el usuario cumpla con las reglas de horario establecidas para su ingreso o salida. </p> -->
+                <p class="card-text ">La aplicación verifica que el usuario cumpla con las reglas de horario establecidas para su ingreso o salida. </p>
             </div>
         </div>
         <div class="card card2 " style="border: 0ch; ">
             <div class="card-body card-body-instruction2 shadow-cards efecto-card-instrucciones ">
                 <img src="assets/img/imagen2-instrucciones.png " class="redondeado-relleno " alt="backend ">
                 <h3 class="card-title seccion ">Seleccione la opción escanear</h3>
-                <!-- <p class="card-text ">Se valida que el usuario que intenta acceder este activo en el sistema.</p> -->
+                <p class="card-text ">Se valida que el usuario que intenta acceder este activo en el sistema.</p>
             </div>
         </div>
         <div class="card card2 " style="border: 0ch; ">
             <div class="card-body card-body-instruction3 shadow-cards efecto-card-instrucciones ">
                 <img src="assets/img/imagen3-instrucciones.png.jpg " class="redondeado-relleno " alt="soporte ">
                 <h3 class="card-title seccion ">Posicione la cámara movil frente al código QR </h3>
-                <!-- <p class="card-text ">Esta función permitirá el acceso a tus usuarios solo si se ha registrado una salida previamente, lo cual es de gran utilidad para impedir varios ingresos con el mismo acceso.</p> -->
+                <p class="card-text ">Esta función permitirá el acceso a tus usuarios solo si se ha registrado una salida previamente, lo cual es de gran utilidad para impedir varios ingresos con el mismo acceso.</p>
             </div>
         </div>
         <div class="card card2 " style="border: 0ch; ">
             <div class="card-body card-body-instruction3 shadow-cards efecto-card-instrucciones ">
                 <img src="assets/img/imagen4-instrucciones.png " class="redondeado-relleno " alt="soporte ">
                 <h3 class="card-title seccion ">¡Listo! se nos muestra los datos del usuario </h3>
-                <!-- <p class="card-text ">Esta función permitirá el acceso a tus usuarios solo si se ha registrado una salida previamente, lo cual es de gran utilidad para impedir varios ingresos con el mismo acceso.</p> -->
+                <p class="card-text ">Esta función permitirá el acceso a tus usuarios solo si se ha registrado una salida previamente, lo cual es de gran utilidad para impedir varios ingresos con el mismo acceso.</p>
             </div>
         </div>
 
     </div>
 
-</section>
+</section> -->
 <!-- ****** SECCIÓN CARACTERÍSTICAS ****** -->
 
-<div id="caracteristicas" class="container animated fadeIn">
+<!-- <div id="caracteristicas" class="container animated fadeIn">
     <h1 class="titulo centrar-texto seccion ">Características</h1>
     <hr>
 </div>
@@ -364,10 +400,10 @@
         </tbody>
     </table>
 
-</section>
+</section> -->
 <!-- ****** SECCIÓN PLANES ****** -->
 
-<div id="planes" class="container animated fadeIn">
+<!-- <div id="planes" class="container animated fadeIn">
     <h1 class="titulo centrar-texto seccion ">Planes</h1>
     <hr>
 </div>
@@ -504,7 +540,7 @@
             </tr>
         </tbody>
     </table>
-</section>
+</section> -->
 
 
 <!-- BANNER SOLUCION-INICIO -->
@@ -578,7 +614,7 @@
 
 <!-- BANNER GOOGLE-STORE -->
 
-<div class="banner-store parallax animated fadeIn ">
+<!-- <div class="banner-store parallax animated fadeIn ">
     <div class="container ">
         <ul class="resumen-evento clearfix ">
             <h1 class="centrar-texto ">¡Descarga la app! <br>
@@ -587,7 +623,7 @@
         </ul>
 
     </div>
-</div>
+</div> -->
 
 
 <!-- ************** SECTION CONTACTO *************** -->
@@ -598,7 +634,11 @@
         <br>
         <div class="row">
             <div class="col-md-6 imagen-contacto">
-                <a href="https://easyaccess.com.mx/" target="_blank"> <img src="assets/img/logoEA.png" alt="Imagen-contactanos"></a>
+                <h1>¿Estás interesado en Easyaccess?</h1>
+                <p>Necesitas asesoría, te interesa más información sobre algunas de nuestras soluciones o simplemente quieres contactarnos?
+                </p>
+                <p>No lo dudes y escríbenos, en breve nos pondremos en contacto</p>
+                <!-- <a href="https://easyaccess.com.mx/" target="_blank"> <img src="assets/img/logoEA.png" alt="Imagen-contactanos"></a> -->
             </div>
             <div class="col-md-6">
                 <form (ngSubmit)="contactForm(form)" #form="ngForm" method="post" onsubmit="return submitUserForm();">
@@ -617,15 +657,15 @@
                         <label for=""><i class="far fa-coloricon-contacto fa-envelope"></i> Correo Electrónico</label>
                         <input type="email" class="form-control" name="email" ngModel required email>
                     </div>
-                    <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-danger">El mensaje es obligatorio</span>
+                    <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-success">El mensaje es obligatorio - Ingrese más de 5 letras</span>
                     <div class="form-goup">
                         <label for=""> <i class="fas fa-coloricon-contacto fa-feather-alt"></i> Mensaje</label>
                         <textarea cols="30" rows="6" class="form-control" name="mensaje" ngModel required minlength="5"></textarea>
                     </div>
                     <!-- CAPTACH -->
                     <hr>
-                    <div class="g-recaptcha" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha"></div>
-                    <!-- <div class="g-recaptcha" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha"></div> -->
+                    <!-- <div class="g-recaptcha" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha"></div> -->
+                    <div class="g-recaptcha" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha"></div>
                     <div id="g-recaptcha-error"></div>
                     <div id="passwordHelpBloc" class="form-text captcha-instruccion">Favor de resolver el reCAPTCHA</div>
                     <div id="passwordHelpBloc" class="form-text captcha-instruccion">En caso de que no aparezca, vuelva a recargar la página</div>
@@ -640,3 +680,11 @@
     </div>
 </section>
 <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button>
+
+<section class="  animated fadeIn">
+    <div class="imagen-inicio2">
+        <img src="assets/img/final.jpeg" alt="imagen-inicio2.0">
+    </div>
+    <br>
+
+</section>

@@ -17,6 +17,10 @@ import { MessageService } from './services/message.service';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { NgxWhastappButtonModule } from 'ngx-whatsapp-button';
 import { FuncionesComponent } from './components/funciones/funciones.component';
+import { ResidencialComponent } from './components/residencial/residencial.component';
+import { EscolarComponent } from './components/escolar/escolar.component';
+import { CorporativoComponent } from './components/corporativo/corporativo.component';
+import { ConstruccionComponent } from './components/construccion/construccion.component';
 
 
 
@@ -27,7 +31,11 @@ import { FuncionesComponent } from './components/funciones/funciones.component';
     NavbarComponent,
     HomeComponent,
     ContactoComponent,
-    FuncionesComponent
+    FuncionesComponent,
+    ResidencialComponent,
+    EscolarComponent,
+    CorporativoComponent,
+    ConstruccionComponent
   ],
   imports: [
     BrowserModule,
