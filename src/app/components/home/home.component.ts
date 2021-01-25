@@ -28,22 +28,29 @@ export class HomeComponent implements OnInit {
   contactForm(form: any) {
 
     if (form.invalid) {
-          Swal.fire(
-            'Error',
-            'Ingrese todos los datos al formulario',
-            'error'
+          Swal.fire({
+            icon: 'warning',
+            title: 'Todos los campos del formulario son obligatorios',
+            text: '*Todos los campos deben tener más de 5 letras*',
+            backdrop: `rgba(0,0,0,0.7)`
+            // imageUrl: 'assets/img/iconEAhd.png',
+            // imageWidth: 100,
+            // imageHeight: 100,
+          }
             );
+
           return;
     }
     this._MessageService.sendMessage(form.value).subscribe(() =>  {
-    
-          Swal.fire(
-            'Formulario Contacto',
-            'Mensaje enviado correctamente',
-            'success'
+
+          Swal.fire({
+             icon: 'success',
+              title: 'Mensaje enviado correctamente',
+              backdrop: `rgba(0,0,0,0.7)`
+          }
           );
         });
-    
+
         }
 
   ngOnInit(): void {
