@@ -602,30 +602,11 @@ ul.no-diseño {
         width: 100%;
         height: 800px;
     }
-    .carousel-caption-inicio h5 {
-        font-size: 45px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-top: 25px;
-    }
     .carousel-caption-inicio p {
         width: 100%;
         margin: auto;
-        font-size: 18px;
-        line-height: 1.9px;
-    }
-}
-
-@media(min-width:1100px) {
-    .carousel-item-inicio::before {
-        width: 100%;
-        height: 1100px;
-    }
-    .carousel-caption-inicio p {
-        width: 100%;
-        margin: auto;
-        font-size: 40px;
-        line-height: 1.9px;
+        font-size: 2rem;
+        /* line-height: 1.9px; */
     }
 }
 
@@ -636,6 +617,22 @@ ul.no-diseño {
 @media(min-width:768px) {
     .carousel-caption-inicio {
         margin-bottom: 270px;
+    }
+}
+
+@media(min-width:1800px) {
+    .carousel-item-inicio::before {
+        width: 100%;
+        height: 1100px;
+    }
+    .carousel-caption-inicio p {
+        width: 100%;
+        margin: auto;
+        font-size: 40px;
+        /* line-height: 1.9px; */
+    }
+    .carousel-caption-inicio {
+        margin-bottom: 350px;
     }
 }
 
@@ -656,7 +653,7 @@ video {
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1800px) {
     .video {
         position: relative;
         max-height: 63rem;
@@ -717,7 +714,7 @@ video {
 
 .banner-control-2 {
     position: relative;
-    padding: 30px;
+    padding: 10px;
     /* border-radius: 1%; */
     margin-bottom: 5rem;
     color: white;
@@ -732,7 +729,7 @@ video {
     .rejilla2 {
         grid-gap: 1rem;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -742,6 +739,40 @@ video {
     width: 45%;
     height: 60%;
     padding-bottom: 1rem;
+}
+
+.icon-rejilla-2 img {
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    padding-top: 1rem;
+}
+
+@media(min-width: 1800px) {
+    .rejilla {
+        grid-gap: 7rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .icon-rejilla img {
+        display: block;
+        margin: auto;
+        width: 75%;
+        height: 75%;
+        padding-bottom: 1rem;
+    }
+    .rejilla2 {
+        grid-gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .icon-rejilla-2 img {
+        display: block;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+    }
 }
 
 
@@ -765,8 +796,8 @@ video {
 .icon-servicios img {
     /* display: block;
     margin: auto; */
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     padding-bottom: 1rem;
 }
 
@@ -789,16 +820,10 @@ video {
     align-items: center;
 }
 
-.servicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .servicio p {
     line-height: 2;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding-top: 1rem;
     color: #1f3d54;
     font-weight: 400;
@@ -809,6 +834,39 @@ video {
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+@media(min-width: 1800px) {
+    .icon-servicios img {
+        /* display: block;
+    margin: auto; */
+        width: 60%;
+        height: 60%;
+        padding-bottom: 1rem;
+    }
+    .servicio .iconos-service {
+        height: 20rem;
+        width: 20rem;
+        background-color: #093152;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicio p {
+        font-size: 2rem;
+    }
+    .servicio h3 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .banner-servicios {
@@ -821,6 +879,71 @@ video {
 .banner-servicios {
     position: relative;
     padding: 120px 26px;
+}
+
+
+/*********************** SECIION DE QUE ES EASYACCESS ***************/
+
+.fondo-banner-presentacion1 {
+    /* background-color: #f9f9fa; */
+    background-image: url(assets/img/fondo-ques.jpeg);
+    background-size: cover;
+}
+
+.texto-presentacion1 h1 {
+    color: #ffffff;
+    font-weight: 300;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.texto-presentacion1 p {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.texto-presentacion1 span {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+    .texto-presentacion1 {
+        padding-top: 2rem;
+    }
+}
+
+@media (min-width: 1800px) {
+    .texto-presentacion1 h1 {
+        font-size: 4rem;
+    }
+    .texto-presentacion1 p {
+        color: #ffffff;
+        font-weight: 300;
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    .texto-presentacion1 span {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 2.2rem;
+    }
+    .texto-presentacion1 {
+        padding-top: 11rem;
+    }
+}
+
+.imga-banner-presentacion1 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    /* margin-bottom: 1rem; */
 }
 
 
@@ -1529,6 +1652,12 @@ video {
 
 
 /********* FORMULARIO CONTACTO *********/
+
+.fondo-banner-contacto2 {
+    /* background-color: #f9f9fa; */
+    background-image: url(assets/img/fondo-contacto.jpeg);
+    background-size: cover;
+}
 
 .fondo-banners-contacto {
     /* background-color: #cc1818; */
