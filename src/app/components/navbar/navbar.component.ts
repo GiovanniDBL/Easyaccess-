@@ -76,6 +76,9 @@ export class NavbarComponent implements OnInit {
   toPlanes(){
     document.getElementById('planes')?.scrollIntoView({behavior: 'smooth'});
   }
+  toService(){
+    document.getElementById('services')?.scrollIntoView({behavior: 'smooth'});
+  }
 
 
 }

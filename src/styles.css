@@ -426,27 +426,19 @@ ul.no-diseño {
 
 /******** FOOTER ********/
 
-.footer-home {
+.footer {
     background: linear-gradient(to right, #1D9AD6, #015B97);
-    margin-top: 50px;
-    width: 100%;
-    height: 250px;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
 }
 
-.footer-home .p1 {
-    text-align: center;
-    padding-top: 2.5rem;
+.footer p {
     color: #ffffff;
-    font-weight: 300;
-    font-size: 1.3rem;
+    text-align: center;
 }
 
-.footer-home .p2 {
-    text-align: center;
-    padding-top: 1px;
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 1.3rem;
+.footer .p1 {
+    padding-top: 1rem;
 }
 
 
@@ -1674,6 +1666,30 @@ video {
     width: 100%;
 }
 
+.texto-contacto2 h1 {
+    color: #ffffff;
+    /* font-weight: 700; */
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.texto-contacto2 p {
+    color: #ffffff;
+    /* font-weight: 300; */
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    /* text-align: center; */
+}
+
+.banner-contacto2 {
+    position: relative;
+    padding: 100px 26px;
+    margin-bottom: 5rem;
+}
+
 @media(min-width:768px) {
     .texto-contacto2 {
         border-radius: 1.5%;
@@ -1683,13 +1699,12 @@ video {
         color: #ffffff;
         font-weight: 300;
         font-size: 2rem;
+        text-align: unset;
         /* text-align: center; */
     }
     .texto-contacto2 h1 {
-        color: #ffffff;
         font-weight: 700;
-        /* text-align: center; */
-        text-transform: uppercase;
+        text-align: unset;
     }
     .banner-contacto2 {
         position: relative;
@@ -1699,8 +1714,8 @@ video {
 }
 
 .colores-contacto input {
-    background-color: #1D9AD6;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .colores-contacto input:hover {
@@ -1709,8 +1724,8 @@ video {
 }
 
 .colores-contacto textarea {
-    background-color: #1D9AD6;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .colores-contacto textarea:hover {
@@ -1719,8 +1734,23 @@ video {
 }
 
 .colores-contacto label {
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
+}
+
+@media(min-width:768px) {
+    .colores-contacto label {
+        color: #000000;
+        font-weight: bold;
+    }
+    .colores-contacto textarea {
+        background-color: #1D9AD6;
+        color: #ffffff;
+    }
+    .colores-contacto input {
+        background-color: #1D9AD6;
+        color: #ffffff;
+    }
 }
 
 .colores-contacto {
@@ -1813,7 +1843,14 @@ video {
 
 .fa-coloricon-contacto {
     /* color: #B2BABB; */
-    color: #000000;
+    color: #b4abab;
+}
+
+@media(min-width:768px) {
+    .fa-coloricon-contacto {
+        /* color: #B2BABB; */
+        color: #000000;
+    }
 }
 
 
@@ -1830,6 +1867,9 @@ video {
 
 
 /* SECCIONES ESCUELA,CONSTRUCIONES ETC.. */
+
+
+/********************************* E S C O L A R **********************/
 
 .fondo-banner-escolar {
     /* background-color: #f9f9fa; */
@@ -1911,5 +1951,185 @@ video {
     /* background-color: #f9f9fa; */
     background-image: url(assets/img/fondo-escuela2.jpg);
     background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 
+.imga-banner-escolar2 {
+    display: block;
+    margin: auto;
+    /* padding-top: 15rem; */
+    width: 100%;
+}
+
+.texto-escolar1 {
+    text-align: center;
+    padding: 1rem;
+    color: #0463ac;
+    font-weight: 500;
+    /*font-size: 1.5rem;
+    margin-right: 10rem; */
+}
+
+.texto-escolar2 {
+    text-align: center;
+    padding: 1rem;
+    color: #0463ac;
+    font-weight: 500;
+    /* color: #ffffff;
+    font-size: 1.5rem; */
+}
+
+.texto-escolar2 img {
+    width: 80%;
+    height: 80%;
+}
+
+.texto-escolarh3 {
+    /* padding-left: 1rem; */
+    font-size: 2rem;
+    color: #0463ac;
+}
+
+.texto-escolarh3 span {
+    color: #0463ac;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media(min-width:768px) {
+    .contenido-banner-escolar2 {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        /* grid-column-gap: 1rem; */
+        /* margin-bottom: 2rem; */
+    }
+    .texto-escolar1 {
+        text-align: center;
+        padding: 2rem;
+        color: #0463ac;
+        font-size: 1.5rem;
+        margin-right: 10rem;
+    }
+    .texto-escolar2 {
+        text-align: center;
+        padding: 2rem;
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+    .texto-escolarh3 {
+        /* padding-left: 1rem; */
+        font-size: 3.6rem;
+        color: #0463ac;
+    }
+    .texto-escolarh3 span {
+        color: #ffffff;
+        font-size: 3.6rem;
+        margin-left: 1rem;
+    }
+    .texto-escolar2 img {
+        width: 100%;
+        height: 70%;
+    }
+}
+
+
+/*asdasdaasdasd*/
+
+.fondo-banner-escolar-2 {
+    /* background-color: #f9f9fa; */
+    background-image: url(assets/img/fondo-servicios.jpeg);
+    background-size: cover;
+}
+
+.banner-escolar-2 {
+    position: relative;
+    padding: 120px 26px;
+    margin-bottom: 5rem;
+    margin-top: 15rem;
+}
+
+@media(min-width:768px) {
+    .banner-escolar-2 {
+        margin-top: 10px;
+    }
+}
+
+.texto-escolar-2 h1 {
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.texto-escolar-2 .parrafo1 {
+    text-align: center;
+    color: #ffffff;
+    /* font-weight: 300; */
+    font-size: 1.2rem;
+}
+
+.texto-escolar-2 .parrafo2 {
+    padding-top: 4rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.texto-escolar-2 .parrafo3 {
+    color: #0463ac;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.imga-banner-escolar-2 {
+    display: block;
+    margin: auto;
+    /* padding-top: 15rem; */
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .contenido-banner-escolar-2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* grid-column-gap: 1rem; */
+        /* margin-bottom: 2rem; */
+    }
+    .imga-banner-escolar-2 {
+        display: block;
+        margin: auto;
+        padding-top: 15rem;
+        width: 100%;
+    }
+    .texto-escolar-2 .parrafo1 {
+        text-align: center;
+        color: #ffffff;
+        /* font-weight: 300; */
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .texto-escolar-2 .parrafo2 {
+        padding-top: 10rem;
+        font-weight: bold;
+        color: #0463ac;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .texto-escolar-2 .parrafo3 {
+        color: #0463ac;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .texto-escolar-2 h1 {
+        color: #ffffff;
+        font-weight: 300;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+}
