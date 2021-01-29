@@ -85,7 +85,7 @@
 </section> -->
 
 <!-- SECCION INICIO 2.0 -->
-<section class=" banner-presentacion1 fondo-banner-presentacion1 animated fadeIn ">
+<!-- <section class=" banner-presentacion1 fondo-banner-presentacion1 animated fadeIn ">
     <div class="contenido-banner-descargarapp ">
 
         <div class=" ">
@@ -102,7 +102,22 @@
         </div>
 
     </div>
+</section> -->
+<section class=" fondo-banner-escolar top-ques animated fadeIn ">
+
+    <div class="contenido-banner-escolar banner-escolar">
+        <img src="assets/img/handeasy2.png " class="imga-banner-escolar" alt="imagen-nosotros ">
+
+        <h1 class="texto-titulo-encima-Quees">¿Qué es Easyaccess?</h1>
+        <p class="texto-abajo-Quees"><span>Easyaccess</span>es una app de información para control de acceso, basado en la captura de información y registro en puntos de control <span>¡Fácil de usar!</span> utilizado para visitantes, proveedores e internos que no requieren de una
+            tarjeta de control o mecanismo fijo de autenticación.</p>
+        <!-- <div class="centrado">Centrado</div> -->
+    </div>
+
+
 </section>
+
+
 
 
 <!-- ************************* SECCION INICIO 2.0 ****************** -->
@@ -265,6 +280,150 @@
 
     </div>
 </section>
+
+
+<section id="contacto" class=" banner-contacto2 fondo-banner-contacto2 animated fadeIn ">
+    <div class="contenido-banner-cotacto2 ">
+
+
+        <div class="texto-contacto2">
+            <h1 class="  seccion ">¿Estás interesado en Easyaccess?</h1>
+            <p class=" seccion">Nuestra aplicación móvil cuenta con todas las funciones necesarias para utilizar y <br> disfrutar de los servicios de Easyaccess
+            </p>
+            <!-- <a href="https://easyaccess.com.mx/" target="_blank"> <img class="imagen-contacto2" src="assets/img/logoEA.png" alt="Imagen-contactanos"></a> -->
+        </div>
+
+        <form (ngSubmit)="contactForm(form)" class="col-md-10 colores-contacto" #form="ngForm" method="post" onsubmit="return submitUserForm();">
+
+            <!-- <span *ngIf="form.submitted && form.controls['nombre'].errors" class="text-danger">El nombre es obligatorio</span> -->
+            <div class="form-goup">
+                <label for=""><i class="fas fa-coloricon-contacto fa-user-edit"></i> Nombre</label>
+                <input type="text" class="form-control" name="nombre" ngModel required minlength="5">
+            </div>
+            <!-- <span *ngIf="form.submitted && form.controls['asunto'].errors" class="text-danger">El asunto es obligatorio</span> -->
+            <div class="form-goup">
+                <label for=""><i class="fas fa-coloricon-contacto fa-exclamation-circle"></i> Asunto</label>
+                <input type="text" class="form-control" name="asunto" ngModel required minlength="5">
+            </div>
+            <!-- <span *ngIf="form.submitted && form.controls['email'].errors" class="text-danger">El correo es obligatorio</span> -->
+            <div class="form-goup">
+                <label for=""><i class="far fa-coloricon-contacto fa-envelope"></i> Correo Electrónico</label>
+                <input type="email" class="form-control" name="email" ngModel required email>
+            </div>
+            <!-- <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-danger">El mensaje es obligatorio - Ingrese más de 5 letras</span> -->
+            <div class="form-goup">
+                <label for=""> <i class="fas fa-coloricon-contacto fa-feather-alt"></i> Mensaje</label>
+                <textarea class="form-control" name="mensaje" ngModel required minlength="5"></textarea>
+            </div>
+            <!-- CAPTACH -->
+            <hr>
+            <div class="g-recaptcha" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha"></div>
+            <!-- <div class="g-recaptcha " data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha"></div> -->
+            <div id="g-recaptcha-error"></div>
+            <div id="passwordHelpBloc" class="form-text captcha-instruccion">Favor de resolver el reCAPTCHA</div>
+            <div id="passwordHelpBloc" class="form-text captcha-instruccion">En caso de que no aparezca, vuelva a recargar la página</div>
+            <!-- CAPTCHA -->
+            <div class="form-goup centrar-texto seccion">
+                <button type="submit" id="btn1" name="submit" value="submit" class="btn btn-primary btn-lg btn-block" disabled>Envíar</button>
+            </div>
+        </form>
+    </div>
+
+</section>
+
+
+<!-- BANNER GOOGLE-STORE -->
+
+<div class="banner-store parallax animated fadeIn ">
+    <div class="container ">
+        <ul class="resumen-evento clearfix ">
+            <h1 class="centrar-texto ">¡Descarga la app! <br>
+                <a href="assets/descargar-aplicacion/EA_1.3.8_PD.apk" download> <img src="assets/img/google-play.png " width="450 " height="200 " alt="Imagen-google-play "></a>
+            </h1>
+        </ul>
+
+    </div>
+</div>
+
+<!-- ************************ BENEFICIOS ********************* -->
+<h1 class="titulo seccion centrar-texto">SLIDER BENEFICIOS EN PROCESO...</h1>
+
+<div id="carouselExampleCaptions-beneficios" class="carousel carousel-beneficios slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions-beneficios" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions-beneficios" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions-beneficios" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/img/carro.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Beneficio1</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Beneficio2</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Beneficio3</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions-beneficios" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions-beneficios" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+
+
+
+<!-- 
+<section class=" fondo-banner-escolar animated fadeIn ">
+
+    <div class="contenido-banner-escolar banner-escolar">
+        <img src="assets/img/fondo-celularman.png " class="imga-banner-escolar" alt="imagen-nosotros ">
+
+        <h1 class="texto-titulo-encima">¡Códigos de entrada únicos!</h1>
+        <p class="texto-abajo">El vigilante escanea el código que presenta el invitado, y si es correcto el usuario recibirá una notificación de la llegada de su visita.</p>
+    
+    </div>
+
+
+</section> -->
+
+
+
+
+
+<section class=" fondo-banner-controlar animated fadeIn ">
+
+    <div class="contenido-banner-escolar banner-escolar">
+        <img src="assets/img/laptops-fondo.png " class="imga-banner-escolar" alt="imagen-nosotros ">
+
+        <h1 class="texto-titulo-rellenolap">Una cuenta para controlar donde quieras</h1>
+        <p class="texto-abajo-rellenolap">Los usuarios e invitados tendrán acceso a la app, a través de sus equipos personales, equipos de oficina existentes, así como tabletas o teléfonos inteligentes. Se podrá consultar vía web para operación del sistema.
+        </p>
+        <!-- <div class="centrado">Centrado</div> -->
+    </div>
+
+
+</section>
+
+
+<jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button>
 
 <!-- BANNER RELLENO  -->
 <!-- <section class="  animated fadeIn">
@@ -650,179 +809,3 @@
 
     </ul>
 </section> -->
-
-<!-- BANNER GOOGLE-STORE -->
-
-<!-- <div class="banner-store parallax animated fadeIn ">
-    <div class="container ">
-        <ul class="resumen-evento clearfix ">
-            <h1 class="centrar-texto ">¡Descarga la app! <br>
-                <a href="assets/descargar-aplicacion/EA_1.3.8_PD.apk" download> <img src="assets/img/google-play.png " width="450 " height="200 " alt="Imagen-google-play "></a>
-            </h1>
-        </ul>
-
-    </div>
-</div> -->
-
-
-<!-- ************** SECTION CONTACTO *************** -->
-
-<!-- <section id="contacto" class=" banner fondo-banners-contacto  animated fadeIn">
-
-    <div class="container col-md-9 contact-form ">
-        <br>
-        <div class="row">
-            <div class="col-md-6 imagen-contacto">
-                <h1>¿Estás interesado en Easyaccess?</h1>
-                <p>Necesitas asesoría, te interesa más información sobre algunas de nuestras soluciones o simplemente quieres contactarnos?
-                </p>
-                <p>No lo dudes y escríbenos, en breve nos pondremos en contacto</p>
-                <a href="https://easyaccess.com.mx/" target="_blank"> <img src="assets/img/logoEA.png" alt="Imagen-contactanos"></a>
-            </div>
-            <div class="col-md-6">
-                <form (ngSubmit)="contactForm(form)" #form="ngForm" method="post" onsubmit="return submitUserForm();">
-                    <span *ngIf="form.submitted && form.controls['nombre'].errors" class="text-danger">El nombre es obligatorio</span>
-                    <div class="form-goup">
-                        <label for=""><i class="fas fa-coloricon-contacto fa-user-edit"></i> Nombre</label>
-                        <input type="text" class="form-control" name="nombre" ngModel required minlength="5">
-                    </div>
-                    <span *ngIf="form.submitted && form.controls['asunto'].errors" class="text-danger">El asunto es obligatorio</span>
-                    <div class="form-goup">
-                        <label for=""><i class="fas fa-coloricon-contacto fa-exclamation-circle"></i> Asunto</label>
-                        <input type="text" class="form-control" name="asunto" ngModel required minlength="5">
-                    </div>
-                    <span *ngIf="form.submitted && form.controls['email'].errors" class="text-danger">El correo es obligatorio</span>
-                    <div class="form-goup">
-                        <label for=""><i class="far fa-coloricon-contacto fa-envelope"></i> Correo Electrónico</label>
-                        <input type="email" class="form-control" name="email" ngModel required email>
-                    </div>
-                    <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-success">El mensaje es obligatorio - Ingrese más de 5 letras</span>
-                    <div class="form-goup">
-                        <label for=""> <i class="fas fa-coloricon-contacto fa-feather-alt"></i> Mensaje</label>
-                        <textarea cols="30" rows="6" class="form-control" name="mensaje" ngModel required minlength="5"></textarea>
-                    </div>
-                    CAPTACH
-                    <hr>
-                    <div class="g-recaptcha" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha"></div>
-                    <div class="g-recaptcha" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha"></div>
-                    <div id="g-recaptcha-error"></div>
-                    <div id="passwordHelpBloc" class="form-text captcha-instruccion">Favor de resolver el reCAPTCHA</div>
-                    <div id="passwordHelpBloc" class="form-text captcha-instruccion">En caso de que no aparezca, vuelva a recargar la página</div>
-                    CAPTCHA
-                    <div class="form-goup centrar-texto seccion">
-                        <button type="submit" id="btn1" name="submit" value="submit" class="btn btn-info btn-lg btn-block" disabled>Envíar</button>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</section> -->
-
-
-
-
-
-
-
-
-
-<section id="contacto" class=" banner-contacto2 fondo-banner-contacto2 animated fadeIn ">
-    <div class="contenido-banner-cotacto2 ">
-
-
-        <div class="texto-contacto2">
-            <h1 class="  seccion ">¿Estás interesado en Easyaccess?</h1>
-            <p class=" seccion">Nuestra aplicación móvil cuenta con todas las funciones necesarias para utilizar y <br> disfrutar de los servicios de Easyaccess
-            </p>
-            <a href="https://easyaccess.com.mx/" target="_blank"> <img class="imagen-contacto2" src="assets/img/logoEA.png" style="width: 300px; height: 300px;" alt="Imagen-contactanos"></a>
-        </div>
-
-        <form (ngSubmit)="contactForm(form)" class="col-md-10 colores-contacto" #form="ngForm" method="post" onsubmit="return submitUserForm();">
-
-            <!-- <span *ngIf="form.submitted && form.controls['nombre'].errors" class="text-danger">El nombre es obligatorio</span> -->
-            <div class="form-goup">
-                <label for=""><i class="fas fa-coloricon-contacto fa-user-edit"></i> Nombre</label>
-                <input type="text" class="form-control" name="nombre" ngModel required minlength="5">
-            </div>
-            <!-- <span *ngIf="form.submitted && form.controls['asunto'].errors" class="text-danger">El asunto es obligatorio</span> -->
-            <div class="form-goup">
-                <label for=""><i class="fas fa-coloricon-contacto fa-exclamation-circle"></i> Asunto</label>
-                <input type="text" class="form-control" name="asunto" ngModel required minlength="5">
-            </div>
-            <!-- <span *ngIf="form.submitted && form.controls['email'].errors" class="text-danger">El correo es obligatorio</span> -->
-            <div class="form-goup">
-                <label for=""><i class="far fa-coloricon-contacto fa-envelope"></i> Correo Electrónico</label>
-                <input type="email" class="form-control" name="email" ngModel required email>
-            </div>
-            <!-- <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-danger">El mensaje es obligatorio - Ingrese más de 5 letras</span> -->
-            <div class="form-goup">
-                <label for=""> <i class="fas fa-coloricon-contacto fa-feather-alt"></i> Mensaje</label>
-                <textarea class="form-control" name="mensaje" ngModel required minlength="5"></textarea>
-            </div>
-            <!-- CAPTACH -->
-            <hr>
-            <!-- <div class="g-recaptcha" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha"></div> -->
-            <div class="g-recaptcha " data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha"></div>
-            <div id="g-recaptcha-error"></div>
-            <div id="passwordHelpBloc" class="form-text captcha-instruccion">Favor de resolver el reCAPTCHA</div>
-            <div id="passwordHelpBloc" class="form-text captcha-instruccion">En caso de que no aparezca, vuelva a recargar la página</div>
-            <!-- CAPTCHA -->
-            <div class="form-goup centrar-texto seccion">
-                <button type="submit" id="btn1" name="submit" value="submit" class="btn btn-primary btn-lg btn-block" disabled>Envíar</button>
-            </div>
-        </form>
-    </div>
-
-</section>
-
-
-
-
-<!-- BANNER RELLENO  -->
-<!-- <section class="  animated fadeIn">
-    <div class="imagen-inicio2">
-        <img src="assets/img/Seguridad3.jpeg" alt="imagen-inicio2.0">
-    </div>
-    <br>
-
-</section> -->
-<section class=" fondo-banner-escolar animated fadeIn ">
-
-    <div class="contenido-banner-escolar banner-escolar">
-        <img src="assets/img/fondo-celularman.png " class="imga-banner-escolar" alt="imagen-nosotros ">
-
-        <h1 class="texto-titulo-encima">¡Códigos de entrada únicos!</h1>
-        <p class="texto-abajo">El vigilante escanea el código que presenta el invitado, y si es correcto el usuario recibirá una notificación de la llegada de su visita.</p>
-        <!-- <div class="centrado">Centrado</div> -->
-    </div>
-
-
-</section>
-
-
-<!-- <section class="  animated fadeIn">
-    <div class="imagen-inicio2">
-        <img src="assets/img/final.jpeg" alt="imagen-inicio2.0">
-    </div>
-    <br>
-
-</section> -->
-
-
-
-<section class=" fondo-banner-controlar animated fadeIn ">
-
-    <div class="contenido-banner-escolar banner-escolar">
-        <img src="assets/img/laptops-fondo.png " class="imga-banner-escolar" alt="imagen-nosotros ">
-
-        <h1 class="texto-titulo-rellenolap">Una cuenta para controlar donde quieras</h1>
-        <p class="texto-abajo-rellenolap">Los usuarios e invitados tendrán acceso a la app, a través de sus equipos personales, equipos de oficina existentes, así como tabletas o teléfonos inteligentes. Se podrá consultar vía web para operación del sistema.
-        </p>
-        <!-- <div class="centrado">Centrado</div> -->
-    </div>
-
-
-</section>
-
-<jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button>

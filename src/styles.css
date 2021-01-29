@@ -562,8 +562,8 @@ ul.no-diseño {
 
 /* *****CAROUSEL INICIO*****  */
 
-.carousel {
-    background-image: url(assets/img/fondo.jpg);
+.carousel-beneficios {
+    background-color: #6c757d;
     background-repeat: no-repeat center center scroll;
     -webkit-background-size: cover;
     background-size: cover;
@@ -1096,6 +1096,14 @@ video {
     margin-top: 1rem;
 }
 
+.fondo-banners-entrada-salida3 {
+    background-image: url(assets/img/fondo-servicios.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+}
+
 @media (min-width: 768px) {
     .fondo-banners-entrada-salida2 {
         background-image: url(assets/img/fondo-ques.jpeg);
@@ -1333,6 +1341,12 @@ video {
         padding-bottom: 8rem;
         width: 18%;
     }
+    .carousel-imagen-QR-titulo {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 }
 
 
@@ -1349,17 +1363,32 @@ video {
     transition: all .5s;
 }
 
+.list-group-item {
+    background-color: rgba(0, 0, 0, .1) !important;
+}
+
 .lista-span span {
     font-weight: bold;
     color: #0e314c;
     text-transform: uppercase;
 }
 
+.lista-span li {
+    color: white;
+}
+
 .texto-control-visitas p {
     text-align: center;
-    color: #000000;
-    font-weight: 200;
+    color: #093152;
+    font-weight: bold;
     font-size: 1.2rem;
+}
+
+.texto-control-vistas p {
+    text-align: center;
+    color: #093152;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .texto-control-visitas {
@@ -1381,6 +1410,15 @@ video {
         grid-template-columns: 40% 60%;
         grid-column-gap: 1rem;
         margin-bottom: 2rem;
+    }
+    .texto-control-visitas p {
+        font-size: 1.5rem;
+    }
+    .texto-control-vistas p {
+        text-align: center;
+        color: #093152;
+        font-weight: bold;
+        font-size: 1.3rem;
     }
 }
 
@@ -1466,10 +1504,11 @@ video {
 /********* SECTION FUNCIONES CONTROL DE INCIDENCIAS *********/
 
 .texto-control-incidencias p {
+    /* padding-top: 8.2rem; */
     text-align: center;
-    color: #000000;
-    font-weight: 200;
-    font-size: 1.2rem;
+    color: #093152;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .texto-control-incidencias {
@@ -1599,9 +1638,9 @@ video {
 
 .texto-informacion-vehicular p {
     text-align: center;
-    color: #000000;
-    font-weight: 200;
-    font-size: 1.2rem;
+    color: #093152;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .texto-informacion-vehicular {
@@ -1612,9 +1651,15 @@ video {
     border-radius: 1%;
 }
 
+.imga-banner-informacion-vehicular img {
+    display: block;
+    margin: auto;
+}
+
 @media (min-width:768px) {
     .imga-banner-informacion-vehicular img {
-        /* width: 50%; */
+        display: unset;
+        margin: unset;
         height: 100%;
         border-radius: 1%;
     }
@@ -1755,14 +1800,14 @@ video {
 @media(min-width:768px) {
     .contenido-banner-cotacto2 {
         display: grid;
-        grid-template-columns: 60% 40%;
-        /* grid-column-gap: 1rem; */
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 6rem;
         margin-bottom: 2rem;
     }
     .texto-descarga h1 {
         color: #093152;
         font-size: 5rem;
-        font-weight: 700;
+        font-weight: bold;
         text-align: center;
     }
 }
@@ -1770,7 +1815,9 @@ video {
 .fondo-banner-contacto2 {
     /* background-color: #f9f9fa; */
     /* background-image: url(assets/img/fondo-ques.jpeg); */
-    background-color: #015B97;
+    /* background-color: #015B97; */
+    background: linear-gradient(to right, #1CB5E0, #08087a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
     position: center center;
@@ -1811,7 +1858,6 @@ video {
         font-weight: 300;
         font-size: 2rem;
         text-align: center;
-        /* text-align: center; */
     }
     .texto-contacto2 h1 {
         font-weight: 700;
@@ -1825,6 +1871,13 @@ video {
     .imagen-contacto2 {
         display: block;
         margin: auto;
+        width: 30%;
+        height: 40%;
+    }
+    .colores-contacto {
+        /* border: 1px solid #ffffff; */
+        background-color: rgba(0, 0, 0, .2);
+        padding: 1rem;
     }
 }
 
@@ -1850,10 +1903,6 @@ video {
         padding: 100px 26px;
         margin-bottom: 5rem;
     }
-    .imagen-contacto2 {
-        display: block;
-        margin: auto;
-    }
 }
 
 .colores-contacto input {
@@ -1861,19 +1910,9 @@ video {
     color: #000000;
 }
 
-.colores-contacto input:hover {
-    background-color: #1d5ed6;
-    color: #ffffff;
-}
-
 .colores-contacto textarea {
     background-color: #ffffff;
     color: #000000;
-}
-
-.colores-contacto textarea:hover {
-    background-color: #1d5ed6;
-    color: #ffffff;
 }
 
 .colores-contacto label {
@@ -1883,16 +1922,17 @@ video {
 
 @media(min-width:768px) {
     .colores-contacto label {
-        color: #000000;
+        color: #ffffff;
         font-weight: bold;
+        font-size: 1.2rem;
     }
     .colores-contacto textarea {
-        background-color: #1D9AD6;
-        color: #ffffff;
+        background-color: #ffffff;
+        color: #000000;
     }
     .colores-contacto input {
-        background-color: #1D9AD6;
-        color: #ffffff;
+        background-color: #ffffff;
+        color: #000000;
     }
 }
 
@@ -1994,13 +2034,13 @@ video {
 
 .fa-coloricon-contacto {
     /* color: #B2BABB; */
-    color: #b4abab;
+    color: #33a3fb;
 }
 
 @media(min-width:768px) {
     .fa-coloricon-contacto {
         /* color: #B2BABB; */
-        color: #000000;
+        color: #33a3fb;
     }
 }
 
@@ -2074,13 +2114,6 @@ video {
 
 
 /********************************* E S C O L A R **********************/
-
-.fondo-banner-escolar {
-    /* background-color: #f9f9fa; */
-    background-image: url(assets/img/fondo-ques.jpeg);
-    background-size: cover;
-    background-position: center center;
-}
 
 @media(min-width:768px) {
     .fondo-banner-escolar {
@@ -2193,6 +2226,29 @@ video {
     font-weight: bold;
 }
 
+.texto-titulo-encima-Quees {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.texto-abajo-Quees {
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: #093152;
+    font-weight: bold;
+    text-align: center;
+}
+
+.top-ques {
+    margin-top: 1rem;
+}
+
 @media(min-width:768px) {
     .texto-titulo-encima {
         position: absolute;
@@ -2213,6 +2269,26 @@ video {
         text-align: center;
         color: #ffffff;
         padding: 1rem;
+    }
+    .texto-titulo-encima-Quees {
+        position: absolute;
+        top: 25%;
+        left: 58%;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #ffffff;
+        padding: 1rem;
+    }
+    .texto-abajo-Quees {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        font-size: 1.7rem;
+        padding: 1rem;
+        color: #ffffff;
+        font-weight: 300;
+        text-align: center;
     }
     .texto-abajo {
         position: absolute;
