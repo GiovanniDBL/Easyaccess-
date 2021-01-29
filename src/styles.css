@@ -699,31 +699,12 @@ video {
     font-weight: bold;
 }
 
-
-/* .banner-control-2 h3 {
-    font-size: 2rem;
-    font-weight: bold;
-} */
-
-.banner-control-2 {
-    position: relative;
-    padding: 10px;
-    /* border-radius: 1%; */
-    margin-bottom: 5rem;
-    color: white;
-}
-
 @media(min-width: 768px) {
     .rejilla {
         grid-gap: 1rem;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
     }
-    /* .rejilla2 {
-        grid-gap: 1rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    } */
 }
 
 .icon-rejilla img {
@@ -734,38 +715,13 @@ video {
     padding-bottom: 1rem;
 }
 
-
-/* .icon-rejilla-2 img {
-    display: block;
-    margin: auto;
-    width: 40%;
-    height: 40%;
-    padding-top: 1rem;
-} */
-
 @media(min-width: 1800px) {
-    .rejilla {
-        grid-gap: 7rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
     .icon-rejilla img {
         display: block;
         margin: auto;
         width: 75%;
         height: 75%;
         padding-bottom: 1rem;
-    }
-    .rejilla2 {
-        grid-gap: 1rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .icon-rejilla-2 img {
-        display: block;
-        margin: auto;
-        width: 50%;
-        height: 50%;
     }
 }
 
@@ -1813,7 +1769,8 @@ video {
 
 .fondo-banner-contacto2 {
     /* background-color: #f9f9fa; */
-    background-image: url(assets/img/fondo-contacto.jpeg);
+    /* background-image: url(assets/img/fondo-ques.jpeg); */
+    background-color: #015B97;
     background-size: cover;
     background-repeat: no-repeat;
     position: center center;
@@ -1853,17 +1810,49 @@ video {
         color: #ffffff;
         font-weight: 300;
         font-size: 2rem;
-        text-align: unset;
+        text-align: center;
         /* text-align: center; */
     }
     .texto-contacto2 h1 {
         font-weight: 700;
-        text-align: unset;
+        text-align: center;
     }
     .banner-contacto2 {
         position: relative;
         padding: 100px 26px;
         margin-bottom: 5rem;
+    }
+    .imagen-contacto2 {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media(min-width: 1800px) {
+    .texto-contacto2 {
+        border-radius: 1.5%;
+        margin-bottom: 9rem;
+    }
+    .texto-contacto2 p {
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 2.3rem;
+        /* text-align: unset; */
+        text-align: center;
+    }
+    .texto-contacto2 h1 {
+        font-weight: 700;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .banner-contacto2 {
+        position: relative;
+        padding: 100px 26px;
+        margin-bottom: 5rem;
+    }
+    .imagen-contacto2 {
+        display: block;
+        margin: auto;
     }
 }
 
@@ -1904,6 +1893,12 @@ video {
     .colores-contacto input {
         background-color: #1D9AD6;
         color: #ffffff;
+    }
+}
+
+@media(min-width:1800px) {
+    .colores-contacto label {
+        font-size: 1.5rem;
     }
 }
 
