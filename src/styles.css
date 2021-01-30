@@ -2097,6 +2097,29 @@ video {
     }
 }
 
+@media(min-width: 1800px) {
+    .texto-titulo-rellenolap {
+        position: absolute;
+        top: 1%;
+        left: 20%;
+        font-weight: bold;
+        font-size: 4rem;
+        text-align: center;
+        color: #093152;
+        padding: 1rem;
+    }
+    .texto-abajo-rellenolap {
+        position: absolute;
+        top: 78%;
+        left: 1%;
+        font-size: 2rem;
+        padding: 1rem;
+        color: #093152;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
 
 /********* CAPTCHA *********/
 
@@ -2279,6 +2302,7 @@ video {
         text-align: center;
         color: #ffffff;
         padding: 1rem;
+        text-transform: uppercase;
     }
     .texto-abajo-Quees {
         position: absolute;
@@ -2291,6 +2315,16 @@ video {
         text-align: center;
     }
     .texto-abajo {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        font-size: 1.7rem;
+        padding: 1rem;
+        color: #ffffff;
+        font-weight: 300;
+        text-align: center;
+    }
+    .texto-abajo-acceso {
         position: absolute;
         top: 60%;
         left: 50%;
@@ -2374,6 +2408,30 @@ video {
     }
 }
 
+@media(min-width:1800px) {
+    .texto-titulo-encima-Quees {
+        position: absolute;
+        top: 25%;
+        left: 60%;
+        font-weight: bold;
+        font-size: 3.5rem;
+        text-align: center;
+        color: #ffffff;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+    .texto-abajo-Quees {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        font-size: 2.5rem;
+        padding: 1rem;
+        color: #ffffff;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
 
 /* .centrado {
     position: absolute;
@@ -2435,6 +2493,26 @@ video {
     }
     .texto-escolar {
         padding-top: 11rem;
+    }
+    .texto-titulo-encima-acceso {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        font-weight: bold;
+        font-size: 5rem;
+        text-align: center;
+        color: #ffffff;
+        padding: 1rem;
+    }
+    .texto-abajo-acceso {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        font-size: 2.5rem;
+        padding: 1rem;
+        color: #ffffff;
+        font-weight: 300;
+        text-align: center;
     }
 }
 
@@ -2633,4 +2711,69 @@ video {
         text-transform: uppercase;
         font-size: 3rem;
     }
+}
+
+
+/* *************** BENEFICIO CAROUSEL PRUEBA ***************** */
+
+.colore-prueba-beneficio {
+    background: linear-gradient(-100deg, white 50%, rgb(20, 75, 255) 50%);
+    height: 75vh;
+}
+
+.img-text {
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding: 40% 5%;
+    background: #093152;
+    color: #fff;
+}
+
+.img-text h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.img-text p {
+    font-size: 14px;
+}
+
+.single-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.img-area {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    top: 15px;
+    left: 159px;
+    border-radius: 50%;
+}
+
+.img-area img {
+    width: 100%;
+}
+
+.carousel-indicators2 {
+    left: 0 !important;
+    top: auto !important;
+    bottom: -70px !important;
+}
+
+.carousel-indicators2 li {
+    background: #000000 !important;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-indicators2 .active {
+    background: #fff !important;
 }
