@@ -19,17 +19,17 @@
 <!-- **************CAROUSEL*********** -->
 <section id="home">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade  animated fadeIn" data-ride="carousel">
-        <ol class="carousel-indicators">
+        <!-- <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
 
-        </ol>
+        </ol> -->
         <div class="carousel-inner ">
 
             <div class="carousel-item  active  video carousel-item-inicio parallax">
-                <video src="assets/videos/seguridad-video1.mp4" controls autoplay muted loop class="d-block "></video>
+                <video src="assets/videos/seguridad-video1.mp4" autoplay muted loop class="d-block "></video>
                 <div class="carousel-caption carousel-caption-inicio header-imagen-fondos  d-md-block">
                     <!-- <h5>Apoderate de la seguridad y control de acceso de tu empresa o residencia</h5> -->
                     <p>Insertar descripción de función explicita</p>
@@ -219,7 +219,7 @@
 
         <div class="servicio ">
             <h3>Residencial</h3>
-            <a [routerLink]="['/residencial']">
+            <a [routerLink]="['/residencial']" target="_blank">
                 <div class="iconos-service efecto-servicio">
                     <img src="assets/img/departamento.png" alt="departamento-img">
                 </div>
@@ -229,7 +229,7 @@
 
         <div class="servicio">
             <h3>Escolar</h3>
-            <a [routerLink]="['/escolar']">
+            <a [routerLink]="['/escolar']" target="_blank">
                 <div class="iconos-service efecto-servicio">
                     <img src="assets/img/universidad.png" alt="universidad-img">
                 </div>
@@ -239,7 +239,7 @@
 
         <div class="servicio">
             <h3>Corporativo</h3>
-            <a [routerLink]="['/corporativo']">
+            <a [routerLink]="['/corporativo']" target="_blank">
                 <div class="iconos-service efecto-servicio">
                     <img src="assets/img/corporativo.png" alt="corporativo-img">
                 </div>
@@ -249,7 +249,7 @@
 
         <div class="servicio titulo-construccion">
             <h3>Contrucción</h3>
-            <a [routerLink]="['/construccion']">
+            <a [routerLink]="['/construccion']" target="_blank">
                 <div class="iconos-service efecto-servicio">
                     <img src="assets/img/construccion.png" alt="contruccion-img">
                 </div>
@@ -273,7 +273,7 @@
         </div>
 
         <div class="texto-descarga ">
-            <h1 class=" centrar-texto seccion ">¡EASYACCESS en tu celular!</h1>
+            <h1 class=" centrar-texto seccion ">¡Easyaccess en tu celular!</h1>
             <p>Nuestra aplicación móvil cuenta con todas las funciones necesarias para utilizar y disfrutar de los servicios de EASYACCESS
             </p>
         </div>
@@ -346,9 +346,10 @@
 </div>
 
 <!-- ************************ BENEFICIOS ********************* -->
-<h1 class="titulo seccion centrar-texto">SLIDER BENEFICIOS EN PROCESO...</h1>
+<!-- <h1 class="titulo seccion centrar-texto">SLIDER BENEFICIOS EN PROCESO...</h1> -->
 
-<div class="colore-prueba-beneficio">
+<div id="beneficios" class="colore-prueba-beneficio">
+    <h1 class="titulo-beneficios">Beneficios</h1>
     <div class="">
         <div class="col-md-12">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -359,33 +360,32 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-md-4 " style="margin-top: 5%;">
+                            <div class="col-md-4 ">
                                 <div class="single-box">
-                                    <div class="img-area"><img src="assets/img/backend.png" alt=""></div>
+                                    <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
                                     <div class="img-text">
-                                        <h2>Beneficio one</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit maiores similique necessitatibus illum doloremque excepturi nihil molestias, fugiat, ullam assumenda unde minus quasi autem! Labore tenetur
-                                            tempora voluptatem facere!</p>
+                                        <h2>Información más accesible</h2>
+                                        <p>Obten la información que necesites a través de la aplicación de manera rápida y sencilla. </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="margin-top: 5%;">
+                            <div class="col-md-4">
                                 <div class="single-box">
-                                    <div class="img-area"><img src="assets/img/backend.png" alt=""></div>
+                                    <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
                                     <div class="img-text">
-                                        <h2>Beneficio two</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit maiores similique necessitatibus illum doloremque excepturi nihil molestias, fugiat, ullam assumenda unde minus quasi autem! Labore tenetur
-                                            tempora voluptatem facere!</p>
+                                        <h2>Información más segura</h2>
+                                        <p>La información se almacena en la nube, puede almacenar toda la información de su empresa de forma virtual, esto facilita el cambio de información entre los usuarios y mayor seguridad.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="margin-top: 5%;">
+                            <div class="col-md-4">
                                 <div class="single-box">
-                                    <div class="img-area"><img src="assets/img/backend.png" alt=""></div>
+                                    <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
                                     <div class="img-text">
-                                        <h2>Beneficio three</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit maiores similique necessitatibus illum doloremque excepturi nihil molestias, fugiat, ullam assumenda unde minus quasi autem! Labore tenetur
-                                            tempora voluptatem facere!</p>
+                                        <h2>Gestión de usuarios</h2>
+                                        <p>La app te permite gestionar distintos tipos de usuarios como: Proveedores, Residentes, Personal administrativo, Guardias, Mantenimiento, Visitantes, Empleados domésticos y Obreros.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -393,36 +393,33 @@
                     </div>
 
 
-
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-md-4" style="margin-top: 5%;">
+                            <div class="col-md-4">
                                 <div class="single-box">
-                                    <div class="img-area"><img src="assets/img/backend.png" alt=""></div>
+                                    <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
                                     <div class="img-text">
-                                        <h2>Beneficio four</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit maiores similique necessitatibus illum doloremque excepturi nihil molestias, fugiat, ullam assumenda unde minus quasi autem! Labore tenetur
-                                            tempora voluptatem facere!</p>
+                                        <h2>Chat en caseta</h2>
+                                        <p>Intercambia información con el vigilante de la caseta de forma privada.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="margin-top: 5%;">
+                            <div class="col-md-4">
                                 <div class="single-box">
-                                    <div class="img-area"><img src="assets/img/backend.png" alt=""></div>
+                                    <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
                                     <div class="img-text">
-                                        <h2>Beneficio five</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit maiores similique necessitatibus illum doloremque excepturi nihil molestias, fugiat, ullam assumenda unde minus quasi autem! Labore tenetur
-                                            tempora voluptatem facere!</p>
+                                        <h2>Control de incidencias</h2>
+                                        <p>Obten la información de los accesos denegados para tomar medidas y garantizar la seguridad.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="margin-top: 5%;">
+                            <div class="col-md-4">
                                 <div class="single-box">
-                                    <div class="img-area"><img src="assets/img/backend.png" alt=""></div>
+                                    <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
                                     <div class="img-text">
-                                        <h2>Beneficio six</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit maiores similique necessitatibus illum doloremque excepturi nihil molestias, fugiat, ullam assumenda unde minus quasi autem! Labore tenetur
-                                            tempora voluptatem facere!</p>
+                                        <h2>Invita amigos</h2>
+                                        <p>Por medio de la aplicación crea invitaciones electrónicas y compartelas mediante código QR</p>
                                     </div>
                                 </div>
                             </div>
@@ -433,6 +430,36 @@
         </div>
     </div>
 </div>
+
+<h1 class="titulo seccion centrar-texto">galeria en proceso...</h1>
+<span class="linea"></span>
+<section class="galeria">
+    <a href="#image1">
+        <img src="assets/img/fondo.jpg" alt="">
+    </a>
+    <a href="#image2">
+        <img src="assets/img/fondo.jpg" alt="">
+    </a>
+    <a href="#image3">
+        <img src="assets/img/fondo.jpg" alt="">
+    </a>
+    <a href="#image4">
+        <img src="assets/img/fondo.jpg" alt="">
+    </a>
+    <a href="#image5">
+        <img src="assets/img/fondo.jpg" alt="">
+    </a>
+    <a href="#image6">
+        <img src="assets/img/fondo.jpg" alt="">
+    </a>
+</section>
+
+<!-- <article class="light-box" id="image1">
+    <a href="" class="siguiente"><i class="fas fa-arrow-left"></i></a>
+    <img src="assets/img/fondo.jpg" alt="">
+    <a href="" class="siguiente"><i class="fas fa-arrow-right"></i></a>
+    <a href="" class="cerrar">X</a>
+</article> -->
 
 
 
