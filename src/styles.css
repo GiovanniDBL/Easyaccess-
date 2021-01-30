@@ -1081,6 +1081,19 @@ video {
     margin-bottom: 270px;
 }
 
+@media(min-width: 1800px) {
+    .carousel-caption-funciones h5 {
+        width: 100%;
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        /* margin-top: 25px; */
+    }
+    .carousel-caption-funciones {
+        margin-bottom: 400px;
+    }
+}
+
 .fondo-banners-entrada-salida {
     background-image: url(assets/img/Fondo-descargar-app.jpeg);
     background-size: cover;
@@ -1155,6 +1168,13 @@ video {
     font-size: 1.4rem;
 }
 
+.habilidad p {
+    /* text-transform: uppercase; */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #093152;
+}
+
 @media (min-width: 768px) {
     .titulo-entrada-salidas {
         color: #093152;
@@ -1165,11 +1185,13 @@ video {
     }
 }
 
-.habilidad p {
-    /* text-transform: uppercase; */
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #093152;
+@media (min-width: 1800px) {
+    .habilidad p {
+        /* text-transform: uppercase; */
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #093152;
+    }
 }
 
 .card-text {
@@ -2717,7 +2739,8 @@ video {
 /* *************** BENEFICIO CAROUSEL PRUEBA ***************** */
 
 .colore-prueba-beneficio {
-    background: linear-gradient(-100deg, white 50%, rgb(20, 75, 255) 50%);
+    /* background: linear-gradient(-100deg, white 50%, rgb(8, 46, 172) 50%); */
+    background: linear-gradient(to right, #1CB5E0, #08087a);
     height: 75vh;
 }
 
@@ -2727,8 +2750,10 @@ video {
     display: block;
     text-align: center;
     padding: 40% 5%;
-    background: #093152;
+    /* background: #093152; */
+    background-color: rgba(0, 0, 0, .3);
     color: #fff;
+    border-radius: 15px;
 }
 
 .img-text h2 {
@@ -2757,6 +2782,19 @@ video {
     border-radius: 50%;
 }
 
+@media (min-width: 1800px) {
+    .img-area {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 5px solid #fff;
+        overflow: hidden;
+        top: 20px;
+        left: 200px;
+        border-radius: 50%;
+    }
+}
+
 .img-area img {
     width: 100%;
 }
@@ -2770,8 +2808,8 @@ video {
 .carousel-indicators2 li {
     background: #000000 !important;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 27px !important;
+    height: 9px !important;
 }
 
 .carousel-indicators2 .active {
