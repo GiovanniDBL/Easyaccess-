@@ -46,9 +46,6 @@ import { ConstruccionComponent } from './components/construccion/construccion.co
     NgxCaptchaModule,
     ReactiveFormsModule,
     NgxWhastappButtonModule
-
-    
-    
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

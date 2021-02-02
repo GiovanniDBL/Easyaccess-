@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from '../../services/message.service';
-import {FormControl} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -9,12 +9,16 @@ import Swal from 'sweetalert2';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  public aFormGroup: FormGroup | undefined;
   recaptcha = new FormControl('');
 
   siteKey: string;
-  constructor(public _MessageService: MessageService) {
+  theme: string;
+
+  constructor(public _MessageService: MessageService, private formBuilder: FormBuilder) {
     this.siteKey = '6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw';
+    this.theme = "dark";
+    
    }
 
   public phone = '[ +529988443544 ]' + 'Easyaccess';
@@ -54,6 +58,9 @@ export class HomeComponent implements OnInit {
         }
 
   ngOnInit(): void {
+    this.aFormGroup = this.formBuilder.group({
+      recaptcha: ['', Validators.required]
+    });
   }
 
 }

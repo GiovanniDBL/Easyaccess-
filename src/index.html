@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Easyaccess</title>
     <base href="./">
+    <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,7 +18,32 @@
 
 <body>
     <app-root></app-root>
+
+    <!-- ACTUALIZAR CONTENIDO TODA LA PÁGINA-->
+    <script type="text/javascript">
+        function reFresh() {
+            location.reload(true)
+
+            /* Establece el tiempo 1 minuto = 60000 milliseconds. */
+            window.setInterval("reFresh()", 300000);
+            // -->
+        }
+    </script>
+
+    <!-- ACTUALIZAR CONTENIDO DIV CAPTCHA-->
     <script>
+        function recargar() {
+            var textodeldiv = document.getElementById("loadcaptcha").innerHTML;
+            document.getElementById("loadcaptcha").innerHTML = textodeldiv;
+
+        }
+    </script>
+
+
+
+    <!-- FUNCIONES PARA VALIDACIÓN DEL CAPTCHA-->
+
+    <script type="text/javascript">
         function submitUserForm() {
             var response = grecaptcha.getResponse();
             console.log(response.length);
@@ -34,6 +60,9 @@
             document.getElementById('g-recaptcha-error').innerHTML = '';
         }
     </script>
+
+
+
 
 
 
