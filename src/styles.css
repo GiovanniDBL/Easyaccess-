@@ -1135,6 +1135,15 @@ video {
     margin-bottom: 1rem;
 }
 
+@media (min-width: 1800px) {
+    .fondo-banners-entrada-salida5 {
+        background: linear-gradient(-90deg, #0f83c4 59.3%, white 59.3%);
+        /* background: linear-gradient(to right, #1CB5E0, #08087a); */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
 .fondo-banners-entrada-salida6 {
     background: linear-gradient(-90deg, white 49%, #0f83c4 49%);
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
@@ -1211,11 +1220,24 @@ video {
 }
 
 @media (min-width: 1800px) {
-    .habilidad p {
+    .habilidad .titulophabi {
         /* text-transform: uppercase; */
-        font-size: 1.2rem;
+        font-size: 2rem;
         font-weight: bold;
         color: #093152;
+    }
+    .habilidad p {
+        /* text-transform: uppercase; */
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #093152;
+    }
+    .card {
+        height: 46vh;
+    }
+    .habilidad img {
+        height: 30%;
+        width: 40%;
     }
 }
 
@@ -1309,6 +1331,22 @@ video {
     font-weight: bold;
     font-size: 1.2rem;
     list-style: circle;
+    padding: 1rem;
+}
+
+@media (min-width: 1800px) {
+    .texto-ul-gestion {
+        font-size: 1.5rem;
+    }
+    .texto-inicial p {
+        text-align: center;
+        color: #093152;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .texto-inicial h1 {
+        font-size: 3.5rem !important;
+    }
 }
 
 .carousel-top {
@@ -1335,6 +1373,14 @@ video {
     content: '';
 }
 
+.carousel-caption-QR h5 {
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
 @media(min-width:768px) {
     .carousel-item-QR::before {
         width: 100%;
@@ -1347,12 +1393,16 @@ video {
     }
 }
 
-.carousel-caption-QR h5 {
-    width: 100%;
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #ffffff;
+@media(min-width: 1800px) {
+    .carousel-item-QR::before {
+        width: 100%;
+        height: 900px;
+    }
+    .carousel-caption-QR h5 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-top: 25px;
+    }
 }
 
 
@@ -1440,6 +1490,22 @@ video {
     }
 }
 
+@media(min-width: 1800px) {
+    .lista-span li {
+        color: white;
+        font-size: 1.5rem;
+    }
+    .lista-span span {
+        font-weight: bold;
+        color: #0e314c;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    .list-group {
+        padding: 1rem;
+    }
+}
+
 .list-group {
     margin-top: 4rem;
 }
@@ -1489,6 +1555,24 @@ video {
     }
 }
 
+@media (min-width: 1800px) {
+    .texto-control-visitas p {
+        font-size: 2rem;
+    }
+    .texto-control-visitas h1 {
+        font-size: 3.5rem;
+    }
+    .texto-control-vistas p {
+        text-align: center;
+        color: #093152;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .texto-control-vistas h1 {
+        font-size: 3.5rem;
+    }
+}
+
 .control-visitas img {
     display: block;
     margin: auto;
@@ -1528,6 +1612,18 @@ video {
     }
 }
 
+@media(min-width: 1800px) {
+    .carousel-item-pvisita::before {
+        width: 100%;
+        height: 1150px;
+    }
+    /* .carousel-caption-pvisita h5 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        margin-top: 22px;
+    } */
+}
+
 .carousel-caption-pvisita h5 {
     width: 100%;
     font-size: 25px;
@@ -1565,6 +1661,13 @@ video {
         padding-top: 2rem;
         padding-bottom: 8rem;
         width: 25%;
+        height: 750px;
+    }
+}
+
+@media(min-width:1800px) {
+    .carousel-imagen-pvisita {
+        height: 990px;
     }
 }
 
@@ -1601,6 +1704,19 @@ video {
     }
 }
 
+@media (min-width:1800px) {
+    .texto-control-incidencias p {
+        /* padding-top: 8.2rem; */
+        text-align: center;
+        color: #093152;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .texto-control-incidencias h1 {
+        font-size: 3.5rem;
+    }
+}
+
 
 /********* SECTION FUNCIONES INFORMACION VISITANTES *********/
 
@@ -1621,6 +1737,14 @@ video {
     content: '';
 }
 
+.carousel-caption-pvisita h5 {
+    width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
 @media(min-width:768px) {
     .carousel-item-informacion-visitas::before {
         width: 100%;
@@ -1633,12 +1757,11 @@ video {
     }
 }
 
-.carousel-caption-pvisita h5 {
-    width: 100%;
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #ffffff;
+@media(min-width: 1800px) {
+    .carousel-item-informacion-visitas::before {
+        width: 100%;
+        height: 1150px;
+    }
 }
 
 
@@ -1691,6 +1814,16 @@ video {
     }
 }
 
+@media(min-width: 1800px) {
+    .carousel-imagen4-informacion-visitas {
+        display: block;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+        width: 31%;
+    }
+}
+
 
 /********* SECTION FUNCIONES INFORMACION VEHICULAR *********/
 
@@ -1736,6 +1869,18 @@ video {
         grid-template-columns: 50% 50%;
         grid-column-gap: 1rem;
         margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1800px) {
+    .texto-informacion-vehicular p {
+        text-align: center;
+        color: #093152;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .texto-informacion-vehicular h1 {
+        font-size: 3.5rem;
     }
 }
 
