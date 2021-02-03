@@ -103,7 +103,7 @@
 
     </div>
 </section> -->
-<section class=" fondo-banner-escolar top-ques animated fadeIn ">
+<section class=" fondo-banners-entrada-salida7 top-ques animated fadeIn ">
 
     <div class="contenido-banner-escolar banner-escolar">
         <img src="assets/img/handeasy2.png " class="imga-banner-escolar" alt="imagen-nosotros ">
@@ -182,6 +182,52 @@
         </div>
     </div>
 </section>
+<section id="services" class="icon-servicios  banner-servicios">
+    <div class="servicios ">
+
+
+        <div class="servicio ">
+            <h3>Residencial</h3>
+            <a [routerLink]="['/residencial']" target="_blank">
+                <div class="iconos-service efecto-servicio">
+                    <img src="assets/img/toque.png" alt="">
+                </div>
+            </a>
+            <P>Mayor control de visitas</P>
+        </div>
+
+        <div class="servicio">
+            <h3>Escolar</h3>
+            <a [routerLink]="['/escolar']" target="_blank">
+                <div class="iconos-service efecto-servicio">
+                    <img src="assets/img/datos-reales.png" alt="">
+                </div>
+            </a>
+            <p>Incrementa la seguridaden tu punto de accesso</p>
+        </div>
+
+        <div class="servicio">
+            <h3>Corporativo</h3>
+            <a [routerLink]="['/corporativo']" target="_blank">
+                <div class="iconos-service efecto-servicio">
+                    <img src="assets/img/stop.png" alt="">
+                </div>
+            </a>
+            <p>Credencialización de empleados</p>
+        </div>
+
+        <div class="servicio titulo-construccion">
+            <h3>Contrucción</h3>
+            <a [routerLink]="['/construccion']" target="_blank">
+                <div class="iconos-service efecto-servicio">
+                    <img src="assets/img/coche.png" alt="">
+                </div>
+            </a>
+            <p>Agilidad en ingresos de visitantes y proveedores</p>
+        </div>
+    </div>
+    <br>
+</section>
 
 <!-- <section class=" banner-control-2  fondo-banners-control">
     <div class="rejilla2 container centrar-texto icon-rejilla-2 ">
@@ -199,18 +245,7 @@
     </div>
 </section> -->
 
-<section class=" fondo-banner-escolar animated fadeIn ">
 
-    <div class="contenido-banner-escolar banner-escolar">
-        <img src="assets/img/rellenos.png " class="imga-banner-escolar" alt="imagen-nosotros ">
-
-        <h1 class="texto-titulo-encima-acceso">¡Acceso rápido!</h1>
-        <p class="texto-abajo-acceso">Tu invitado recibe un código QR y lo presenta en la entrada del lugar.</p>
-        <!-- <div class="centrado">Centrado</div> -->
-    </div>
-
-
-</section>
 
 <!-- SECCION CATEGORIAS ESCUELA, RESIDENCIAS ETC... -->
 <section id="services" class="icon-servicios  banner-servicios">
@@ -527,13 +562,14 @@
             </div>
             <!-- CAPTACH -->
             <hr>
-            <!-- <div id="loadcaptcha" class="g-recaptcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha">
+            <div id="loadcaptcha" class="g-recaptcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha">
+                Favor de resolver el reCAPTCHA, en caso de que no aparezca presione el botón de recargar.
+            </div>
+            <!-- <div class="g-recaptcha " style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha">
                 Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
             </div> -->
-            <div class="g-recaptcha " style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha">
-                Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
-            </div>
             <button style="margin-top: 1rem;" type="button" class="btn btn-secondary" onclick="javascript:window.location.reload();"><i class="fas fa-2x fa-sync"></i></button>
+
             <!-- <button type="button" class="btn btn-dark" onclick="recargar()"><i class="fas fa-2x fa-sync"></i></button> -->
             <div id="g-recaptcha-error"></div>
             <!-- <form>
