@@ -252,6 +252,34 @@ hr {
 
 /********* CONTENIDO INSTRUCCIONES *********/
 
+.titulo-instrucciones {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-instrucciones {
+    background-color: #093152 !important;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card-instrucciones2 {
+    background-color: #f0f3f4 !important;
+    font-size: 1.5rem;
+}
+
+.card-instrucciones2 li {
+    color: #000000;
+    /* text-align: center; */
+    list-style: none;
+}
+
+.bottom-card-instrucciones {
+    margin-bottom: 10rem;
+    padding: 1rem;
+    border-radius: 2%;
+}
+
 
 /********* CONTENIDO NOSOTROS *********/
 
