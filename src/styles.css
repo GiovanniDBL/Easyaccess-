@@ -805,7 +805,7 @@ video {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 1rem;
-        padding-top: 10rem;
+        padding-top: 9rem;
     }
     .servicio p {
         line-height: 2;
@@ -825,6 +825,7 @@ video {
 }
 
 .servicio .iconos-service {
+    /* border: 7px solid #007bff; */
     height: 17rem;
     width: 17rem;
     background-color: #093152;
@@ -876,6 +877,67 @@ video {
 .banner-servicios {
     position: relative;
     padding: 120px 26px;
+}
+
+
+/**** SERVICIO 2****/
+
+.banner-servicios2 {}
+
+.banner-servicios2 {
+    position: relative;
+    padding: 120px 26px;
+}
+
+@media(min-width:768px) {
+    .servicios2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        padding-top: 7rem;
+    }
+    .servicio2 p {
+        line-height: 2;
+        text-align: center;
+        font-size: 1.6rem;
+        padding-top: 1rem;
+        color: #1f3d54;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .titulo-construccion h3 {
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff !important;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    .servicios2-titulo {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 5rem;
+        letter-spacing: 8px;
+        color: rgb(18, 190, 104);
+        font-weight: bold;
+    }
+}
+
+.servicio2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio2 .iconos-service {
+    /* border: 7px solid #007bff; */
+    height: 10rem;
+    width: 10rem;
+    background-color: #093152;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid #09AEF5;
 }
 
 
@@ -2648,7 +2710,7 @@ video {
         font-weight: bold;
         font-size: 2.5rem;
         text-align: center;
-        color: #ffffff;
+        color: #000000;
         padding: 1rem;
         text-transform: uppercase;
     }
@@ -2658,7 +2720,7 @@ video {
         left: 50%;
         font-size: 1.7rem;
         padding: 1rem;
-        color: #ffffff;
+        color: #000000;
         font-weight: 300;
         text-align: center;
     }

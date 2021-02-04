@@ -37,7 +37,7 @@
                 </div>
             </div>
 
-            <div class="carousel-item header-imagen carousel-item-inicio  contenedor-video ">
+            <div class="carousel-item header-imagen carousel-item-inicio  contenedor-video parallax ">
                 <img src="assets/img/Seguridad1.jpeg" class="d-block w-100" alt="...">
                 <div class="carousel-caption carousel-caption-inicio  d-md-block">
 
@@ -48,7 +48,7 @@
                 </div>
 
             </div>
-            <div class="carousel-item header-imagen carousel-item-inicio ">
+            <div class="carousel-item header-imagen carousel-item-inicio parallax">
                 <img src="assets/img/Seguridad2.jpeg" class="d-block w-100" alt="...">
                 <div class="carousel-caption carousel-caption-inicio    d-md-block">
                     <!-- <h5>Código QR</h5> -->
@@ -56,7 +56,7 @@
                     <!-- <hr> -->
                 </div>
             </div>
-            <div class="carousel-item header-imagen carousel-item-inicio ">
+            <div class="carousel-item header-imagen carousel-item-inicio parallax">
                 <img src="assets/img/Seguridad3.jpeg" class="d-block w-100" alt="...">
                 <div class="carousel-caption carousel-caption-inicio   d-md-block">
                     <!-- <h5>Control de visitas e incidencias</h5> -->
@@ -103,7 +103,7 @@
 
     </div>
 </section> -->
-<section class=" fondo-banners-entrada-salida7 top-ques animated fadeIn ">
+<section class="fondo-banners-entrada-salida6 top-ques animated fadeIn ">
 
     <div class="contenido-banner-escolar banner-escolar">
         <img src="assets/img/handeasy2.png " class="imga-banner-escolar" alt="imagen-nosotros ">
@@ -152,40 +152,24 @@
 
 <!-- SECCION INFORMACION DE CONTROL 2.0 -->
 
-<section class=" banner-control  fondo-banners-control">
+<!-- <section class=" banner-control  fondo-banners-control">
     <div class="rejilla container centrar-texto icon-rejilla">
         <div>
 
-            <!-- <i class="fas fa-10x fa-fingerprint"></i> -->
+            <i class="fas fa-10x fa-fingerprint"></i>
             <img src="assets/img/toque.png" alt="">
             <h3> Control de entradas y salidas</h3>
         </div>
         <div>
-            <!-- <i class="fas fa-10x fa-id-card"></i> -->
+            <i class="fas fa-10x fa-id-card"></i>
             <img src="assets/img/datos-reales.png" alt="">
             <h3> Control de acceso con datos reales</h3>
         </div>
         <div>
-            <!-- <i class="fas fa-10x fa-fingerprint"></i> -->
+            <i class="fas fa-10x fa-fingerprint"></i>
             <img src="assets/img/stop.png" alt="">
             <h3>Control de incidencias</h3>
         </div>
-        <div>
-            <!-- <i class="fas fa-10x fa-car"></i> -->
-            <img src="assets/img/coche.png" alt="">
-            <h3> Información vehicular</h3>
-        </div>
-        <div>
-            <!-- <i class="fas fa-10x fa-qrcode"></i> -->
-            <img src="assets/img/qr.png" alt="">
-            <h3> Información completa <br> mediante QR</h3>
-        </div>
-    </div>
-</section>
-
-
-<!-- <section class=" banner-control-2  fondo-banners-control">
-    <div class="rejilla2 container centrar-texto icon-rejilla-2 ">
         <div>
             <i class="fas fa-10x fa-car"></i>
             <img src="assets/img/coche.png" alt="">
@@ -196,14 +180,82 @@
             <img src="assets/img/qr.png" alt="">
             <h3> Información completa <br> mediante QR</h3>
         </div>
-
     </div>
 </section> -->
 
 
+<section id="services" class="icon-servicios   banner-servicios2">
+    <h1 class="servicios2-titulo">Nuestros servicios</h1>
+
+    <div class="servicios2 ">
+
+
+        <div class="servicio2">
+
+
+            <div class="iconos-service efecto-servicio">
+                <img src="assets/img/toque.png" alt="">
+            </div>
+
+            <P>Control de entradas y salidas</P>
+        </div>
+
+        <div class="servicio2">
+
+
+            <div class="iconos-service efecto-servicio">
+                <img src="assets/img/datos-reales.png" alt="">
+            </div>
+
+            <p>Control de acceso con datos reales</p>
+        </div>
+
+        <div class="servicio2">
+
+
+            <div class="iconos-service efecto-servicio">
+                <img src="assets/img/stop.png" alt="">
+            </div>
+
+            <p>Control de incidencias</p>
+        </div>
+
+        <div class="servicio2">
+
+
+            <div class="iconos-service efecto-servicio">
+                <img src="assets/img/coche.png" alt="">
+            </div>
+
+            <p>Información vehicular</p>
+        </div>
+
+
+    </div>
+
+    <div class="servicio2">
+
+
+        <div class="iconos-service efecto-servicio">
+            <img src="assets/img/qr.png" alt="">
+        </div>
+
+        <p>Información completa mediante código QR</p>
+    </div>
+    <br>
+</section>
+
+
+
+
+
+
+
+
 
 <!-- SECCION CATEGORIAS ESCUELA, RESIDENCIAS ETC... -->
-<section id="services" class="icon-servicios  banner-servicios">
+<section class="icon-servicios   banner-servicios">
+    <!-- <h1 class="servicios-titulo">Nuestros servicios</h1> -->
     <div class="servicios ">
 
 
@@ -237,8 +289,8 @@
             <p>Credencialización de empleados</p>
         </div>
 
-        <div class="servicio titulo-construccion">
-            <h3>Contrucción</h3>
+        <div class="servicio ">
+            <h3>Construcción</h3>
             <a [routerLink]="['/construccion']" target="_blank">
                 <div class="iconos-service efecto-servicio">
                     <img src="assets/img/construccion.png" alt="contruccion-img">
@@ -246,9 +298,12 @@
             </a>
             <p>Agilidad en ingresos de visitantes y proveedores</p>
         </div>
+
     </div>
     <br>
 </section>
+
+
 
 <!-- SECCIÓN BANNNER DE DESCARGA 2.0 -->
 
