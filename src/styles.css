@@ -882,17 +882,24 @@ video {
 
 /**** SERVICIO 2****/
 
-.banner-servicios2 {}
+.banner-servicios2 {
+    /* background-color: rgba(169, 169, 169, 0.377); */
+    /* background: linear-gradient(150deg, white 50%, #0f83c4 50%); */
+    /* background: linear-gradient(to right, #1CB5E0, #08087a); */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 .banner-servicios2 {
     position: relative;
-    padding: 120px 26px;
+    padding: 100px 26px;
+    margin-bottom: 2rem;
 }
 
 @media(min-width:768px) {
     .servicios2 {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 1rem;
         padding-top: 7rem;
     }
@@ -901,8 +908,8 @@ video {
         text-align: center;
         font-size: 1.6rem;
         padding-top: 1rem;
-        color: #1f3d54;
-        font-weight: bold;
+        color: #093152;
+        /* font-weight: bold; */
         text-transform: uppercase;
     }
     .titulo-construccion h3 {
@@ -915,10 +922,72 @@ video {
     .servicios2-titulo {
         text-align: center;
         text-transform: uppercase;
-        margin-top: 5rem;
-        letter-spacing: 8px;
-        color: rgb(18, 190, 104);
+        margin-top: 1rem;
+        /* letter-spacing: 8px; */
+        color: #000000;
         font-weight: bold;
+    }
+}
+
+.servicio2 .iconos-service {
+    /* border: 7px solid #007bff; */
+    height: 12rem;
+    width: 12rem;
+    /* background-color: #093152; */
+    background-color: #154360;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 6px solid #09AEF5; */
+    /* border: 6px solid #eafaf1; */
+    border: 6px solid #4591e7;
+}
+
+@media(min-width: 1800px) {
+    .servicios2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+        padding-top: 7rem;
+    }
+    .servicio2 p {
+        line-height: 2;
+        text-align: center;
+        font-size: 1.6rem;
+        padding-top: 1rem;
+        color: #093152;
+        /* font-weight: bold; */
+        text-transform: uppercase;
+    }
+    .titulo-construccion h3 {
+        font-weight: bold;
+        text-align: center;
+        color: #ffffff !important;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    .servicios2-titulo {
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        /* letter-spacing: 8px; */
+        color: #000000;
+        font-weight: bold;
+    }
+    .servicio2 .iconos-service {
+        /* border: 7px solid #007bff; */
+        height: 17rem;
+        width: 17rem;
+        /* background-color: #093152; */
+        background-color: #154360;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 6px solid #09AEF5; */
+        /* border: 6px solid #eafaf1; */
+        border: 6px solid #4591e7;
     }
 }
 
@@ -926,18 +995,6 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.servicio2 .iconos-service {
-    /* border: 7px solid #007bff; */
-    height: 10rem;
-    width: 10rem;
-    background-color: #093152;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 6px solid #09AEF5;
 }
 
 
@@ -2826,7 +2883,7 @@ video {
         font-weight: bold;
         font-size: 3.5rem;
         text-align: center;
-        color: #ffffff;
+        color: #000000;
         padding: 1rem;
         text-transform: uppercase;
     }
@@ -2836,7 +2893,7 @@ video {
         left: 50%;
         font-size: 2.5rem;
         padding: 1rem;
-        color: #ffffff;
+        color: #000000;
         font-weight: 300;
         text-align: center;
     }
