@@ -21,9 +21,11 @@ import { ResidencialComponent } from './components/residencial/residencial.compo
 import { EscolarComponent } from './components/escolar/escolar.component';
 import { CorporativoComponent } from './components/corporativo/corporativo.component';
 import { ConstruccionComponent } from './components/construccion/construccion.component';
+import { NgsRevealModule } from 'ngx-scrollreveal';
 
 
-
+// SCROLLREVEAL
+// import {NgsRevealModule} from 'ngx-scrollreveal';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { ConstruccionComponent } from './components/construccion/construccion.co
     FormsModule,
     NgxCaptchaModule,
     ReactiveFormsModule,
-    NgxWhastappButtonModule
+    NgxWhastappButtonModule,
+  NgsRevealModule,
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

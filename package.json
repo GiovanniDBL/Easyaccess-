@@ -23,9 +23,11 @@
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "ngx-captcha": "^5.0.4",
+    "ngx-scrollreveal": "^3.0.0",
     "ngx-whatsapp-button": "^1.0.4",
     "popper.js": "^1.16.1",
     "rxjs": "~6.6.0",
+    "scrollreveal": "^4.0.7",
     "sweetalert2": "^9.11.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

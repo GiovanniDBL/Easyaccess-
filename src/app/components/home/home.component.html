@@ -103,7 +103,7 @@
 
     </div>
 </section> -->
-<section class="fondo-banners-entrada-salida6 top-ques animated fadeIn  ">
+<section class="fondo-banners-entrada-salida6 top-ques animated fadeIn  " [ngsReveal]="{reset:true, duration:1000, origin:'left', distance:'400px'}">
 
     <div class="contenido-banner-escolar banner-escolar">
         <img src="assets/img/handeasy2.png " class="imga-banner-escolar" alt="imagen-nosotros ">
@@ -184,7 +184,7 @@
 </section> -->
 
 
-<section id="services" class="icon-servicios   banner-servicios2">
+<section id="services" class="icon-servicios   banner-servicios2" [ngsReveal]="{reset:true, duration:1000, origin:'left', distance:'400px'}">
     <h1 class="servicios2-titulo">Nuestros servicios</h1>
 
     <div class="servicios2 ">
@@ -254,7 +254,7 @@
 
 
 <!-- SECCION CATEGORIAS ESCUELA, RESIDENCIAS ETC... -->
-<section class="icon-servicios   banner-servicios">
+<section class="icon-servicios   banner-servicios" [ngsReveal]="{reset:true, duration:1000, origin:'left', distance:'400px'}">
     <!-- <h1 class="servicios-titulo">Nuestros servicios</h1> -->
     <div class="servicios ">
 
@@ -307,7 +307,7 @@
 
 <!-- SECCIÓN BANNNER DE DESCARGA 2.0 -->
 
-<section class=" banner-descargarapp fondo-banner-descarga animated fadeIn ">
+<section class=" banner-descargarapp fondo-banner-descarga animated fadeIn " [ngsReveal]="{reset:true, duration:1000, origin:'left', distance:'400px'}">
     <div class="contenido-banner-descargarapp ">
 
         <div class=" ">
@@ -343,7 +343,7 @@
 <!-- ************************ BENEFICIOS ********************* -->
 <!-- <h1 class="titulo seccion centrar-texto">SLIDER BENEFICIOS EN PROCESO...</h1> -->
 
-<div id="beneficios" class="colore-prueba-beneficio animated fadeIn">
+<div id="beneficios" class="colore-prueba-beneficio animated fadeIn" [ngsReveal]="{reset:true, duration:1000, origin:'left', distance:'400px'}">
     <h1 class="titulo-beneficios">Beneficios</h1>
     <div class="">
         <div class="col-md-12">
@@ -431,7 +431,7 @@
 <!-- ************************ GALERIA ********************* -->
 
 
-<section class="galeria animated fadeIn" id="galeria">
+<section class="galeria animated fadeIn" id="galeria" [ngsReveal]="{reset:true, duration:1000, origin:'bottom', distance:'400px'}">
     <a href="#image1">
         <img src="assets/img/Seguridad1.jpeg" alt="">
     </a>
@@ -548,7 +548,7 @@
             <!-- <a href="https://easyaccess.com.mx/" target="_blank"> <img class="imagen-contacto2" src="assets/img/logoEA.png" alt="Imagen-contactanos"></a> -->
         </div>
 
-        <form (ngSubmit)="contactForm(form)" class="col-md-10 colores-contacto" #form="ngForm" method="post" onsubmit="return submitUserForm();">
+        <form (ngSubmit)="contactForm(form)" class="col-md-10 colores-contacto" #form="ngForm" method="post" onsubmit="return submitUserForm();" [ngsReveal]="{ duration:1000, origin:'bottom', distance:'400px'}">
 
             <!-- <span *ngIf="form.submitted && form.controls['nombre'].errors" class="text-danger">El nombre es obligatorio</span> -->
             <div class="form-goup">

@@ -2,11 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { MessageService } from '../../services/message.service';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import Swal from 'sweetalert2';
+import { NgsRevealConfig} from 'ngx-scrollreveal';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  providers: [NgsRevealConfig]
+
 })
 export class HomeComponent implements OnInit {
   public aFormGroup: FormGroup | undefined;
@@ -15,9 +19,21 @@ export class HomeComponent implements OnInit {
   siteKey: string;
   theme: string;
 
-  constructor(public _MessageService: MessageService, private formBuilder: FormBuilder) {
+  constructor(public _MessageService: MessageService, private formBuilder: FormBuilder, config:NgsRevealConfig) {
     this.siteKey = '6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw';
     this.theme = "dark";
+
+
+    config.duration = 5000;
+  //  config.scale = 10;
+    config.origin = 'left';
+    config.origin = 'top';
+    config.distance = '400px';
+
+
+
+
+
     
    }
 
