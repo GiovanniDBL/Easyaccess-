@@ -36,13 +36,13 @@ body {
 .header_change {
     /* position: fixed; */
     background-color: rgba(0, 0, 0, .9) !important;
-    transition: all .7s;
+    transition: all .7s ease-in-out;
     /* width: 100%; */
     /* z-index: 1; */
 }
 
 .navbar-nav {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, .1);
     border-radius: 1%;
 }
 
@@ -153,7 +153,8 @@ hr {
     margin-top: 25px;
     margin-bottom: 80px;
     border: 0;
-    animation: separator-width 1s ease-in-out forwards;
+    width: 0;
+    animation: separator-width 2s ease-out forwards;
 }
 
 @keyframes separator-width {
@@ -489,6 +490,7 @@ ul.no-diseño {
 .banner-store {
     position: relative;
     height: auto;
+    margin-top: 11rem;
 }
 
 .banner-store::before {
@@ -625,7 +627,8 @@ ul.no-diseño {
     .carousel-caption-inicio p {
         width: 100%;
         margin: auto;
-        font-size: 2rem;
+        font-size: 1rem;
+        text-transform: uppercase;
         /* line-height: 1.9px; */
     }
 }
@@ -677,6 +680,14 @@ video {
     .video {
         position: relative;
         max-height: 63rem;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1125px) {
+    .video {
+        position: relative;
+        max-height: 43.5rem;
         overflow: hidden;
     }
 }
@@ -872,6 +883,7 @@ video {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 11rem;
 }
 
 .banner-servicios {
@@ -886,7 +898,7 @@ video {
     /* background-color: rgba(169, 169, 169, 0.377); */
     /* background: linear-gradient(150deg, white 50%, #0f83c4 50%); */
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-    margin-top: 1rem;
+    margin-top: 11rem;
     margin-bottom: 1rem;
 }
 
@@ -1201,6 +1213,7 @@ video {
     /* background-color: #f9f9fa; */
     background-image: url(assets/img/Fondo-descargar-app.jpeg);
     background-size: cover;
+    margin-top: 11rem;
 }
 
 .imga-banner-descargarapp {
@@ -1343,7 +1356,7 @@ video {
     background-image: url(assets/img/Fondo-descargar-app.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 1rem;
+    margin-top: 11rem;
     margin-bottom: 1rem;
 }
 
@@ -1354,6 +1367,7 @@ video {
     background-repeat: no-repeat;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-top: 11rem;
 }
 
 .fondo-banners-entrada-salida3 {
@@ -1363,20 +1377,29 @@ video {
     background-repeat: no-repeat;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-top: 11rem;
 }
 
 .fondo-banners-entrada-salida4 {
     background: linear-gradient(-200deg, white 20%, #0f83c4 20%);
     /* background: linear-gradient(-100deg, white 50%, #0f83c4 50%); */
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-    margin-top: 1rem;
+    margin-top: 11rem;
+    margin-bottom: 1rem;
+}
+
+.fondo-banners-entrada-salida-blanco {
+    background: linear-gradient(-200deg, white 20%, white 20%);
+    /* background: linear-gradient(-100deg, white 50%, #0f83c4 50%); */
+    /* background: linear-gradient(to right, #1CB5E0, #08087a); */
+    margin-top: 11rem;
     margin-bottom: 1rem;
 }
 
 .fondo-banners-entrada-salida5 {
     background: linear-gradient(-90deg, #0f83c4 59%, white 41%);
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-    margin-top: 1rem;
+    margin-top: 11rem;
     margin-bottom: 1rem;
 }
 
@@ -1384,7 +1407,7 @@ video {
     .fondo-banners-entrada-salida5 {
         background: linear-gradient(-90deg, #0f83c4 59.3%, white 59.3%);
         /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-        margin-top: 1rem;
+        margin-top: 11rem;
         margin-bottom: 1rem;
     }
 }
@@ -1392,7 +1415,7 @@ video {
 .fondo-banners-entrada-salida6 {
     background: linear-gradient(-90deg, white 49%, #0f83c4 49%);
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-    margin-top: 1rem;
+    margin-top: 11rem;
     margin-bottom: 1rem;
 }
 
@@ -1400,7 +1423,7 @@ video {
     background: linear-gradient(-200deg, white 20%, #093152 20%);
     /* background: linear-gradient(-100deg, white 50%, #0f83c4 50%); */
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-    margin-top: 1rem;
+    margin-top: 11rem;
     margin-bottom: 1rem;
 }
 
@@ -1409,7 +1432,7 @@ video {
         background-image: url(assets/img/fondo-ques.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
-        margin-top: 1rem;
+        margin-top: 11rem;
     }
 }
 
@@ -1566,9 +1589,10 @@ video {
 @media (min-width: 768px) {
     .imga-banner-gestion img {
         width: 100%;
-        height: 100%;
+        height: 60%;
         /* margin-bottom: 1rem; */
         border-radius: 1%;
+        margin-top: 7rem;
     }
 }
 
@@ -1580,7 +1604,7 @@ video {
 }
 
 .texto-ul-gestion {
-    color: #ffffff;
+    color: #093152;
     font-weight: bold;
     font-size: 1.2rem;
     list-style: circle;
@@ -2313,6 +2337,7 @@ video {
     position: relative;
     padding: 100px 26px;
     margin-bottom: 5rem;
+    margin-top: 11rem;
 }
 
 @media(min-width:768px) {
@@ -2611,6 +2636,9 @@ video {
         background-image: url(assets/img/fondo-ques.jpeg);
         background-size: cover;
     }
+    .top-relleno {
+        margin-top: 11rem;
+    }
 }
 
 .banner-escolar {
@@ -2736,7 +2764,7 @@ video {
 }
 
 .top-ques {
-    margin-top: 1rem;
+    margin-top: 11rem;
 }
 
 @media(min-width:768px) {
@@ -3187,6 +3215,7 @@ video {
     /* background: linear-gradient(-100deg, white 50%, rgb(8, 46, 172) 50%); */
     background: linear-gradient(to right, #1CB5E0, #08087a);
     /* height: 72vh; */
+    margin-top: 11rem;
 }
 
 .titulo-beneficios {
@@ -3371,6 +3400,7 @@ video {
         margin: auto;
         grid-gap: 10px;
         padding: 40px 0;
+        margin-top: 11rem;
     }
 }
 

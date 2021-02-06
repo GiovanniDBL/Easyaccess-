@@ -15,7 +15,8 @@ export class NavbarComponent implements OnInit {
   }
 
   header_variable = false;
-  @HostListener("document:scroll")
+  
+  @HostListener('document:scroll')
   scrollfunction(){
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
       this.header_variable = true;
@@ -31,6 +32,9 @@ export class NavbarComponent implements OnInit {
   // tslint:disable-next-line:typedef
   toInicio(){
     document.getElementById('home')?.scrollIntoView({behavior: 'smooth'});
+  }
+  toInicio2(){
+    document.getElementById('home2')?.scrollIntoView({behavior: 'smooth'});
   }
   // tslint:disable-next-line:typedef
   toContacto(){

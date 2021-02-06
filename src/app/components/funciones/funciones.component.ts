@@ -11,5 +11,5 @@ export class FuncionesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }
