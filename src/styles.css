@@ -658,6 +658,13 @@ ul.no-diseño {
     .carousel-caption-inicio {
         margin-bottom: 350px;
     }
+    .carousel-caption-inicio h5 {
+        width: 100%;
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        /* margin-top: 25px; */
+    }
 }
 
 video {
@@ -991,7 +998,7 @@ video {
 @media(min-width: 1800px) {
     .servicios2 {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 1rem;
         padding-top: 7rem;
     }
@@ -1018,6 +1025,7 @@ video {
         /* letter-spacing: 8px; */
         color: #000000;
         font-weight: bold;
+        font-size: 3.5rem;
     }
     .servicio2 .iconos-service {
         /* border: 7px solid #007bff; */
@@ -2942,7 +2950,7 @@ video {
         top: 35%;
         left: 50%;
         font-size: 2.5rem;
-        padding: 1rem;
+        padding: 2.5rem;
         color: #000000;
         font-weight: 300;
         text-align: center;
