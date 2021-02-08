@@ -256,6 +256,7 @@ hr {
 .titulo-instrucciones {
     text-align: center;
     text-transform: uppercase;
+    margin-top: 11rem;
 }
 
 .card-instrucciones {
@@ -816,7 +817,7 @@ video {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 1rem;
-        padding-top: 9rem;
+        padding-top: 5rem;
     }
     .servicio p {
         line-height: 2;
@@ -833,6 +834,14 @@ video {
         text-transform: uppercase;
         margin-bottom: 1rem;
     }
+}
+
+.servicios-titulo {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 
 .servicio .iconos-service {
@@ -908,10 +917,31 @@ video {
     margin-bottom: 2rem;
 }
 
+.servicios2-titulo {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    /* letter-spacing: 8px; */
+    color: #000000;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+.servicio2 p {
+    line-height: 2;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    color: #093152;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+}
+
 @media(min-width:768px) {
     .servicios2 {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 1rem;
         padding-top: 7rem;
     }
@@ -938,6 +968,8 @@ video {
         /* letter-spacing: 8px; */
         color: #000000;
         font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -1357,7 +1389,6 @@ video {
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 11rem;
-    margin-bottom: 1rem;
 }
 
 .fondo-banners-entrada-salida2 {
@@ -1365,8 +1396,6 @@ video {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     margin-top: 11rem;
 }
 
@@ -1375,8 +1404,6 @@ video {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     margin-top: 11rem;
 }
 
@@ -1385,7 +1412,6 @@ video {
     /* background: linear-gradient(-100deg, white 50%, #0f83c4 50%); */
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
     margin-top: 11rem;
-    margin-bottom: 1rem;
 }
 
 .fondo-banners-entrada-salida-blanco {
@@ -1393,14 +1419,12 @@ video {
     /* background: linear-gradient(-100deg, white 50%, #0f83c4 50%); */
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
     margin-top: 11rem;
-    margin-bottom: 1rem;
 }
 
 .fondo-banners-entrada-salida5 {
     background: linear-gradient(-90deg, #0f83c4 59%, white 41%);
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
     margin-top: 11rem;
-    margin-bottom: 1rem;
 }
 
 @media (min-width: 1800px) {
@@ -1408,7 +1432,6 @@ video {
         background: linear-gradient(-90deg, #0f83c4 59.3%, white 59.3%);
         /* background: linear-gradient(to right, #1CB5E0, #08087a); */
         margin-top: 11rem;
-        margin-bottom: 1rem;
     }
 }
 
@@ -1416,7 +1439,6 @@ video {
     background: linear-gradient(-90deg, white 49%, #0f83c4 49%);
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
     margin-top: 11rem;
-    margin-bottom: 1rem;
 }
 
 .fondo-banners-entrada-salida7 {
@@ -1424,7 +1446,6 @@ video {
     /* background: linear-gradient(-100deg, white 50%, #0f83c4 50%); */
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
     margin-top: 11rem;
-    margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -2748,18 +2769,19 @@ video {
     position: absolute;
     top: 15%;
     left: 50%;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
-    color: #ffffff;
-    padding: 1rem;
+    color: #000000;
+    /* padding: 1rem; */
+    text-transform: uppercase;
 }
 
 .texto-abajo-Quees {
     font-size: 1.2rem;
     padding: 1rem;
-    color: #093152;
-    font-weight: bold;
+    color: #000000;
+    font-weight: 400;
     text-align: center;
 }
 
@@ -2804,7 +2826,7 @@ video {
         top: 35%;
         left: 50%;
         font-size: 1.7rem;
-        padding: 1rem;
+        padding: 2rem;
         color: #000000;
         font-weight: 300;
         text-align: center;

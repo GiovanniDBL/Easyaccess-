@@ -30,7 +30,7 @@
 
             <div class="carousel-item  active  video carousel-item-inicio parallax">
                 <video src="assets/videos/seguridad-video1.mp4" autoplay muted loop class="d-block "></video>
-                <div class="carousel-caption carousel-caption-inicio header-imagen-fondos  d-md-block">
+                <div class="carousel-caption carousel-caption-inicio header-imagen-fondos  d-md-block" [ngsReveal]="{reset:true, duration:3000, origin:'top', distance:'400px'}">
                     <h5>seguridad y control de acceso <br> para tu empresa o residencia</h5>
                     <!-- <p>Controla la seguridad</p> -->
                     <hr>
@@ -185,7 +185,7 @@
 
 
 <section id="services" class="icon-servicios   banner-servicios2">
-    <h1 class="servicios2-titulo" [ngsReveal]="{ reset: true, duration: 2000}">Nuestros servicios</h1>
+    <h1 class="servicios2-titulo" [ngsReveal]="{ reset: true, duration: 2000}">¿Qué ofrecemos?</h1>
 
     <div class="servicios2 ">
 
@@ -193,7 +193,7 @@
         <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
 
 
-            <div class="iconos-service efecto-servicio">
+            <div class="iconos-service ">
                 <img src="assets/img/toque.png" alt="">
             </div>
 
@@ -203,7 +203,7 @@
         <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'200px'}">
 
 
-            <div class="iconos-service efecto-servicio">
+            <div class="iconos-service ">
                 <img src="assets/img/datos-reales.png" alt="">
             </div>
 
@@ -213,7 +213,7 @@
         <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
 
 
-            <div class="iconos-service efecto-servicio">
+            <div class="iconos-service ">
                 <img src="assets/img/stop.png" alt="">
             </div>
 
@@ -223,17 +223,35 @@
         <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'200px'}">
 
 
-            <div class="iconos-service efecto-servicio">
+            <div class="iconos-service ">
                 <img src="assets/img/coche.png" alt="">
             </div>
 
             <p>Información vehicular</p>
         </div>
+        <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
+
+
+            <div class="iconos-service ">
+                <img src="assets/img/qr.png" alt="">
+            </div>
+
+            <p>Información completa <br> mediante código QR</p>
+        </div>
+        <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'200px'}">
+
+
+            <div class="iconos-service ">
+                <img src="assets/img/codigo-qr-visitas.png" alt="">
+            </div>
+
+            <p>Control de visitas</p>
+        </div>
 
 
     </div>
 
-    <div class="servicio2" [ngsReveal]="{reset:true, duration:2000}">
+    <!-- <div class="servicio2" [ngsReveal]="{reset:true, duration:2000}">
 
 
         <div class="iconos-service efecto-servicio">
@@ -241,7 +259,8 @@
         </div>
 
         <p>Información completa <br> mediante código QR</p>
-    </div>
+    </div> -->
+
     <br>
 </section>
 
@@ -255,7 +274,7 @@
 
 <!-- SECCION CATEGORIAS ESCUELA, RESIDENCIAS ETC... -->
 <section class="icon-servicios   banner-servicios" [ngsReveal]="{reset:true, duration:1000, origin:'left', distance:'400px'}">
-    <!-- <h1 class="servicios-titulo">Nuestros servicios</h1> -->
+    <h1 class="servicios-titulo" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">Controla tu empresa</h1>
     <div class="servicios ">
 
 
@@ -276,7 +295,7 @@
                     <img src="assets/img/universidad.png" alt="universidad-img">
                 </div>
             </a>
-            <p>Incrementa la seguridaden tu punto de accesso</p>
+            <p>Incrementa la seguridad en tu punto de accesso</p>
         </div>
 
         <div class="servicio" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
@@ -470,7 +489,7 @@
 <!-- ************************ GALERIA ********************* -->
 
 
-<section class="galeria animated fadeIn" id="galeria" [ngsReveal]="{reset:true, duration:1000, origin:'left', distance:'400px'}">
+<section class="galeria animated fadeIn" id="galeria" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
     <a href="#image1">
         <img src="assets/img/Seguridad1.jpeg" alt="">
     </a>
