@@ -676,18 +676,18 @@ video {
     }
 }
 
-@media (min-width: 1800px) {
-    .video {
-        position: relative;
-        max-height: 63rem;
-        overflow: hidden;
-    }
-}
-
 @media (min-width: 1125px) {
     .video {
         position: relative;
         max-height: 43.5rem;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1800px) {
+    .video {
+        position: relative;
+        max-height: 63rem;
         overflow: hidden;
     }
 }
