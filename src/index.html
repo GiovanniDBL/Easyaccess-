@@ -6,7 +6,7 @@
     <title>Easyaccess</title>
     <base href="./">
     <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- <script src="system.config.js"></script> -->
     <!-- <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,6 +53,7 @@
             console.log(response.length);
             if (response.length == 0) {
                 document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:orange;">El captcha es requerido.</span>';
+                grecaptcha.reload();
                 return false;
             }
             return true;
@@ -62,9 +63,26 @@
             console.log('verified');
             document.getElementById("btn1").disabled = false;
             document.getElementById('g-recaptcha-error').innerHTML = '';
+            // grecaptcha.reset(verifyCaptcha);
         }
     </script>
 
+    <!-- RESETEAR RECAPTCHA -->
+    <!-- <script type="text/javascript">
+        var verifyCallback = function(response) {
+            alert(response);
+        };
+
+        var widgetId2;
+        var onloadCallback = function() {
+
+            widgetId2 = grecaptcha.render(document.getElementById('example2'), {
+                'sitekey': '6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw',
+                'theme': 'dark'
+
+            });
+        };
+    </script> -->
 
 
 
@@ -77,7 +95,9 @@
 
 
 
-
+    <!-- 
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script> -->
 </body>
 
 

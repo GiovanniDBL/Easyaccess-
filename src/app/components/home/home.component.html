@@ -574,31 +574,31 @@
             <!-- <span *ngIf="form.submitted && form.controls['nombre'].errors" class="text-danger">El nombre es obligatorio</span> -->
             <div class="form-goup">
                 <label for=""><i class="fas fa-coloricon-contacto fa-user-edit"></i> Nombre</label>
-                <input type="text" class="form-control" name="nombre" ngModel required minlength="5">
+                <input id="inputform" type="text" class="form-control" name="nombre" ngModel required minlength="5">
             </div>
             <!-- <span *ngIf="form.submitted && form.controls['asunto'].errors" class="text-danger">El asunto es obligatorio</span> -->
             <div class="form-goup">
                 <label for=""><i class="fas fa-coloricon-contacto fa-exclamation-circle"></i> Asunto</label>
-                <input type="text" class="form-control" name="asunto" ngModel required minlength="5">
+                <input id="inputform" type="text" class="form-control" name="asunto" ngModel required minlength="5">
             </div>
             <!-- <span *ngIf="form.submitted && form.controls['email'].errors" class="text-danger">El correo es obligatorio</span> -->
             <div class="form-goup">
                 <label for=""><i class="far fa-coloricon-contacto fa-envelope"></i> Correo Electrónico</label>
-                <input type="email" class="form-control" name="email" ngModel required email>
+                <input id="inputform" type="email" class="form-control" name="email" ngModel required email>
             </div>
             <!-- <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-danger">El mensaje es obligatorio - Ingrese más de 5 letras</span> -->
             <div class="form-goup">
                 <label for=""> <i class="fas fa-coloricon-contacto fa-feather-alt"></i> Mensaje</label>
-                <textarea class="form-control" name="mensaje" ngModel required minlength="5"></textarea>
+                <textarea class="form-control" id="inputform" name="mensaje" ngModel required minlength="5"></textarea>
             </div>
             <!-- CAPTACH -->
             <hr>
-            <!-- <div id="loadcaptcha" class="g-recaptcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha">
+            <div id="loadcaptcha" class="g-recaptcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha">
                 Favor de resolver el reCAPTCHA, en caso de que no aparezca presione el botón de recargar.
-            </div> -->
-            <div class="g-recaptcha " style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha">
-                Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
             </div>
+            <!-- <div class="g-recaptcha " style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha">
+                Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
+            </div> -->
             <button style="margin-top: 1rem;" type="button" class="btn btn-secondary" onclick="javascript:window.location.reload();"><i class="fas fa-2x fa-sync"></i></button>
 
             <!-- <button type="button" class="btn btn-dark" onclick="recargar()"><i class="fas fa-2x fa-sync"></i></button> -->
@@ -616,7 +616,18 @@
 
 </section>
 
+
+
+
 <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button>
+
+<!-- <form action="javascript:grecaptcha.reset(widgetId2);">
+    <div id="example2" class="g-recaptcha" data-callback="verifyCaptcha"></div>
+    <br>
+    <input type="submit" value="reset">
+</form> -->
+
+
 
 
 <!-- BANNER RELLENO  -->

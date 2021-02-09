@@ -1966,8 +1966,8 @@ video {
         margin: auto;
         padding-top: 2rem;
         padding-bottom: 8rem;
-        width: 25%;
-        height: 750px;
+        width: 18%;
+        /* height: 750px; */
     }
 }
 
@@ -2099,6 +2099,7 @@ video {
         padding-top: 2rem;
         padding-bottom: 8rem;
         width: 25%;
+        /* height: 20rem; */
     }
 }
 
