@@ -277,9 +277,17 @@ hr {
 }
 
 .bottom-card-instrucciones {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     padding: 1rem;
     border-radius: 2%;
+}
+
+@media(min-width:1800px) {
+    .card-instrucciones {
+        background-color: #093152 !important;
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
 
 
@@ -1538,7 +1546,7 @@ video {
         color: #093152;
     }
     .card {
-        height: 46vh;
+        /* height: 46vh; */
     }
     .habilidad img {
         height: 30%;
@@ -1546,9 +1554,10 @@ video {
     }
 }
 
-.card-text {
+
+/* .card-text {
     color: #ffffff;
-}
+} */
 
 .card-body {
     border-radius: 5%;
