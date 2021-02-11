@@ -1,13 +1,14 @@
 <section class=" fondo-banner-escolar animated fadeIn ">
 
-    <div class="contenido-banner-escolar banner-escolar">
+    <div class="contenido-banner-escolar banner-escolar" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
         <img src="assets/img/escolar-fondo.png " class="imga-banner-escolar" alt="imagen-nosotros ">
 
-        <p class="titulo-sectores-escolar">Escolar</p>
-        <img class="img-encima-sectores" src="assets/img/icono-sectores.png" alt="">
-        <p class="texto-abajo-sectores-escolar">Validación de personas autorizadas <span>para recogida de alumnos</span><br>
+        <p class="titulo-sectores-escolar" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'400px'}">Escolar</p>
+        <img class="img-encima-sectores" src="assets/img/icono-sectores.png" alt="" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'400px'}">
+        <p class="texto-abajo-sectores-escolar" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">Validación de personas autorizadas <span>para recogida de alumnos</span><br>
             <span>Mayor seguridad</span> para la comunidad<br> Información en <span>tiempo real</span>
         </p>
+
         <!-- <div class="centrado">Centrado</div> -->
     </div>
 
@@ -15,7 +16,7 @@
 </section>
 
 
-<section id="contacto" class=" banner-escolar2 fondo-banner-escolar2 animated fadeIn ">
+<section id="contacto" class=" fondo-banner-comofunciona2 fondo-banner-escolar2 animated fadeIn ">
     <div class="contenido-banner-escolar2 ">
 
         <div class="texto-escolar1">
@@ -44,21 +45,64 @@
 
 </section>
 
+<!-- 
+<section class=" fondo-banner-comofunciona2 top-relleno animated fadeIn ">
+
+    <div class=" banner-escolar">
+        <img src="assets/img/laptop.png " class="imagen-comofunciona" alt="imagen-nosotros laptop.png">
 
 
-<section class=" banner-escolar-2 fondo-banner-escolar-2 animated fadeIn ">
+        <p class="texto-arriba-comofunciona-subtitulo2 ">
+            Si tienes un complejo escolar en donde se requiera <br> uno o varios puntos de control de ingreso y salida <br> para:
+        </p>
+        <p class="texto-arriba-comofunciona-subtitulo2-2 ">
+            De no ser asi, te ofrecemos gestionar de manera <br> más eficiente estos puntos de acceso bajo una <br> solución que resuelve necesidades de:
+        </p>
+
+
+        <img src="assets/img/fondo-transparente.png " class="imga-banner-escolar" alt=" imagen-nosotros ">
+
+    </div>
+
+
+</section> -->
+
+
+<section class=" fondo-banner-comofunciona top-relleno animated fadeIn ">
+
+    <div class=" banner-escolar ">
+        <img src="assets/img/laptop.png " class="imagen-comofunciona " alt="imagen-nosotros laptop.png ">
+        <!-- <img src="assets/img/laptop.png " class=" img-encima-comofunciona " alt="imagen-nosotros "> -->
+
+        <h1 class="texto-arriba-comofunciona ">¿Cómo funciona?</h1>
+        <p class="texto-arriba-comofunciona-subtitulo ">
+            La versatibilidad del sistema permite diversas opciones <br> para la distribución de información (Credencial de <br> estudiante o empleado, invitación impresa, <br> invitación vía e-mail).
+        </p>
+        <p class="texto-abajo-comofunciona1 ">
+            Con un lector fijo o con un dispositivo móvil (Android o iOS),<br> se lee el código y se permite el acceso a la persona .
+        </p>
+        <p class="texto-abajo-comofunciona2 ">
+            Cada código de invitación es único e irrepetible, válido para <br> una sola entrada y una sola salida, dentro del horario <br> marcado por el anfitrión.
+        </p>
+
+    </div>
+
+
+</section>
+
+<!-- <section class=" banner-escolar-2 fondo-banner-escolar-2 animated fadeIn ">
     <div class="contenido-banner-escolar-2 ">
 
-        <div class="texto-escolar-2">
+        <div class="texto-escolar-2 ">
             <h1 class=" centrar-texto seccion ">¿Cómo funciona?</h1>
-            <p class="parrafo1">
+            <p class="parrafo1 ">
                 La versatibilidad del sistema permite diversas opciones para la distribución de información (Credencial de estudiante o empleado, invitación impresa, invitación vía e-mail).
             </p>
 
-            <p class="parrafo2">
+            <p class="parrafo2 ">
                 Con un lector fijo o con un dispositivo móvil (Android o iOS), se lee el código y se permite el acceso a la persona .
             </p>
-            <p class="parrafo3">
+            <p class="parrafo3 ">
                 Cada código de invitación es único e irrepetible, válido para una sola entrada y una sola salida, dentro del horario marcado por el anfitrión.
             </p>
         </div>
@@ -70,4 +114,4 @@
 
 
     </div>
-</section>
+</section> -->

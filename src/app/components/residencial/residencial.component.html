@@ -1,11 +1,11 @@
 <section class=" fondo-banner-escolar animated fadeIn ">
 
-    <div class="contenido-banner-escolar banner-escolar">
+    <div class="contenido-banner-escolar banner-escolar" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
         <img src="assets/img/fondo-residencial.png " class="imga-banner-escolar" alt="imagen-nosotros ">
 
-        <p class="titulo-sectores-residencial">Residencial</p>
-        <img class="img-encima-sectores" src="assets/img/icono-sectores.png" alt="">
-        <p class="texto-abajo-sectores">Mayor seguridad interna <span>para los habitantes</span><br>
+        <p class="titulo-sectores-residencial" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'400px'}">Residencial</p>
+        <img class="img-encima-sectores" src="assets/img/icono-sectores.png" alt="" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'400px'}">
+        <p class="texto-abajo-sectores" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">Mayor seguridad interna <span>para los habitantes</span><br>
             <span>Menor carga en</span> puntos de acceso <br> Mayor control <span>de visitas</span>
         </p>
         <!-- <div class="centrado">Centrado</div> -->
@@ -44,8 +44,30 @@
 </section>
 
 
+<section class=" fondo-banner-comofunciona top-relleno animated fadeIn ">
 
-<section class=" banner-escolar-2 fondo-banner-escolar-2 animated fadeIn ">
+    <div class=" banner-escolar">
+        <img src="assets/img/laptop.png " class="imagen-comofunciona" alt="imagen-nosotros laptop.png">
+        <!-- <img src="assets/img/laptop.png " class=" img-encima-comofunciona" alt="imagen-nosotros "> -->
+
+        <h1 class="texto-arriba-comofunciona">¿Cómo funciona?</h1>
+        <p class="texto-arriba-comofunciona-subtitulo">
+            La versatibilidad del sistema permite diversas opciones <br> para la distribución del código (invitación vía e-mail o <br> WhatsApp, Código dinamico en app para residentes, <br> identificación de empleado doméstico o de obra).
+        </p>
+        <p class="texto-abajo-comofunciona1">
+            Con un lector fijo o con un dispositivo móvil (Android o iOS),<br> se lee el código y se permite el acceso a la persona .
+        </p>
+        <p class="texto-abajo-comofunciona2">
+            Cada código de invitación es único e irrepetible, válido para <br> una sola entrada y una sola salida, dentro del horario <br> marcado por el anfitrión.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+<!-- <section class=" banner-escolar-2 fondo-banner-escolar-2 animated fadeIn ">
     <div class="contenido-banner-escolar-2 ">
 
         <div class="texto-escolar-2">
@@ -69,4 +91,4 @@
 
 
     </div>
-</section>
+</section> -->

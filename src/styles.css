@@ -2607,7 +2607,8 @@ video {
 
 .fondo-banner-controlar {
     /* background-color: #f9f9fa; */
-    background-image: url(assets/img/fondo-relleno-controlar.png);
+    /* background-image: url(assets/img/fondo-relleno-controlar.png); */
+    background-image: url(assets/img/fondo-servicios.jpeg);
     background-size: cover;
 }
 
@@ -2711,7 +2712,6 @@ video {
     position: relative;
     display: inline-block;
     text-align: center;
-    margin-bottom: 1rem;
 }
 
 .img-encima-sectores {
@@ -3095,6 +3095,9 @@ video {
     width: 100%;
     height: 100vh;
     margin-top: 11rem;
+    background: linear-gradient(-90deg, #0f83c4 59%, white 41%);
+    /* background: linear-gradient(to right, #1CB5E0, #08087a); */
+    margin-top: 11rem;
 }
 
 .imga-banner-escolar2 {
@@ -3193,7 +3196,7 @@ video {
 
 @media(min-width:768px) {
     .banner-escolar-2 {
-        margin-top: 10px;
+        margin-top: 11px;
     }
 }
 
@@ -3575,3 +3578,153 @@ video {
         border-radius: 50%;
     }
 }
+
+
+/* *********************************************************** */
+
+.fondo-banner-comofunciona2 {
+    /* background-color: #f9f9fa; */
+    /* background-image: url(assets/img/fondo-relleno-controlar.png); */
+    /* background-image: url(assets/img/fondo-servicios.jpeg); */
+    background: linear-gradient(-90deg, #0f83c4 50%, white 50%);
+    margin-bottom: 15rem;
+    height: 100vh;
+}
+
+@media(min-width:768px) {
+    .texto-arriba-comofunciona2 {
+        position: absolute;
+        top: 22%;
+        left: 8%;
+        font-weight: bold;
+        font-size: 3rem;
+        text-align: center;
+        color: #093152;
+        text-transform: uppercase;
+    }
+    .texto-arriba-comofunciona-subtitulo2 {
+        position: absolute;
+        top: 20%;
+        left: 1%;
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #093152;
+        text-align: center;
+    }
+    .texto-arriba-comofunciona-subtitulo2-2 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #093152;
+        text-align: center;
+    }
+    /* .texto-abajo-comofunciona1-2 {
+        position: absolute;
+        top: 75%;
+        left: 1%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #093152;
+        font-weight: bold;
+        text-align: center;
+    }
+    .texto-abajo-comofunciona2-2 {
+        position: absolute;
+        top: 90%;
+        left: 1%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #093152;
+        font-weight: bold;
+        text-align: center;
+    } */
+}
+
+
+/**********************************************************/
+
+.fondo-banner-comofunciona {
+    /* background-color: #f9f9fa; */
+    /* background-image: url(assets/img/fondo-relleno-controlar.png); */
+    background-image: url(assets/img/fondo-servicios.jpeg);
+    background-size: cover;
+    margin-bottom: 15rem;
+    height: 100vh;
+}
+
+.imagen-comofunciona {
+    width: 80%;
+    float: right;
+}
+
+@media(min-width:768px) {
+    .texto-arriba-comofunciona {
+        position: absolute;
+        top: 22%;
+        left: 8%;
+        font-weight: bold;
+        font-size: 3rem;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    .texto-arriba-comofunciona-subtitulo {
+        position: absolute;
+        top: 30%;
+        left: 2%;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+    .texto-abajo-comofunciona1 {
+        position: absolute;
+        top: 75%;
+        left: 1%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #093152;
+        font-weight: bold;
+        text-align: center;
+    }
+    .texto-abajo-comofunciona2 {
+        position: absolute;
+        top: 90%;
+        left: 1%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #093152;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+/* @media(min-width: 1800px) {
+    .texto-titulo-rellenolap {
+        position: absolute;
+        top: 1%;
+        left: 20%;
+        font-weight: bold;
+        font-size: 4rem;
+        text-align: center;
+        color: #093152;
+        padding: 1rem;
+    }
+    .texto-abajo-rellenolap {
+        position: absolute;
+        top: 78%;
+        left: 1%;
+        font-size: 2rem;
+        padding: 1rem;
+        color: #093152;
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+} */
