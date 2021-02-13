@@ -1577,6 +1577,12 @@ video {
         text-transform: uppercase;
         font-size: 3rem;
     }
+    .habilidad .titulophabi {
+        /* text-transform: uppercase; */
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #093152;
+    }
 }
 
 @media (min-width: 1800px) {
@@ -1940,7 +1946,7 @@ video {
         text-align: center;
         color: #093152;
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -3223,6 +3229,10 @@ video {
         width: 100%;
         height: 70%;
     }
+    .texto-escolar1 img {
+        width: 100%;
+        height: 70%;
+    }
 }
 
 
@@ -3651,7 +3661,7 @@ video {
     }
     .texto-arriba-comofunciona-subtitulo2 {
         position: absolute;
-        top: 20%;
+        top: 2%;
         left: 1%;
         font-size: 1.7rem;
         font-weight: bold;
@@ -3660,33 +3670,168 @@ video {
     }
     .texto-arriba-comofunciona-subtitulo2-2 {
         position: absolute;
-        top: 10%;
-        left: 50%;
+        top: 2%;
+        left: 55%;
         font-size: 1.7rem;
         font-weight: bold;
-        color: #093152;
+        color: #ffffff;
         text-align: center;
     }
-    /* .texto-abajo-comofunciona1-2 {
+    .img-encima-comofunciona1 {
         position: absolute;
-        top: 75%;
-        left: 1%;
+        width: 200px;
+        height: 200px;
+        left: 7%;
+        top: 15%;
+    }
+    .img-encima-comofunciona2 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 30%;
+        top: 15%;
+    }
+    .img-encima-comofunciona3 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 7%;
+        top: 30%;
+    }
+    .img-encima-comofunciona4 {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 30%;
+        top: 30%;
+    }
+    .img-encima-comofunciona1-2 {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        left: 57%;
+        top: 15%;
+    }
+    .img-encima-comofunciona2-2 {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        left: 80%;
+        top: 15%;
+    }
+    .img-encima-comofunciona3-2 {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        left: 57%;
+        top: 30%;
+    }
+    .img-encima-comofunciona4-2 {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        left: 80%;
+        top: 30%;
+    }
+    .texto-abajo-comofunciona-icono1 {
+        position: absolute;
+        top: 25%;
+        left: 8.5%;
         font-size: 1.5rem;
         padding: 1rem;
         color: #093152;
         font-weight: bold;
         text-align: center;
     }
-    .texto-abajo-comofunciona2-2 {
+    .texto-abajo-comofunciona-icono2 {
         position: absolute;
-        top: 90%;
-        left: 1%;
+        top: 25%;
+        left: 33%;
         font-size: 1.5rem;
         padding: 1rem;
         color: #093152;
         font-weight: bold;
         text-align: center;
-    } */
+    }
+    .texto-abajo-comofunciona-icono3 {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #093152;
+        font-weight: bold;
+        text-align: center;
+    }
+    .texto-abajo-comofunciona-icono4 {
+        position: absolute;
+        top: 40%;
+        left: 34%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #093152;
+        font-weight: bold;
+        text-align: center;
+    }
+    .texto-abajo-comofunciona-icono4-ajuste {
+        position: absolute;
+        top: 40%;
+        left: 29%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #093152;
+        font-weight: bold;
+        text-align: center;
+    }
+    .texto-abajo-comofunciona-icono1-2 {
+        position: absolute;
+        top: 25%;
+        left: 58%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+    }
+    .texto-abajo-comofunciona-icono2-2 {
+        position: absolute;
+        top: 25%;
+        left: 80.5%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+    }
+    .texto-abajo-comofunciona-icono3-2 {
+        position: absolute;
+        top: 40%;
+        left: 58.5%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+    }
+    .texto-abajo-comofunciona-icono4-2 {
+        position: absolute;
+        top: 40%;
+        left: 84%;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #ffffff;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+@media(min-width:768px) {
+    .grid-comofunciona {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* column-gap: 1rem;
+        padding-top: 5rem; */
+    }
 }
 
 
