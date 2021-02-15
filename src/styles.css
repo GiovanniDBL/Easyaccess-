@@ -669,9 +669,9 @@ ul.no-diseño {
 
 .carousel-caption-inicio h5 {
     width: 100%;
-    font-size: 25px;
+    font-size: 15px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     /* margin-top: 25px; */
 }
 
@@ -687,10 +687,17 @@ ul.no-diseño {
         text-transform: uppercase;
         /* line-height: 1.9px; */
     }
+    .carousel-caption-inicio h5 {
+        width: 100%;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        /* margin-top: 25px; */
+    }
 }
 
 .carousel-caption-inicio {
-    margin-bottom: 100px;
+    margin-bottom: 250px;
 }
 
 @media(min-width:768px) {
@@ -1499,9 +1506,17 @@ video {
 }
 
 .fondo-banners-entrada-salida6 {
-    background: linear-gradient(-90deg, white 49%, #0f83c4 49%);
+    background: linear-gradient(-20deg, white 50%, #0f83c4 50%);
     /* background: linear-gradient(to right, #1CB5E0, #08087a); */
     margin-top: 11rem;
+}
+
+@media (min-width: 768px) {
+    .fondo-banners-entrada-salida6 {
+        background: linear-gradient(-90deg, white 49%, #0f83c4 49%);
+        /* background: linear-gradient(to right, #1CB5E0, #08087a); */
+        margin-top: 11rem;
+    }
 }
 
 .fondo-banners-entrada-salida7 {
@@ -1728,21 +1743,24 @@ video {
     position: relative;
     height: auto;
     /* background-image: url(assets/img/QR2-imagen.png); */
-    background: linear-gradient(190deg, #0f83c4 59%, white 41%);
+    /* background: linear-gradient(190deg, #0f83c4 59%, white 41%); */
+    background: linear-gradient(to right, #1CB5E0, #08087a);
 }
 
 .carousel-item-QR2 {
     position: relative;
     height: auto;
     /* background-image: url(assets/img/QR2-imagen.png); */
-    background: linear-gradient(190deg, #0f83c4 59%, white 41%);
+    /* background: linear-gradient(190deg, #0f83c4 59%, white 41%); */
+    background: linear-gradient(to right, #1CB5E0, #08087a);
 }
 
 .carousel-item-QR3 {
     position: relative;
     height: auto;
     /* background-image: url(assets/img/QR2-imagen.png); */
-    background: linear-gradient(160deg, #0f83c4 59%, white 41%);
+    /* background: linear-gradient(160deg, #0f83c4 59%, white 41%); */
+    background: linear-gradient(to right, #1CB5E0, #08087a);
 }
 
 .carousel-item-QR::before {
@@ -1760,7 +1778,7 @@ video {
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #000000;
+    color: #ffffff;
 }
 
 @media(min-width:768px) {
@@ -1772,6 +1790,29 @@ video {
         font-size: 40px;
         letter-spacing: 2px;
         margin-top: 25px;
+    }
+    .carousel-caption-transparente-titulo h5 {
+        width: 100%;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #76D7C4;
+        letter-spacing: 2px;
+        font-weight: bold;
+        /* margin-top: 25px; */
+    }
+    .carousel-caption-transparente-titulo {
+        margin-bottom: 270px;
+    }
+    .lista-obeter-informacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .lista-obeter-informacion li {
+        list-style: none;
     }
 }
 
@@ -1821,6 +1862,13 @@ video {
         padding-bottom: 8rem;
         width: 18%;
     }
+    .carousel-imagen-transparente-slider {
+        display: block;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+        width: 56.5%;
+    }
     .carousel-imagen-QR-titulo {
         width: 100%;
         background-size: cover;
@@ -1830,21 +1878,21 @@ video {
 }
 
 .carousel .carousel-indicators li {
-    background-color: #000000!important;
+    background-color: #ffffff!important;
 }
 
 .carousel .carousel-control-next-icon {
-    background-color: #093152!important;
+    /* background-color: #093152!important; */
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .carousel .carousel-control-prev-icon {
-    background-color: #093152!important;
+    /* background-color: #093152!important; */
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 
@@ -2236,7 +2284,7 @@ video {
 
 .texto-informacion-vehicular p {
     text-align: center;
-    color: #093152;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -2271,7 +2319,7 @@ video {
 @media (min-width: 1800px) {
     .texto-informacion-vehicular p {
         text-align: center;
-        color: #093152;
+        color: #ffffff;
         font-weight: bold;
         font-size: 2rem;
     }
@@ -3582,15 +3630,14 @@ video {
     display: block;
 }
 
-
-/* .galeria {
+.galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-    width: 95%;
+    /* grid-template-columns: repeat(auto-fit, minmax(390px, 1fr)); */
+    /* width: 95%; */
     margin: auto;
     grid-gap: 10px;
     padding: 40px 0;
-} */
+}
 
 @media(min-width:768px) {
     .galeria {
@@ -3651,8 +3698,15 @@ video {
 }
 
 .light-box img {
-    width: 60vw;
-    max-height: 60vw;
+    width: 85vw;
+    max-height: 85vw;
+}
+
+@media(min-width: 768px) {
+    .light-box img {
+        width: 60vw;
+        max-height: 60vw;
+    }
 }
 
 .light-box:target {
@@ -3662,13 +3716,13 @@ video {
 .cerrar {
     display: block;
     position: absolute;
-    top: 80px;
-    right: 200px;
+    top: 170px;
+    right: 20px;
     background-color: darkred;
     color: #fff;
     text-decoration: none;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
@@ -3689,6 +3743,23 @@ video {
     line-height: 40px;
     text-decoration: none;
     text-align: center;
+}
+
+@media(min-width: 768px) {
+    .cerrar {
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 200px;
+        background-color: darkred;
+        color: #fff;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+    }
 }
 
 @media(min-width:1800px) {
