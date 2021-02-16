@@ -31,7 +31,7 @@
             <div class="carousel-item  active  video carousel-item-inicio parallax">
                 <video src="assets/videos/seguridad-video1.mp4" autoplay muted loop class="d-block "></video>
                 <div class="carousel-caption carousel-caption-inicio header-imagen-fondos  d-md-block" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'400px'}">
-                    <h5>seguridad y control de acceso <br> para tu empresa o residencia</h5>
+                    <h5>seguridad y control de acceso <br> para tu sitio</h5>
                     <!-- <p>Controla la seguridad</p> -->
                     <hr>
                 </div>
@@ -109,8 +109,8 @@
         <img src="assets/img/handeasy2.png " class="imga-banner-escolar" alt="imagen-nosotros ">
 
         <h1 class="texto-titulo-encima-Quees" [ngsReveal]="{reset:true, duration:1000, origin:'top', distance:'100px'}">¿Qué es easyaccess?</h1>
-        <p class="texto-abajo-Quees" [ngsReveal]="{reset:true, duration:1000, origin:'bottom', distance:'400px'}"><span>Easyaccess</span>es una app de información para control de acceso, basado en la captura de información y registro en puntos de control <span>¡Fácil de usar!</span> utilizado para visitantes, proveedores e internos que no requieren de una
-            tarjeta de control o mecanismo fijo de autenticación.</p>
+        <p class="texto-abajo-Quees" [ngsReveal]="{reset:true, duration:1000, origin:'bottom', distance:'400px'}"><span class="easyaccess">Easyaccess</span> es una aplicación de información para control de acceso, basado en la captura de información y registro en puntos de control <span>¡Fácil de usar!</span> utilizado para visitantes, proveedores e internos
+            que no requieren de una tarjeta de control o mecanismo fijo de autenticación.</p>
         <!-- <div class="centrado">Centrado</div> -->
     </div>
 
@@ -272,20 +272,20 @@
     <h1 class="titulo-beneficios">Beneficios</h1>
     <div class="">
         <div class="col-md-12">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="30000">
                 <ol class="carousel-indicators carousel-indicators2">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-interval="30000">
                         <div class="row">
                             <div class="col-md-4 " [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
                                 <div class="single-box">
                                     <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
                                     <div class="img-text">
                                         <h2>Información más accesible</h2>
-                                        <p>Obten la información que necesites a través de la aplicación de manera rápida y sencilla. </p>
+                                        <p>Obtén la información que necesites a través de la aplicación de manera rápida y sencilla. </p>
                                     </div>
                                 </div>
                             </div>
@@ -304,7 +304,7 @@
                                     <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
                                     <div class="img-text">
                                         <h2>Gestión de usuarios</h2>
-                                        <p>La app te permite gestionar distintos tipos de usuarios como: Proveedores, Residentes, Personal administrativo, Guardias, Mantenimiento, Visitantes, Empleados domésticos y Obreros.
+                                        <p>La aplicación te permite gestionar distintos tipos de usuarios como: Proveedores, Residentes, Personal administrativo, Guardias, Mantenimiento, Visitantes, Empleados domésticos y Obreros.
                                         </p>
                                     </div>
                                 </div>
@@ -313,23 +313,14 @@
                     </div>
 
 
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-interval="30000">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="single-box">
                                     <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
                                     <div class="img-text">
-                                        <h2>Chat en caseta</h2>
-                                        <p>Intercambia información con el vigilante de la caseta de forma privada.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-box">
-                                    <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
-                                    <div class="img-text">
                                         <h2>Control de incidencias</h2>
-                                        <p>Obten la información de los accesos denegados para tomar medidas y garantizar la seguridad.
+                                        <p>Obtén la información de los accesos denegados para tomar medidas y garantizar la seguridad.
                                         </p>
                                     </div>
                                 </div>
@@ -339,7 +330,7 @@
                                     <div class="img-area"><img src="assets/img/cheque.png" alt=""></div>
                                     <div class="img-text">
                                         <h2>Invita amigos</h2>
-                                        <p>Por medio de la aplicación crea invitaciones electrónicas y compartelas mediante código QR</p>
+                                        <p>Por medio de la aplicación crea invitaciones electrónicas y compártelas mediante código QR</p>
                                     </div>
                                 </div>
                             </div>
@@ -380,7 +371,7 @@
                     <img src="assets/img/universidad.png" alt="universidad-img">
                 </div>
             </a>
-            <p>Incrementa la seguridad en tu punto de accesso</p>
+            <p>Incrementa la seguridad en tu punto de acceso</p>
         </div>
 
         <div class="servicio" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
@@ -497,7 +488,7 @@
 
         <div class="texto-descarga ">
             <h1 class=" centrar-texto seccion ">¡Easyaccess en tu celular!</h1>
-            <p>Nuestra aplicación móvil cuenta con todas las funciones necesarias para utilizar y disfrutar de los servicios de EASYACCESS
+            <p>Nuestra aplicación móvil cuenta con todas las funciones necesarias para utilizar y disfrutar de los servicios de <span class="easyaccess">easyaccess</span>
             </p>
         </div>
 
@@ -572,7 +563,7 @@
 
         <div class="texto-contacto2">
             <h1 class="  seccion " [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'400px'}">¿Estás interesado en Easyaccess?</h1>
-            <p class=" seccion" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'400px'}">Nuestra aplicación móvil cuenta con todas las funciones necesarias para utilizar y <br> disfrutar de los servicios de Easyaccess
+            <p class=" seccion" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'400px'}">Nuestra aplicación móvil cuenta con todas las funciones necesarias para utilizar y <br> disfrutar de los servicios de <span class="easyaccess"> Easyaccess </span>
             </p>
             <!-- <a href="https://easyaccess.com.mx/" target="_blank"> <img class="imagen-contacto2" src="assets/img/logoEA.png" alt="Imagen-contactanos"></a> -->
         </div>

@@ -265,16 +265,26 @@ hr {
     text-align: center;
 }
 
-.card-instrucciones2 {
-    background-color: #f0f3f4 !important;
-    font-size: 1.5rem;
+.imagen-card2 img {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
 }
 
-.card-instrucciones2 li {
-    color: #000000;
-    /* text-align: center; */
-    list-style: none;
+
+/* .card-instrucciones2 {
+    background-color: #f0f3f4 !important;
+    font-size: 1.5rem;
+    text-align: center;
 }
+
+.card-instrucciones2 img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+} */
 
 .bottom-card-instrucciones {
     margin-bottom: 5rem;
@@ -1781,6 +1791,20 @@ video {
     color: #ffffff;
 }
 
+.carousel-caption-transparente-titulo h5 {
+    width: 100%;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #76D7C4;
+    letter-spacing: 2px;
+    font-weight: bold;
+    /* margin-top: 25px; */
+}
+
+.carousel-caption-transparente-titulo {
+    margin-bottom: 250px;
+}
+
 @media(min-width:768px) {
     .carousel-item-QR::before {
         width: 100%;
@@ -1810,9 +1834,7 @@ video {
         font-size: 1.5rem;
         text-transform: uppercase;
         font-weight: bold;
-    }
-    .lista-obeter-informacion li {
-        list-style: none;
+        list-style: circle;
     }
 }
 
@@ -1852,6 +1874,15 @@ video {
     padding-top: 2rem;
     padding-bottom: 8rem;
     width: 60%;
+}
+
+.carousel-imagen-transparente-slider {
+    display: block;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    width: 60%;
+    height: 90vh;
 }
 
 @media(min-width:768px) {
@@ -2933,6 +2964,13 @@ video {
 
 .top-ques {
     margin-top: 11rem;
+}
+
+.easyaccess {
+    text-transform: uppercase;
+    /* color: #33a3fb; */
+    /* font-weight: bold; */
+    /* font-weight: 400; */
 }
 
 @media(min-width:768px) {
