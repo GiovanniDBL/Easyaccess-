@@ -1760,6 +1760,15 @@ video {
     .texto-inicial h1 {
         font-size: 3.5rem !important;
     }
+    .imga-banner-gestion img {
+        display: block;
+        margin: auto;
+        /* width: 100%; */
+        /* height: 60%; */
+        /* margin-bottom: 1rem; */
+        /* border-radius: 1%; */
+        /* margin-top: 7rem; */
+    }
 }
 
 .carousel-top {
