@@ -89,6 +89,9 @@ export class NavbarComponent implements OnInit {
    toGaleria(){
     document.getElementById('galeria')?.scrollIntoView({behavior: 'smooth'});
   }
+  toLogin(){
+    document.getElementById('login')?.scrollIntoView({behavior: 'smooth'});
+  }
   
 
 

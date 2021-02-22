@@ -35,6 +35,8 @@ import { from } from 'rxjs';
 // SCROLLREVEAL
 // import {NgsRevealModule} from 'ngx-scrollreveal';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+import { LoginComponent } from './components/login/login.component';
+import { RegistroComponent } from './components/registro/registro.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
     ResidencialComponent,
     EscolarComponent,
     CorporativoComponent,
-    ConstruccionComponent
+    ConstruccionComponent,
+    LoginComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

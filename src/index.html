@@ -23,25 +23,9 @@
 <body>
     <app-root></app-root>
 
-    <!-- ACTUALIZAR CONTENIDO TODA LA PÁGINA-->
-    <script type="text/javascript">
-        function reFresh() {
-            location.reload(true)
 
-            /* Establece el tiempo 1 minuto = 60000 milliseconds. */
-            window.setInterval("reFresh()", 300000);
-            // 
-        }
-    </script>
 
-    <!-- ACTUALIZAR CONTENIDO DIV CAPTCHA-->
-    <script>
-        function recargar() {
-            var textodeldiv = document.getElementById("loadcaptcha").innerHTML;
-            document.getElementById("loadcaptcha").innerHTML = textodeldiv;
 
-        }
-    </script>
 
 
 
@@ -66,37 +50,6 @@
             // grecaptcha.reset(verifyCaptcha);
         }
     </script>
-
-    <!-- RESETEAR RECAPTCHA -->
-    <!-- <script type="text/javascript">
-        var verifyCallback = function(response) {
-            alert(response);
-        };
-
-        var widgetId1;
-        var widgetId2;
-        var onloadCallback = function() {
-
-            widgetId2 = grecaptcha.render(document.getElementById('example2'), {
-                'sitekey': '6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw',
-                'theme': 'dark'
-
-
-            });
-
-
-        };
-    </script> -->
-
-
-
-
-
-
-
-
-
-
 
 
 
