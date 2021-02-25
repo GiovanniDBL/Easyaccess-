@@ -42,17 +42,22 @@
                 <li class="nav-item espacio-li" (click)="toGaleria()" routerLinkActive="active">
                     <a class="nav-link " routerLink='inicio'>Galeria</a>
                 </li>
+
+
                 <li class="nav-item dropdown" data-toggle="dropdown" routerLinkActive="active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" routerLink='funciones' aria-expanded="false">
-                      Funciones
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li (click)="toFunction1()"><a class="dropdown-item ">Entradas y salidas</a></li>
-                        <li (click)="toFunction2()"><a class="dropdown-item ">Gestion de usuarios</a></li>
-                        <li (click)="toFunction6()"><a class="dropdown-item ">Control de incidencias</a></li>
-                        <li (click)="toFunction8()"><a class="dropdown-item ">Información vehícular</a></li>
-                        <li (click)="toFunction9()"><a class="dropdown-item ">Vistas programadas</a></li>
-                        <li (click)="toFunction4()"><a class="dropdown-item ">Control de visitas</a></li>
+                    <div (click)="toInicio2()">
+
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" routerLink='funciones' role="button" aria-expanded="true">
+                          Funciones
+                        </a>
+                    </div>
+                    <ul class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
+                        <li (click)="toFunction1()"><a routerLink='funciones' class="dropdown-item ">Entradas y salidas</a></li>
+                        <li (click)="toFunction2()"><a routerLink='funciones' class="dropdown-item ">Gestion de usuarios</a></li>
+                        <li (click)="toFunction4()"><a routerLink='funciones' class="dropdown-item ">Información vehicular</a></li>
+                        <li (click)="toFunction3()"><a routerLink='funciones' class="dropdown-item ">Control de incidencias</a></li>
+                        <li (click)="toFunction5()"><a routerLink='funciones' class="dropdown-item ">Visitas programadas</a></li>
+                        <li (click)="toFunction6()"><a routerLink='funciones' class="dropdown-item ">Control de visitas</a></li>
                         <!-- <li (click)="toFunction3()"><a class="dropdown-item ">Información QR</a></li>
                         <li (click)="toFunction5()"><a class="dropdown-item ">Programar una visita</a></li>
                         <li (click)="toFunction7()"><a class="dropdown-item ">Información de visitantes</a></li> -->
@@ -62,6 +67,8 @@
                     </ul>
 
                 </li>
+
+
                 <li class="nav-item espacio-li" (click)="toInstructions()" routerLinkActive="active">
                     <a class="nav-link active " routerLink='funciones'>Instrucciones </a>
                 </li>
