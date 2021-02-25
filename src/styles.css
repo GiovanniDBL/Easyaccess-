@@ -276,6 +276,13 @@ hr {
     padding-left: 1rem;
 }
 
+@media only screen and (min-width: 1800px) {
+    .lista-instrucciones {
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+}
+
 
 /* .lista-obeter-informacion {
     display: flex;
@@ -291,6 +298,18 @@ hr {
     text-transform: uppercase;
     color: #093152;
     text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1800px) {
+    .titulo-card-instrucciones h2 {
+        font-size: 3rem;
+    }
+    .titulo-card-instrucciones h3 {
+        font-size: 2.2rem;
+        padding: 1rem;
+        /* text-align: center; */
+    }
 }
 
 .card-instrucciones3 {
@@ -303,7 +322,7 @@ hr {
     color: #000000 !important;
 }
 
-@media(min-width: 1800px) {
+@media only screen and (min-width: 1800px) {
     .card-instrucciones3 {
         background-color: #f9f9fa !important;
         font-size: 2rem;
@@ -3365,7 +3384,7 @@ video {
     }
 }
 
-@media(min-width:1800px) {
+@media only screen and (min-width:1800px) {
     .texto-titulo-encima-Quees {
         position: absolute;
         top: 25%;
