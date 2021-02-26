@@ -44,9 +44,13 @@
         }
 
         function verifyCaptcha() {
+            var response = grecaptcha.getResponse();
+
             console.log('verified');
             document.getElementById("btn1").disabled = false;
             document.getElementById('g-recaptcha-error').innerHTML = '';
+
+            // if(response.length == 1){}
             // grecaptcha.reset(verifyCaptcha);
         }
     </script>

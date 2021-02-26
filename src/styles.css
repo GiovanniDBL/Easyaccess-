@@ -114,6 +114,35 @@ body {
 
 /********* GLOBALES *********/
 
+.easyaccess {
+    text-transform: uppercase;
+}
+
+.card-text {
+    color: #ffffff;
+}
+
+.card-body {
+    border-radius: 5%;
+}
+
+.card-deck {
+    border-radius: 5%;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-title {
+    margin-top: 1rem;
+}
+
+.banner {
+    position: relative;
+    padding: 50px 26px;
+}
+
 .parallax::before {
     width: 100%;
     height: 85%;
@@ -214,8 +243,6 @@ hr {
     width: 100%;
     font-size: 15px;
     text-transform: uppercase;
-    /* letter-spacing: 2px; */
-    /* margin-top: 25px; */
 }
 
 @media(min-width:768px) {
@@ -228,7 +255,6 @@ hr {
         font-size: 30px;
         text-transform: uppercase;
         letter-spacing: 2px;
-        /* margin-top: 25px; */
     }
 }
 
@@ -255,7 +281,6 @@ hr {
         font-size: 40px;
         text-transform: uppercase;
         letter-spacing: 2px;
-        /* margin-top: 25px; */
     }
 }
 
@@ -296,78 +321,6 @@ video {
 }
 
 
-/********* BANNER SECCION INICIAL 2.0 *********/
-
-.imagen-inicio2 img {
-    /* background-image: url(assets/img/Que-es.jpeg); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-}
-
-@media (min-width:768px) {
-    .imagen-inicio2 img {
-        /* background-image: url(assets/img/Que-es.jpeg); */
-        background-size: cover;
-        /* background-position: center; */
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-}
-
-
-/********* BANNER SECCION INFORMACIÓN CONTROL 2.0 *********/
-
-.fondo-banners-control {
-    background: #8E2DE2;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1d97d1, #0463ac);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1D9AD6, #015B97);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.banner-control {
-    position: relative;
-    padding: 30px;
-    /* border-radius: 1%; */
-    margin-bottom: 1rem;
-    color: white;
-}
-
-.banner-control h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-@media(min-width: 768px) {
-    .rejilla {
-        grid-gap: 1rem;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-    }
-}
-
-.icon-rejilla img {
-    display: block;
-    margin: auto;
-    width: 60%;
-    height: 60%;
-    padding-bottom: 1rem;
-}
-
-@media(min-width: 1800px) {
-    .icon-rejilla img {
-        display: block;
-        margin: auto;
-        width: 75%;
-        height: 75%;
-        padding-bottom: 1rem;
-    }
-}
-
-
 /********* BANNER SECCION SERVICIOS ESCUELA, RESIDENCIAL ETC 2.0 *********/
 
 .efecto-servicio {
@@ -376,9 +329,7 @@ video {
 }
 
 .efecto-servicio:hover {
-    /* -webkit-filter: grayscale(1); */
     -webkit-transform: scale(1.1);
-    /* transform: rotate(1deg); */
     transition: all .4s ease-in-out;
     border-radius: 0%;
     border-radius: 5%;
@@ -386,8 +337,6 @@ video {
 }
 
 .icon-servicios img {
-    /* display: block;
-    margin: auto; */
     width: 60%;
     height: 60%;
     padding-bottom: 1rem;
@@ -400,10 +349,6 @@ video {
     padding-top: 1rem;
     color: #093152;
     font-weight: bold;
-}
-
-.titulo-construccion h3 {
-    color: #4f585f !important;
 }
 
 .servicio h3 {
@@ -429,13 +374,6 @@ video {
         color: #1f3d54;
         font-weight: 400;
     }
-    .titulo-construccion h3 {
-        font-weight: bold;
-        text-align: center;
-        color: #ffffff !important;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-    }
 }
 
 .servicios-titulo {
@@ -447,7 +385,6 @@ video {
 }
 
 .servicio .iconos-service {
-    /* border: 7px solid #007bff; */
     height: 17rem;
     width: 17rem;
     background-color: #093152;
@@ -459,8 +396,6 @@ video {
 
 @media(min-width: 1800px) {
     .icon-servicios img {
-        /* display: block;
-    margin: auto; */
         width: 60%;
         height: 60%;
         padding-bottom: 1rem;
@@ -502,13 +437,26 @@ video {
     padding: 120px 26px;
 }
 
+.icon-servicios img {
+    width: 60%;
+    height: 60%;
+    padding-bottom: 1rem;
+}
+
+@media(min-width: 1800px) {
+    .icon-servicios img {
+        /* display: block;
+    margin: auto; */
+        width: 60%;
+        height: 60%;
+        padding-bottom: 1rem;
+    }
+}
+
 
 /**** SERVICIO 2****/
 
 .banner-servicios2 {
-    /* background-color: rgba(169, 169, 169, 0.377); */
-    /* background: linear-gradient(150deg, white 50%, #0f83c4 50%); */
-    /* background: linear-gradient(to right, #1CB5E0, #08087a); */
     margin-top: 11rem;
     margin-bottom: 1rem;
 }
@@ -523,7 +471,6 @@ video {
     text-align: center;
     text-transform: uppercase;
     margin-top: 1rem;
-    /* letter-spacing: 8px; */
     color: #000000;
     font-weight: bold;
     font-size: 2rem;
@@ -536,7 +483,6 @@ video {
     font-size: 1.3rem;
     padding-top: 1rem;
     color: #093152;
-    /* font-weight: bold; */
     text-transform: uppercase;
 }
 
@@ -559,21 +505,12 @@ video {
         font-size: 1.6rem;
         padding-top: 1rem;
         color: #093152;
-        /* font-weight: bold; */
         text-transform: uppercase;
-    }
-    .titulo-construccion h3 {
-        font-weight: bold;
-        text-align: center;
-        color: #ffffff !important;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
     }
     .servicios2-titulo {
         text-align: center;
         text-transform: uppercase;
         margin-top: 1rem;
-        /* letter-spacing: 8px; */
         color: #000000;
         font-weight: bold;
         font-size: 2.5rem;
@@ -582,17 +519,13 @@ video {
 }
 
 .servicio2 .iconos-service {
-    /* border: 7px solid #007bff; */
     height: 12rem;
     width: 12rem;
-    /* background-color: #093152; */
     background-color: #154360;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 6px solid #09AEF5; */
-    /* border: 6px solid #eafaf1; */
     border: 6px solid #4591e7;
 }
 
@@ -609,37 +542,24 @@ video {
         font-size: 1.6rem;
         padding-top: 1rem;
         color: #093152;
-        /* font-weight: bold; */
         text-transform: uppercase;
-    }
-    .titulo-construccion h3 {
-        font-weight: bold;
-        text-align: center;
-        color: #ffffff !important;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
     }
     .servicios2-titulo {
         text-align: center;
         text-transform: uppercase;
         margin-top: 1rem;
-        /* letter-spacing: 8px; */
         color: #000000;
         font-weight: bold;
         font-size: 3.5rem;
     }
     .servicio2 .iconos-service {
-        /* border: 7px solid #007bff; */
         height: 17rem;
         width: 17rem;
-        /* background-color: #093152; */
         background-color: #154360;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* border: 6px solid #09AEF5; */
-        /* border: 6px solid #eafaf1; */
         border: 6px solid #4591e7;
     }
 }
@@ -651,207 +571,9 @@ video {
 }
 
 
-/*********************** SECIION DE QUE ES EASYACCESS ***************/
-
-.fondo-banner-presentacion1 {
-    /* background-color: #f9f9fa; */
-    background-image: url(assets/img/Fondo-descargar-app.jpeg);
-    background-size: cover;
-}
-
-.banner-presentacion1 {
-    position: relative;
-    padding: 120px 26px;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
-
-.texto-presentacion1 p {
-    text-align: center;
-    color: #093152;
-    font-weight: 500;
-    font-size: 1.3rem;
-}
-
-.texto-presentacion1 span {
-    color: #093152;
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-
-.texto-presentacion1 h1 {
-    color: #ffffff;
-    font-weight: 300;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2.6rem;
-}
-
-@media(min-width:768px) {
-    .fondo-banner-presentacion1 {
-        /* background-color: #f9f9fa; */
-        background-image: url(assets/img/fondo-ques.jpeg);
-        background-size: cover;
-    }
-    .texto-presentacion1 p {
-        text-align: center;
-        color: #ffffff;
-        font-weight: 300;
-        font-size: 1.7rem;
-    }
-    .texto-presentacion1 span {
-        color: #ffffff;
-        font-weight: bold;
-        font-size: 1.8rem;
-    }
-    .texto-presentacion1 h1 {
-        color: #ffffff;
-        font-weight: 300;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 3rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .texto-presentacion1 {
-        padding-top: 2rem;
-    }
-}
-
-@media (min-width: 1800px) {
-    .texto-presentacion1 h1 {
-        font-size: 4rem;
-    }
-    .texto-presentacion1 p {
-        color: #ffffff;
-        font-weight: 300;
-        text-align: center;
-        font-size: 2.2rem;
-    }
-    .texto-presentacion1 span {
-        color: #ffffff;
-        font-weight: bold;
-        font-size: 2.2rem;
-    }
-    .texto-presentacion1 {
-        padding-top: 11rem;
-    }
-}
-
-.imga-banner-presentacion1 {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    /* margin-left: 10rem; */
-}
-
-
-/********* BANNER SECCION FUNCIONALIDADES 2.0*********/
-
-.icon-servicios img {
-    /* display: block;
-    margin: auto; */
-    width: 60%;
-    height: 60%;
-    padding-bottom: 1rem;
-}
-
-.funcion p {
-    line-height: 2;
-    text-align: center;
-    font-size: 1.6rem;
-    padding-top: 1rem;
-    color: #093152;
-    font-weight: bold;
-}
-
-.titulo-construccion h3 {
-    color: #4f585f !important;
-}
-
-.funcion h3 {
-    font-weight: bold;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-@media(min-width:768px) {
-    .funciones20 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem;
-        padding-top: 10rem;
-    }
-    .funcion p {
-        line-height: 2;
-        text-align: center;
-        font-size: 1.6rem;
-        padding-top: 1rem;
-        color: #1f3d54;
-        font-weight: 400;
-    }
-    .titulo-construccion h3 {
-        font-weight: bold;
-        text-align: center;
-        color: #ffffff !important;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-    }
-}
-
-.funcion .iconos-service {
-    height: 11rem;
-    width: 11rem;
-    background-color: #093152;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media(min-width: 1800px) {
-    .icon-servicios img {
-        /* display: block;
-    margin: auto; */
-        width: 60%;
-        height: 60%;
-        padding-bottom: 1rem;
-    }
-    .funcion .iconos-service {
-        height: 20rem;
-        width: 20rem;
-        background-color: #093152;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .funcion p {
-        font-size: 2rem;
-    }
-    .funcion h3 {
-        font-size: 2.4rem;
-        margin-bottom: 1rem;
-    }
-}
-
-.funcion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
 /********* BANNER DESCARGAR APLICACION 2.0 ****************/
 
 .fondo-banner-descarga {
-    /* background-color: #f9f9fa; */
     background-image: url(assets/img/Fondo-descargar-app.jpeg);
     background-size: cover;
     margin-top: 11rem;
@@ -866,7 +588,6 @@ video {
     background-color: #ffffff;
     display: block;
     margin: auto;
-    /* margin-bottom: 1rem; */
 }
 
 .texto-descarga p {
@@ -881,7 +602,6 @@ video {
         width: 20rem;
         height: 20rem;
         border: 30px solid #ffffff;
-        /* margin-bottom: 1rem; */
     }
     .texto-descarga p {
         font-weight: 400;
@@ -916,7 +636,6 @@ video {
     .contenido-banner-descargarapp {
         display: grid;
         grid-template-columns: 60% 40%;
-        /* grid-column-gap: 1rem; */
         margin-bottom: 2rem;
     }
     .texto-descarga h1 {
@@ -929,77 +648,10 @@ video {
 }
 
 
-/********* BANNER SECCION INICIAL *********/
-
-.fondo-banners {
-    background-color: #f9f9fa;
-}
-
-.banner {
-    position: relative;
-    padding: 50px 26px;
-    /* border-radius: 1%; */
-}
-
-@media (min-width: 1800px) {
-    .contenido-banner-inicial {
-        position: relative;
-        padding: 50px 26px;
-    }
-}
-
-.texto-inicial {
-    /* box-shadow: 10px 10px 8px black; */
-    border-radius: 1.5%;
-    margin-bottom: 9rem;
-}
-
-.texto-inicial p {
-    text-align: center;
-    color: #000000;
-    font-weight: 200;
-    font-size: 1.2rem;
-}
-
-@media (min-width: 768px) {
-    .contenido-banner-inicial {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-column-gap: 1rem;
-        margin-bottom: 2rem;
-    }
-}
+/******************************F U N C I O N E S ******************************/
 
 
-/************ ******************FUNCIONES **************** **************/
-
-
-/************ FUNCION CONTROL DE ENTRADA Y SALIDA **************/
-
-.carousel-caption-funciones h5 {
-    width: 100%;
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    /* margin-top: 25px; */
-}
-
-.carousel-caption-funciones {
-    margin-bottom: 270px;
-}
-
-@media(min-width: 1800px) {
-    .carousel-caption-funciones h5 {
-        width: 100%;
-        font-size: 40px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        /* margin-top: 25px; */
-    }
-    .carousel-caption-funciones {
-        margin-bottom: 400px;
-    }
-}
+/************ FUNCION CONTROL DE ENTRADAS Y SALIDAS **************/
 
 .fondo-banners-entrada-salida {
     background-image: url(assets/img/Fondo-descargar-app.jpeg);
@@ -1008,66 +660,13 @@ video {
     margin-top: 11rem;
 }
 
-.fondo-banners-entrada-salida2 {
-    background-image: url(assets/img/fondo-ques.jpeg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 11rem;
-}
-
-.fondo-banners-entrada-salida3 {
-    background-image: url(assets/img/fondo-servicios.jpeg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 11rem;
-}
-
-.fondo-banners-entrada-salida4 {
-    background: linear-gradient(-200deg, white 20%, #0f83c4 20%);
-    /* background: linear-gradient(-100deg, white 50%, #0f83c4 50%); */
-    /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-    margin-top: 11rem;
+.fondo-banners-funciones-color {
+    background: linear-gradient(-90deg, #0f83c4 49%, #0f83c4 49%);
 }
 
 .fondo-banners-entrada-salida-blanco {
     background: linear-gradient(-200deg, white 20%, white 20%);
-    /* background: linear-gradient(-100deg, white 50%, #0f83c4 50%); */
-    /* background: linear-gradient(to right, #1CB5E0, #08087a); */
     margin-top: 11rem;
-}
-
-.fondo-banners-entrada-salida5 {
-    background: linear-gradient(-190deg, #0f83c4 59%, white 41%);
-    /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-    margin-top: 11rem;
-}
-
-@media (min-width: 768px) {
-    .fondo-banners-entrada-salida5 {
-        background: linear-gradient(-90deg, #0f83c4 59%, white 41%);
-        /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-        margin-top: 11rem;
-    }
-    .fondo-banners-entrada-salida5-2 {
-        background: linear-gradient(-90deg, white 50%, #0f83c4 50%);
-        /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-        margin-top: 11rem;
-    }
-    .fondo-banners-entrada-salida5-3 {
-        background: linear-gradient(-90deg, #0f83c4 47%, white 47%);
-        /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-        margin-top: 11rem;
-    }
-}
-
-@media (min-width: 1800px) {
-    .fondo-banners-entrada-salida5 {
-        background: linear-gradient(-90deg, #0f83c4 59.3%, white 59.3%);
-        /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-        margin-top: 11rem;
-    }
 }
 
 .fondo-banners-entrada-salida6 {
@@ -1082,28 +681,6 @@ video {
         /* background: linear-gradient(to right, #1CB5E0, #08087a); */
         margin-top: 11rem;
     }
-}
-
-.fondo-banners-entrada-salida7 {
-    background: linear-gradient(-200deg, white 20%, #093152 20%);
-    /* background: linear-gradient(-100deg, white 50%, #0f83c4 50%); */
-    /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-    margin-top: 11rem;
-}
-
-@media (min-width: 768px) {
-    .fondo-banners-entrada-salida2 {
-        background-image: url(assets/img/fondo-ques.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: 11rem;
-    }
-}
-
-.banner {
-    position: relative;
-    padding: 50px 26px;
-    /* border-radius: 1%; */
 }
 
 @media (min-width: 768px) {
@@ -1149,10 +726,6 @@ video {
     color: #093152;
 }
 
-.card {
-    height: 100%;
-}
-
 @media (min-width: 768px) {
     .titulo-entrada-salidas {
         color: #093152;
@@ -1162,13 +735,11 @@ video {
         font-size: 3rem;
     }
     .habilidad .titulophabi {
-        /* text-transform: uppercase; */
         font-size: 1.5rem;
         font-weight: bold;
         color: #093152;
     }
     .habilidad p {
-        /* text-transform: uppercase; */
         font-size: 1.2rem;
         font-weight: bold;
         color: #093152;
@@ -1176,10 +747,6 @@ video {
     .card {
         height: unset;
     }
-}
-
-.card-title {
-    margin-top: 1rem;
 }
 
 @media (min-width: 1800px) {
@@ -1204,16 +771,7 @@ video {
     }
 }
 
-.card-body {
-    border-radius: 5%;
-}
-
-.card-deck {
-    border-radius: 5%;
-}
-
 .card-body-card1 {
-    /* background: linear-gradient(to right, #005ae0, #15a3c7); */
     background: linear-gradient(to right, #0068e0, #2da9e2);
 }
 
@@ -1222,13 +780,11 @@ video {
 }
 
 .card-body-card3 {
-    /* background: linear-gradient(to right, #e05a00, #e29a2d); */
     background: linear-gradient(to right, #0068e0, #2da9e2);
 }
 
 .card-body-habilidades:hover {
     background: linear-gradient(to right, #6ac4d8, #3fa8d8);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     transition: all .6s ease-in-out;
 }
 
@@ -1248,6 +804,18 @@ video {
 
 /********* SECTION FUNCIONES GESTION DE USUARIOS *********/
 
+.texto-inicial {
+    border-radius: 1.5%;
+    margin-bottom: 9rem;
+}
+
+.texto-inicial p {
+    text-align: center;
+    color: #000000;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
 @media (min-width: 768px) {
     .contenido-banner-gestion {
         display: grid;
@@ -1262,10 +830,6 @@ video {
         display: block;
         margin: auto;
         width: 65%;
-        /* height: 60%; */
-        /* margin-bottom: 1rem; */
-        /* border-radius: 1%; */
-        /* margin-top: 7rem; */
     }
 }
 
@@ -1300,11 +864,6 @@ video {
     .imga-banner-gestion img {
         display: block;
         margin: auto;
-        /* width: 100%; */
-        /* height: 60%; */
-        /* margin-bottom: 1rem; */
-        /* border-radius: 1%; */
-        /* margin-top: 7rem; */
     }
 }
 
@@ -1321,52 +880,6 @@ video {
 }
 
 
-/********* SECTION INSTRUCCIONES *********/
-
-@media (min-width: 768px) {
-    .instrucciones {
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-.instrucciones {
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    .instrucciones {
-        flex-basis: calc(33.3% - 1rem);
-    }
-}
-
-.instrucciones img {
-    height: 75%;
-    width: 75%;
-    border-radius: 2%;
-    border: 5px solid rgba(8, 90, 243, .8);
-}
-
-.instrucciones h3 {
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #000000;
-}
-
-.card-text {
-    color: #ffffff;
-}
-
-.card-body {
-    border-radius: 5%;
-}
-
-.card-deck {
-    border-radius: 5%;
-}
-
-
 /********* FORMULARIO CONTACTO *********/
 
 @media(min-width:768px) {
@@ -1379,11 +892,7 @@ video {
 }
 
 .fondo-banner-contacto2 {
-    /* background-color: #f9f9fa; */
-    /* background-image: url(assets/img/fondo-ques.jpeg); */
-    /* background-color: #015B97; */
     background: linear-gradient(to right, #1CB5E0, #08087a);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
     position: center center;
@@ -1392,7 +901,6 @@ video {
 
 .texto-contacto2 h1 {
     color: #ffffff;
-    /* font-weight: 700; */
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
@@ -1435,14 +943,7 @@ video {
         padding: 100px 26px;
         margin-bottom: 5rem;
     }
-    .imagen-contacto2 {
-        display: block;
-        margin: auto;
-        width: 30%;
-        height: 40%;
-    }
     .colores-contacto {
-        /* border: 1px solid #ffffff; */
         background-color: rgba(0, 0, 0, .2);
         padding: 1rem;
     }
@@ -1510,119 +1011,26 @@ video {
 }
 
 .colores-contacto {
-    /* background-color: #3f87f4; */
     border-radius: 2%;
 }
 
 .fa-coloricon-contacto {
-    /* color: #B2BABB; */
     color: #33a3fb;
 }
 
 @media(min-width:768px) {
     .fa-coloricon-contacto {
-        /* color: #B2BABB; */
         color: #33a3fb;
     }
 }
 
 
-/**************** FONDO RELLENO LAPTOPS *****************/
-
-.fondo-banner-controlar {
-    /* background-color: #f9f9fa; */
-    /* background-image: url(assets/img/fondo-relleno-controlar.png); */
-    background-image: url(assets/img/fondo-servicios.jpeg);
-    background-size: cover;
-}
-
-.texto-titulo-rellenolap {
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-align: center;
-    color: #093152;
-}
-
-.texto-abajo-rellenolap {
-    position: absolute;
-    top: 78%;
-    left: 1%;
-    font-size: 14px;
-    /* padding: 1rem; */
-    color: #093152;
-    font-weight: bold;
-    text-align: center;
-}
-
-@media(min-width:768px) {
-    .texto-titulo-rellenolap {
-        position: absolute;
-        top: 1%;
-        left: 12%;
-        font-weight: bold;
-        font-size: 3.5rem;
-        text-align: center;
-        color: #093152;
-        padding: 1rem;
-    }
-    .texto-abajo-rellenolap {
-        position: absolute;
-        top: 78%;
-        left: 1%;
-        font-size: 1.5rem;
-        padding: 1rem;
-        color: #093152;
-        font-weight: bold;
-        text-align: center;
-    }
-}
-
-@media(min-width: 1800px) {
-    .texto-titulo-rellenolap {
-        position: absolute;
-        top: 1%;
-        left: 20%;
-        font-weight: bold;
-        font-size: 4rem;
-        text-align: center;
-        color: #093152;
-        padding: 1rem;
-    }
-    .texto-abajo-rellenolap {
-        position: absolute;
-        top: 78%;
-        left: 1%;
-        font-size: 2rem;
-        padding: 1rem;
-        color: #093152;
-        font-weight: bold;
-        text-align: center;
-    }
-}
-
-
-/********* CAPTCHA *********/
-
-.captcha {
-    padding-top: 1rem;
-}
-
-.captcha-instruccion {
-    color: #d8bb94;
-    font-weight: bold;
-}
-
-
-/* SECCIONES ESCUELA,CONSTRUCIONES ETC.. */
+/* SECCIONES SECTORES ESCUELA,CONSTRUCIONES ETC.. */
 
 
 /********************************* E S C O L A R **********************/
 
 .fondo-banner-escolar {
-    /* background-color: #f9f9fa; */
     background-image: url(assets/img/fondo-ques.jpeg);
     background-size: cover;
 }
@@ -1633,10 +1041,15 @@ video {
 
 @media(min-width:768px) {
     .fondo-banner-escolar {
-        /* background-color: #f9f9fa; */
         background-image: url(assets/img/fondo-ques.jpeg);
         background-size: cover;
+        background-position: center center;
     }
+    /* .fondo-banner-escolar-prueba {
+        background-image: url(assets/img/fondo-banner-escolar-prueba.png);
+        background-size: cover;
+        background-position: center center;
+    } */
     .top-relleno {
         margin-top: 11rem;
     }
@@ -1662,22 +1075,11 @@ video {
     height: 150px;
     left: 53%;
     top: 15%;
-}
-
-.titulo-sectores {
-    position: absolute;
-    left: 71%;
-    top: 42%;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
+    /* camiar a seccion de funcioones */
 }
 
 .texto-abajo-sectores {
-    /* font-weight: 300; */
     font-weight: bold;
-    /* color: #0c3d63; */
     color: #093152;
     padding: 1rem;
 }
@@ -1685,27 +1087,6 @@ video {
 .texto-abajo-sectores span {
     color: #ffffff;
     font-weight: bold;
-}
-
-.texto-titulo-encima {
-    font-weight: bold;
-    /* color: #0463ac; */
-    color: #ffffff;
-    padding: 1rem;
-}
-
-.texto-titulo-encima-acceso {
-    font-weight: bold;
-    color: #ffffff;
-    /* padding: 1rem; */
-}
-
-.texto-abajo {
-    /* font-weight: 300; */
-    font-weight: bold;
-    /* color: #0c3d63; */
-    color: #ffffff;
-    padding: 1rem;
 }
 
 .texto-abajo-sectores-escolar {
@@ -1717,16 +1098,6 @@ video {
 
 .texto-abajo-sectores-escolar span {
     color: #ffffff;
-    font-weight: bold;
-}
-
-.titulo-sectores-escolar {
-    position: absolute;
-    left: 71%;
-    top: 43%;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 12px;
     font-weight: bold;
 }
 
@@ -1752,16 +1123,6 @@ video {
     font-weight: bold;
 }
 
-.titulo-sectores-residencial {
-    position: absolute;
-    left: 71%;
-    top: 44%;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-}
-
 .texto-abajo-sectores-corporativo {
     color: #093152;
     font-weight: bold;
@@ -1782,16 +1143,7 @@ video {
     text-align: center;
     font-weight: bold;
     color: #000000;
-    /* padding: 1rem; */
     text-transform: uppercase;
-}
-
-.texto-abajo-Quees {
-    font-size: 1.2rem;
-    padding: 1rem;
-    color: #000000;
-    font-weight: 400;
-    text-align: center;
 }
 
 .top-ques {
@@ -1802,34 +1154,7 @@ video {
     margin-bottom: 20rem;
 }
 
-.easyaccess {
-    text-transform: uppercase;
-    /* color: #33a3fb; */
-    /* font-weight: bold; */
-    /* font-weight: 400; */
-}
-
 @media(min-width:768px) {
-    .texto-titulo-encima {
-        position: absolute;
-        top: 50%;
-        left: 55%;
-        font-weight: bold;
-        font-size: 2.5rem;
-        text-align: center;
-        color: #ffffff;
-        padding: 1rem;
-    }
-    .texto-titulo-encima-acceso {
-        position: absolute;
-        top: 50%;
-        left: 64%;
-        font-weight: bold;
-        font-size: 2.5rem;
-        text-align: center;
-        color: #ffffff;
-        padding: 1rem;
-    }
     .texto-titulo-encima-Quees {
         position: absolute;
         top: 25%;
@@ -1848,26 +1173,6 @@ video {
         font-size: 1.7rem;
         padding: 2rem;
         color: #000000;
-        font-weight: 300;
-        text-align: center;
-    }
-    .texto-abajo {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        font-size: 1.7rem;
-        padding: 1rem;
-        color: #ffffff;
-        font-weight: 300;
-        text-align: center;
-    }
-    .texto-abajo-acceso {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        font-size: 1.7rem;
-        padding: 1rem;
-        color: #ffffff;
         font-weight: 300;
         text-align: center;
     }
@@ -1918,28 +1223,10 @@ video {
     }
     .img-encima-funciones {
         position: absolute;
-        width: 450px;
+        width: 350px;
         height: unset;
-        left: 50%;
-        top: 3%;
-    }
-    .titulo-sectores {
-        position: absolute;
-        left: 66%;
-        top: 44%;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-    .titulo-sectores-escolar {
-        position: absolute;
-        left: 66%;
-        top: 44%;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-size: 2rem;
-        font-weight: bold;
+        left: 55%;
+        top: 15%;
     }
     .titulo-sectores-funciones {
         position: absolute;
@@ -1950,15 +1237,6 @@ video {
         font-size: 2.3rem;
         font-weight: bold;
         letter-spacing: 2px;
-    }
-    .titulo-sectores-residencial {
-        position: absolute;
-        left: 66%;
-        top: 44%;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-size: 2rem;
-        font-weight: bold;
     }
     .texto-abajo-sectores-corporativo {
         position: absolute;
@@ -1996,19 +1274,11 @@ video {
         font-weight: 300;
         text-align: center;
     }
-    .titulo-sectores-escolar {
-        position: absolute;
-        left: 66%;
-        top: 41%;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-size: 3rem;
-        font-weight: bold;
-    }
     .titulo-sectores-funciones {
         position: absolute;
         left: 66%;
-        top: 41%;
+        top: 45%;
+        /* top: 41%; */
         color: #ffffff;
         text-transform: uppercase;
         font-size: 3rem;
@@ -2024,10 +1294,10 @@ video {
     }
     .img-encima-funciones {
         position: absolute;
-        width: 600px;
+        width: 450px;
         height: unset;
-        left: 55%;
-        top: 3%;
+        left: 60%;
+        top: 16%;
     }
     .texto-abajo-sectores-escolar {
         position: absolute;
@@ -2053,15 +1323,6 @@ video {
         color: #ffffff;
         font-weight: bold;
     }
-    .titulo-sectores-residencial {
-        position: absolute;
-        left: 65%;
-        top: 41%;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-size: 3rem;
-        font-weight: bold;
-    }
     .texto-abajo-sectores {
         position: absolute;
         top: 70%;
@@ -2074,15 +1335,6 @@ video {
     }
     .texto-abajo-sectores span {
         color: #ffffff;
-        font-weight: bold;
-    }
-    .titulo-sectores {
-        position: absolute;
-        left: 65%;
-        top: 41%;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-size: 3rem;
         font-weight: bold;
     }
     .texto-abajo-sectores-corporativo {
@@ -2099,302 +1351,27 @@ video {
     }
 }
 
-
-/* .centrado {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
 .contenido-banner-escolar {
     display: grid;
-    /* grid-template-columns: 80% 20%; */
-    /* grid-column-gap: 1rem; */
-    /* margin-bottom: 2rem; */
-}
-
-.texto-escolar h1 {
-    color: #ffffff;
-    font-weight: 300;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 3rem;
-}
-
-.texto-escolar p {
-    text-align: center;
-    color: #000000;
-    font-weight: 300;
-    font-size: 1rem;
-    padding-top: 400px;
-}
-
-.texto-escolar span {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-@media (min-width: 768px) {
-    .texto-escolar {
-        padding-top: 2rem;
-    }
-}
-
-@media (min-width: 1800px) {
-    .texto-escolar h1 {
-        font-size: 4rem;
-    }
-    .texto-escolar p {
-        color: #ffffff;
-        font-weight: 300;
-        text-align: center;
-        font-size: 2.2rem;
-    }
-    .texto-escolar span {
-        color: #ffffff;
-        font-weight: bold;
-        font-size: 2.2rem;
-    }
-    .texto-escolar {
-        padding-top: 11rem;
-    }
-    .texto-titulo-encima-acceso {
-        position: absolute;
-        top: 50%;
-        left: 60%;
-        font-weight: bold;
-        font-size: 5rem;
-        text-align: center;
-        color: #ffffff;
-        padding: 1rem;
-    }
-    .texto-abajo-acceso {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        font-size: 2.5rem;
-        padding: 1rem;
-        color: #ffffff;
-        font-weight: 300;
-        text-align: center;
-    }
 }
 
 @media(min-width:768px) {
     .imga-banner-escolar {
-        /* display: block;
-        margin: auto;
-        width: 100%;*/
-        /* width: 4000px; */
         height: 100vh;
     }
-}
-
-.fondo-banner-escolar2 {
-    /* background-color: #f9f9fa; */
-    background-image: url(assets/img/fondo-escuela2.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    margin-top: 11rem;
-    background: linear-gradient(-90deg, #0f83c4 59%, white 41%);
-    /* background: linear-gradient(to right, #1CB5E0, #08087a); */
-    margin-top: 11rem;
 }
 
 .imga-banner-escolar2 {
     display: block;
     margin: auto;
-    /* padding-top: 15rem; */
     width: 100%;
-}
-
-.texto-escolar1 {
-    text-align: center;
-    padding: 1rem;
-    color: #0463ac;
-    font-weight: 500;
-    /*font-size: 1.5rem;
-    margin-right: 10rem; */
-}
-
-.texto-escolar2 {
-    text-align: center;
-    padding: 1rem;
-    color: #0463ac;
-    font-weight: 500;
-    /* color: #ffffff;
-    font-size: 1.5rem; */
-}
-
-.texto-escolar2 img {
-    width: 80%;
-    height: 80%;
-}
-
-.texto-escolarh3 {
-    /* padding-left: 1rem; */
-    font-size: 2rem;
-    color: #0463ac;
-}
-
-.texto-escolarh3 span {
-    color: #0463ac;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-@media(min-width:768px) {
-    .contenido-banner-escolar2 {
-        display: grid;
-        grid-template-columns: 60% 40%;
-        /* grid-column-gap: 1rem; */
-        /* margin-bottom: 2rem; */
-    }
-    .texto-escolar1 {
-        text-align: center;
-        padding: 2rem;
-        color: #0463ac;
-        font-size: 1.5rem;
-        margin-right: 10rem;
-    }
-    .texto-escolar2 {
-        text-align: center;
-        padding: 2rem;
-        color: #ffffff;
-        font-size: 1.5rem;
-    }
-    .texto-escolarh3 {
-        /* padding-left: 1rem; */
-        font-size: 3.6rem;
-        color: #0463ac;
-    }
-    .texto-escolarh3 span {
-        color: #ffffff;
-        font-size: 3.6rem;
-        margin-left: 1rem;
-    }
-    .texto-escolar2 img {
-        width: 100%;
-        height: 70%;
-    }
-    .texto-escolar1 img {
-        width: 100%;
-        height: 70%;
-    }
-}
-
-
-/*asdasdaasdasd*/
-
-.fondo-banner-escolar-2 {
-    /* background-color: #f9f9fa; */
-    background-image: url(assets/img/fondo-servicios.jpeg);
-    background-size: cover;
-}
-
-.banner-escolar-2 {
-    position: relative;
-    padding: 120px 26px;
-    margin-bottom: 5rem;
-    margin-top: 15rem;
-}
-
-@media(min-width:768px) {
-    .banner-escolar-2 {
-        margin-top: 11px;
-    }
-}
-
-.texto-escolar-2 h1 {
-    color: #ffffff;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 2rem;
-}
-
-.texto-escolar-2 .parrafo1 {
-    text-align: center;
-    color: #ffffff;
-    /* font-weight: 300; */
-    font-size: 1.2rem;
-}
-
-.texto-escolar-2 .parrafo2 {
-    padding-top: 4rem;
-    color: #ffffff;
-    font-size: 1.2rem;
-    text-align: center;
-    padding-bottom: 3rem;
-}
-
-.texto-escolar-2 .parrafo3 {
-    color: #0463ac;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-.imga-banner-escolar-2 {
-    display: block;
-    margin: auto;
-    /* padding-top: 15rem; */
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .contenido-banner-escolar-2 {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        /* grid-column-gap: 1rem; */
-        /* margin-bottom: 2rem; */
-    }
-    .imga-banner-escolar-2 {
-        display: block;
-        margin: auto;
-        padding-top: 15rem;
-        width: 100%;
-    }
-    .texto-escolar-2 .parrafo1 {
-        text-align: center;
-        color: #ffffff;
-        /* font-weight: 300; */
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
-    .texto-escolar-2 .parrafo2 {
-        padding-top: 10rem;
-        font-weight: bold;
-        color: #0463ac;
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-    }
-    .texto-escolar-2 .parrafo3 {
-        color: #0463ac;
-        font-weight: bold;
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    .texto-escolar-2 h1 {
-        color: #ffffff;
-        font-weight: 300;
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 3rem;
-    }
 }
 
 
 /* *************** BENEFICIO CAROUSEL PRUEBA ***************** */
 
 .colore-prueba-beneficio {
-    /* background: linear-gradient(-100deg, white 50%, rgb(8, 46, 172) 50%); */
     background: linear-gradient(to right, #1CB5E0, #08087a);
-    /* height: 72vh; */
     margin-top: 11rem;
 }
 
@@ -2467,7 +1444,6 @@ video {
 
 @media(min-width:768px) {
     .colore-prueba-beneficio {
-        /* background: linear-gradient(-100deg, white 50%, rgb(8, 46, 172) 50%); */
         background: linear-gradient(to right, #1c98e0, #08087a);
         height: 74vh;
     }
@@ -2484,7 +1460,6 @@ video {
         display: block;
         text-align: center;
         padding: 40% 5%;
-        /* background: #093152; */
         background-color: rgba(0, 0, 0, .3);
         color: #fff;
         border-radius: 15px;
@@ -2553,13 +1528,6 @@ video {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.linea {
-    background: #550b51;
-    height: 5px;
-    width: 100%;
-    display: block;
 }
 
 .galeria {
@@ -2712,13 +1680,9 @@ video {
 }
 
 
-/* *********************************************************** */
+/* FONDO BANNERS SECTORES Y CONTENIDO */
 
 .fondo-banner-comofunciona2 {
-    /* background-color: #f9f9fa; */
-    /* background-image: url(assets/img/fondo-relleno-controlar.png); */
-    /* background-image: url(assets/img/fondo-servicios.jpeg); */
-    /* background: linear-gradient(140deg, #0f83c4 50%, white 50%); */
     background: linear-gradient(180deg, white 50%, #0f83c4 50%);
     margin-bottom: 15rem;
     height: 100vh;
@@ -3106,15 +2070,6 @@ video {
     }
 }
 
-@media(min-width:768px) {
-    .grid-comofunciona {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* column-gap: 1rem;
-        padding-top: 5rem; */
-    }
-}
-
 @media(min-width:1400px) {
     .texto-arriba-comofunciona-subtitulo2 {
         position: absolute;
@@ -3284,11 +2239,9 @@ video {
 }
 
 
-/**********************************************************/
+/**************************** CONTENIDO SECTORES ¿CÓMO FUNCIONA? ******************************/
 
 .fondo-banner-comofunciona {
-    /* background-color: #f9f9fa; */
-    /* background-image: url(assets/img/fondo-relleno-controlar.png); */
     background-image: url(assets/img/fondo-servicios.jpeg);
     background-size: cover;
     margin-bottom: 15rem;
@@ -3314,13 +2267,7 @@ video {
     position: absolute;
     top: 110%;
     left: 2%;
-    /* font-size: 1rem;
-    font-weight: bold; */
     color: #ffffff;
-    /* padding: 1rem; */
-    /* text-align: center;
-    margin-top: 2rem;
-    padding: 1rem; */
 }
 
 .texto-abajo-comofunciona1 {
@@ -3669,11 +2616,8 @@ video {
 }
 
 .derechos-reservados {
-    /* background-color: rgba(124, 179, 241, 0.8); */
     background-color: #015B97;
-    /* background: linear-gradient(to right, #1D9AD6, #015B97); */
     padding-bottom: 1rem;
-    /* padding-top: 1rem; */
     height: 60px;
 }
 
@@ -3681,7 +2625,6 @@ video {
     color: #ffffff !important;
     text-align: center;
     padding-top: 1.4rem;
-    /* font-weight: 300; */
 }
 
 .redes-sociales {
