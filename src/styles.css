@@ -1911,10 +1911,10 @@ video {
     }
     .img-encima-sectores {
         position: absolute;
-        width: 450px;
+        width: 500px;
         height: unset;
-        left: 55%;
-        top: 3%;
+        left: 60%;
+        top: 15%;
     }
     .img-encima-funciones {
         position: absolute;
@@ -1974,7 +1974,7 @@ video {
     }
 }
 
-@media only screen and (min-width:1800px) {
+@media only screen and (min-width:1400px) {
     .texto-titulo-encima-Quees {
         position: absolute;
         top: 25%;
@@ -2017,10 +2017,10 @@ video {
     }
     .img-encima-sectores {
         position: absolute;
-        width: 600px;
+        width: 800px;
         height: unset;
         left: 55%;
-        top: 3%;
+        top: 15%;
     }
     .img-encima-funciones {
         position: absolute;
@@ -2735,6 +2735,17 @@ video {
     }
 }
 
+@media(min-width: 1400px) {
+    .fondo-banner-comofunciona2 {
+        /* background-color: #f9f9fa; */
+        /* background-image: url(assets/img/fondo-relleno-controlar.png); */
+        /* background-image: url(assets/img/fondo-servicios.jpeg); */
+        background: linear-gradient(-90deg, #0f83c4 47%, white 47%);
+        margin-bottom: 15rem;
+        height: 100vh;
+    }
+}
+
 .texto-arriba-comofunciona-subtitulo2 {
     position: absolute;
     top: 2%;
@@ -3104,7 +3115,7 @@ video {
     }
 }
 
-@media(min-width:1800px) {
+@media(min-width:1400px) {
     .texto-arriba-comofunciona-subtitulo2 {
         position: absolute;
         top: 2%;
@@ -3113,6 +3124,7 @@ video {
         font-weight: bold;
         color: #093152;
         text-align: center;
+        padding-right: 3rem;
     }
     .texto-arriba-comofunciona-subtitulo2-2 {
         position: absolute;
