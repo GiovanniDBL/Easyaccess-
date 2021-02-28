@@ -2079,7 +2079,8 @@ video {
         font-weight: bold;
         color: #093152;
         text-align: center;
-        padding-right: 3rem;
+        padding-right: 4rem;
+        padding-left: 1rem;
     }
     .texto-arriba-comofunciona-subtitulo2-2 {
         position: absolute;
