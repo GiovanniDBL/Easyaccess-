@@ -6,7 +6,8 @@
 
         <a class="navbar-brand  h1-upercase easy-title">
             <img src="assets/img/iconoEA.png" alt="" width="50" height="50" class="d-inline-block align-center">
-            <span class="easy-span"> Easy</span>access
+
+            <span class="easy-span"> Easy</span> <span class="easy-span2">Access</span>
         </a>
 
 
@@ -28,15 +29,33 @@
                 </li>
 
 
+                <li class="nav-item dropdown" routerLinkActive="active">
+                    <div>
+
+                        <a class="nav-link dropdown-toggle " id="navbarDropdown" data-toggle="dropdown" role="button" aria-expanded="false">
+                          Sectores
+                        </a>
+                    </div>
+                    <ul class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
+                        <li (click)="toSector1()"><a routerLink='residencial' class="dropdown-item ">Residencial</a></li>
+                        <li (click)="toSector2()"><a routerLink='escolar' class="dropdown-item ">Escolar</a></li>
+                        <li (click)="toSector3()"><a routerLink='corporativo' class="dropdown-item ">Corporativo</a></li>
+                        <li (click)="toSector4()"><a routerLink='construccion' class="dropdown-item ">Construcción</a></li>
+                    </ul>
+
+                </li>
+
+
+
                 <li class="nav-item espacio-li" (click)="toGaleria()" routerLinkActive="active">
                     <a class="nav-link " routerLink='inicio'>Galeria</a>
                 </li>
 
 
-                <li class="nav-item dropdown" data-toggle="dropdown" routerLinkActive="active">
+                <li class="nav-item dropdown" routerLinkActive="active">
                     <div (click)="toInicio2()">
 
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" routerLink='funciones' role="button" aria-expanded="true">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" routerLink='funciones' role="button" aria-expanded="true">
                           Funciones
                         </a>
                     </div>
@@ -80,4 +99,6 @@
 
         </div>
     </nav>
+
+
 </header>

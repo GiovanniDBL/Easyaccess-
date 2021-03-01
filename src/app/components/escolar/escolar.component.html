@@ -1,4 +1,4 @@
-<section class=" fondo-banner-escolar animated fadeIn ">
+<section id="sector2" class=" fondo-banner-escolar animated fadeIn ">
 
     <div class="contenido-banner-escolar banner-escolar" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
         <img src="assets/img/escolar-fondo.png " class="imga-banner-escolar" alt="imagen-nosotros ">
@@ -82,5 +82,62 @@
 
     </div>
 
+
+</section>
+
+<section id="contacto" class=" banner-contacto2 fondo-banner-contacto2 animated fadeIn ">
+    <div class="contenido-banner-cotacto2 ">
+
+
+        <div class="texto-contacto2">
+            <h1 class="  seccion " [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'400px'}">¿Estás interesado en Easyaccess?</h1>
+            <p class=" seccion" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'400px'}">Nuestra aplicación móvil cuenta con todas las funciones necesarias para utilizar y <br> disfrutar de los servicios de <span class="easyaccess"> Easy</span>Access
+            </p>
+
+        </div>
+
+        <form (ngSubmit)="contactForm(form)" class="col-md-10 colores-contacto" #form="ngForm" method="post" onsubmit="return submitUserForm();" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'400px'}">
+
+            <!-- <span *ngIf="form.submitted && form.controls['nombre'].errors" class="text-danger">El nombre es obligatorio</span> -->
+            <div class="form-goup">
+                <label for=""><i class="fas fa-coloricon-contacto fa-user-edit"></i> Nombre</label>
+                <input id="inputform" type="text" class="form-control" name="nombre" ngModel required minlength="5">
+            </div>
+            <!-- <span *ngIf="form.submitted && form.controls['asunto'].errors" class="text-danger">El asunto es obligatorio</span> -->
+            <div class="form-goup">
+                <label for=""><i class="fas fa-coloricon-contacto fa-exclamation-circle"></i> Asunto</label>
+                <input id="inputform" type="text" class="form-control" name="asunto" ngModel required minlength="5">
+            </div>
+            <!-- <span *ngIf="form.submitted && form.controls['email'].errors" class="text-danger">El correo es obligatorio</span> -->
+            <div class="form-goup">
+                <label for=""><i class="far fa-coloricon-contacto fa-envelope"></i> Correo Electrónico</label>
+                <input id="inputform" type="email" class="form-control" name="email" ngModel required email>
+            </div>
+            <!-- <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-danger">El mensaje es obligatorio - Ingrese más de 5 letras</span> -->
+            <div class="form-goup">
+                <label for=""> <i class="fas fa-coloricon-contacto fa-feather-alt"></i> Mensaje</label>
+                <textarea class="form-control" id="inputform" name="mensaje" ngModel required minlength="5"></textarea>
+            </div>
+            <!-- CAPTACH -->
+            <hr>
+            <!-- <div id="loadcaptcha" class="g-recaptcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();  ">
+                Favor de resolver el reCAPTCHA, en caso de que no aparezca presione el botón de recargar.
+            </div> -->
+            <div class="g-recaptcha " id="loadcaptcha" style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();">
+                Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
+            </div>
+
+
+            <div id="g-recaptcha-error"></div>
+            <!-- <form>
+                <ngx-recaptcha2 #captchaElem [siteKey]="siteKey"></ngx-recaptcha2>
+            </form> -->
+            <!-- CAPTCHA -->
+            <div class="form-goup centrar-texto seccion">
+                <button type="submit" id="btn1" name="submit" value="submit" class="btn btn-primary btn-lg btn-block" disabled>Envíar</button>
+                <!-- <input type="button" value="refrescar" class="btn btn-primary" onclick="javascript:window.location.reload();" /> -->
+            </div>
+        </form>
+    </div>
 
 </section>

@@ -88,6 +88,15 @@ body {
     color: #33a3fb;
 }
 
+@media (min-width: 1400px) {
+    .easy-span {
+        font-size: 2rem;
+    }
+    .easy-span2 {
+        font-size: 2rem;
+    }
+}
+
 .easy-title {
     letter-spacing: 4px;
     font-weight: 800;
@@ -115,7 +124,7 @@ body {
 /********* GLOBALES *********/
 
 .easyaccess {
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .card-text {
@@ -1442,7 +1451,7 @@ video {
     background: #fff !important;
 }
 
-@media(min-width:768px) {
+@media(min-width: 768px) {
     .colore-prueba-beneficio {
         background: linear-gradient(to right, #1c98e0, #08087a);
         height: 74vh;
@@ -1517,7 +1526,7 @@ video {
         border-radius: 50%;
     }
     .colore-prueba-beneficio {
-        height: 65vh;
+        height: 70vh;
     }
 }
 

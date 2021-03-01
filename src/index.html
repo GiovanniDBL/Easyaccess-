@@ -39,19 +39,25 @@
                 document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:orange;">El captcha es requerido.</span>';
                 grecaptcha.reload();
                 return false;
+            } else {
+                grecaptcha.reset();
+                document.getElementById("btn1").disabled = true;
             }
             return true;
         }
 
         function verifyCaptcha() {
-            var response = grecaptcha.getResponse();
+
 
             console.log('verified');
             document.getElementById("btn1").disabled = false;
             document.getElementById('g-recaptcha-error').innerHTML = '';
 
-            // if(response.length == 1){}
-            // grecaptcha.reset(verifyCaptcha);
+
+
+
+
+
         }
     </script>
 
