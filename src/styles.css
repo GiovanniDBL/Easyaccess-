@@ -698,6 +698,28 @@ video {
     }
 }
 
+@media(min-width: 1400px) {
+    .contenido-entradas-salidas h5 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: #093152;
+        font-weight: bold;
+    }
+    .contenido-entradas-salidas p {
+        text-align: center;
+        color: #093152;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .contenido-entradas-salidas img {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        height: 400px;
+    }
+}
+
 .fondo-banners-entrada-salida {
     background-image: url(assets/img/Fondo-descargar-app.jpeg);
     background-size: cover;
