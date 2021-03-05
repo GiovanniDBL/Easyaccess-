@@ -175,25 +175,26 @@ hr {
     background-color: #5574da;
     margin-top: 25px;
     margin-bottom: 80px;
-    border: 0;
-    width: 0;
-    animation: separator-width 2s ease-out forwards;
+    /* border: 0;
+    width: 0; */
+    /* animation: separator-width 3s ease-out forwards; */
 }
 
-.firma {
-    float: left;
-    color: transparent;
-    background: transparent;
-    font-size: 10px;
-}
 
-@keyframes separator-width {
+/* @keyframes separator-width {
     0% {
         width: 0;
     }
     100% {
         width: 100%;
     }
+} */
+
+.firma {
+    float: left;
+    color: transparent;
+    background: transparent;
+    font-size: 10px;
 }
 
 
@@ -295,6 +296,34 @@ hr {
 
 
 /* ************************* VIDEO CAROUSEL INICIO *********************** */
+
+.texto-abajo-carousel-inicio {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding: unset;
+    color: #ffffff;
+    text-align: center;
+}
+
+.texto-abajo-carousel-inicio span {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    text-transform: none;
+    font-size: 1rem;
+    padding: unset;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* .texto-abajo-sectores-funciones span {
+    color: #ffffff;
+    font-weight: bold;
+} */
 
 video {
     display: block;

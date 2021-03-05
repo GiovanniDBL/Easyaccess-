@@ -33,6 +33,7 @@ export class NavbarComponent implements OnInit {
   toInicio(){
     document.getElementById('home')?.scrollIntoView({behavior: 'smooth'});
   }
+  // tslint:disable-next-line:typedef
   toInicio2(){
     document.getElementById('home2')?.scrollIntoView({behavior: 'smooth'});
   }

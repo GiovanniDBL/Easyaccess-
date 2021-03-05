@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
         }
 
   ngOnInit(): void {
-    
+
     this.aFormGroup = this.formBuilder.group({
       recaptcha: ['', Validators.required]
     });
@@ -97,7 +97,7 @@ this._http.post('',{token: token}).subscribe(
   res =>{
 
     console.log('success or not?', res);
-    
+
   }
 );
   }
