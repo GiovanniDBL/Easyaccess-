@@ -743,6 +743,8 @@ video {
         height: 200px;
     }
     .status-img {
+        display: block;
+        margin: 0 auto;
         width: 250px !important;
         height: 200px !important;
     }
