@@ -744,14 +744,14 @@ video {
     .contenido-entradas-salidas img {
         display: block;
         margin: 0 auto;
-        width: 300px;
-        height: 200px;
+        width: 400px;
+        height: 295px;
     }
     .status-img {
         display: block;
         margin: 0 auto;
-        width: 250px !important;
-        height: 200px !important;
+        width: 350px !important;
+        height: 300px !important;
     }
     .imagen-junta {
         text-align: center;
