@@ -37,8 +37,8 @@ export class HomeComponent implements OnInit {
 
    }
 
-  public phone = '[ +529988443544 ]' + 'Easyaccess';
-  public title = '[ Hola, me interesa su servicio ]';
+  public phone = ' +529988443544 ' + 'Easyaccess';
+  public title = 'Hola, me interesa su servicio';
 
   public phonetecnico = '[ +529988443544 ]' + 'Técnico Easyaccess';
   public titletecnico = '[ Hola, Tengo un problema con el servicio ]';
@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
         }
 
   ngOnInit(): void {
-    
+
     this.aFormGroup = this.formBuilder.group({
       recaptcha: ['', Validators.required]
     });
@@ -97,7 +97,7 @@ this._http.post('',{token: token}).subscribe(
   res =>{
 
     console.log('success or not?', res);
-    
+
   }
 );
   }
