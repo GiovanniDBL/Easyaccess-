@@ -297,26 +297,136 @@ hr {
 
 /* ************************* VIDEO CAROUSEL INICIO *********************** */
 
-.texto-abajo-carousel-inicio {
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    text-transform: uppercase;
-    font-size: 4rem;
-    padding: unset;
-    color: #ffffff;
-    text-align: center;
+@media only screen and (min-width:768px) {
+    .texto-abajo-carousel-inicio {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        text-transform: uppercase;
+        font-size: 4rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+    }
+    .texto-abajo-carousel-inicio span {
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        text-transform: none;
+        font-size: 2rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .texto-abajo-carousel-inicio2 {
+        position: absolute;
+        top: 40%;
+        left: 53%;
+        text-transform: uppercase;
+        font-size: 4rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+    }
+    .texto-abajo-carousel-inicio2 span {
+        position: absolute;
+        top: 100%;
+        left: 2%;
+        text-transform: none;
+        font-size: 2rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .texto-abajo-carousel-inicio3 {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        text-transform: uppercase;
+        font-size: 4rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+    }
+    .texto-abajo-carousel-inicio3 span {
+        position: absolute;
+        top: 100%;
+        left: 1%;
+        text-transform: none;
+        font-size: 2rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 4rem;
+    }
 }
 
-.texto-abajo-carousel-inicio span {
-    position: absolute;
-    top: 60%;
-    left: 40%;
-    text-transform: none;
-    font-size: 1rem;
-    padding: unset;
-    color: #ffffff;
-    text-align: center;
+@media only screen and (min-width: 1400px) {
+    .texto-abajo-carousel-inicio {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        text-transform: uppercase;
+        font-size: 4rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+    }
+    .texto-abajo-carousel-inicio span {
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        text-transform: none;
+        font-size: 2.5rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .texto-abajo-carousel-inicio2 {
+        position: absolute;
+        top: 40%;
+        left: 60%;
+        text-transform: uppercase;
+        font-size: 4rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+    }
+    .texto-abajo-carousel-inicio2 span {
+        position: absolute;
+        top: 100%;
+        left: 2%;
+        text-transform: none;
+        font-size: 2.5rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .texto-abajo-carousel-inicio3 {
+        position: absolute;
+        top: 40%;
+        left: 47%;
+        text-transform: uppercase;
+        font-size: 4rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+    }
+    .texto-abajo-carousel-inicio3 span {
+        position: absolute;
+        top: 100%;
+        left: 2%;
+        text-transform: none;
+        font-size: 2.5rem;
+        padding: unset;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 4rem;
+    }
 }
 
 
@@ -733,8 +843,8 @@ video {
     .contenido-entradas-salidas p {
         text-align: center;
         color: #093152;
-        font-size: 1.2rem;
-        font-weight: 500;
+        font-size: 1.3rem;
+        font-weight: bold;
     }
     .contenido-entradas-salidas img {
         display: block;
@@ -770,7 +880,7 @@ video {
         text-align: center;
         color: #093152;
         font-size: 1.8rem;
-        font-weight: 500;
+        font-weight: bold;
     }
     .contenido-entradas-salidas img {
         display: block;
