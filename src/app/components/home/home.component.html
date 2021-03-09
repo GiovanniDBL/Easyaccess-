@@ -29,9 +29,9 @@
             <div class="carousel-item header-imagen carousel-item-inicio  fondo-banners-funciones-color parallax">
 
 
-                <img src="assets/img/Funcionalidades-fondo.png " class="imga-banner-escolar" alt="imagen-nosotros ">
+                <img src="assets/img/Funcionalidades-fondo.png " class="imga-banner-escolar " alt="imagen-nosotros ">
                 <h1 class="texto-abajo-carousel-inicio">
-                    ¡Tú controlas quien entra a tu sitio!
+                    ¡Tú controlas quien entra a tu sitio! <br>
                     <span>Por medio de la app, controlas quién puede visitarte.</span>
                 </h1>
 
@@ -50,7 +50,7 @@
 
                 <img src="assets/img/qr-fondo2.png" class="imga-banner-escolar" alt="imagen-nosotros ">
                 <h1 class="texto-abajo-carousel-inicio2">
-                    ¡Acceso rápido!
+                    ¡Acceso rápido! <br>
                     <span>Tu invitado recibe un código QR y lo presenta en la entrada del sitio.</span>
                 </h1>
 
@@ -72,9 +72,9 @@
             <div class="carousel-item header-imagen carousel-item-inicio  fondo-banners-funciones-color parallax">
 
 
-                <img src="assets/img/seguridad-slider.png " class="imga-banner-escolar" alt="imagen-nosotros ">
+                <img src="assets/img/seguridad-slider.png " class="imga-banner-escolar " alt="imagen-nosotros ">
                 <h1 class="texto-abajo-carousel-inicio3">
-                    ¡Códigos de entrada únicos!
+                    ¡Códigos de entrada únicos! <br>
                     <span>El vigilante escanea el código que presenta el invitado y si es correcto el invitado podrá ingresar al sitio.</span>
                 </h1>
 
@@ -517,15 +517,33 @@
 
 
 <!-- ********************BOTÓN DE WHATSAPP************************ -->
-<!-- <div>
-    <i class="fab fa-whatsapp"></i>
+<!-- <div class="dropdown">
+
+    <i class="fab fa-whatsapp fa-2x icono-whatsapp "></i>
+</div> -->
+
+<!-- <div class="dropdown  dropup" style="position: fixed; bottom: 100px;">
+    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fab fa-whatsapp fa-2x "></i> 
+        
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item name-whatsapp"><i class="fab fa-whatsapp fa-2x icono-whatsapp"></i> Ventas</a>
+        <a class="dropdown-item name-whatsapp"><i class="fab fa-whatsapp fa-2x icono-whatsapp"></i> Técnico</a>
+        <a class="dropdown-item name-whatsapp">
+            <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button>
+
+        </a>
+
+
+    </div>
 </div> -->
 
 
 
 <div>
 
+    <!-- <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phonetecnico" class="ngx-whatsapp-button-float whatsapp-tecnico" [ngx_whatsapp_text]="titletecnico">Técnico</jjva-ngx-whatsapp-button> -->
+    <!-- <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phonetecnico" class="ngx-whatsapp-button-float whatsapp-tecnico" [ngx_whatsapp_text]="titletecnico">Técnico</jjva-ngx-whatsapp-button> -->
     <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" class="ngx-whatsapp-button-float " [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button>
 </div>
-
-<!-- <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phonetecnico" class="ngx-whatsapp-button-float  " [ngx_whatsapp_text]="titletecnico"></jjva-ngx-whatsapp-button> -->

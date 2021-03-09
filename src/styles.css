@@ -191,10 +191,12 @@ hr {
 } */
 
 .firma {
+    visibility: hidden;
     float: left;
     color: transparent;
     background: transparent;
     font-size: 10px;
+    margin: 0;
 }
 
 
@@ -296,6 +298,57 @@ hr {
 
 
 /* ************************* VIDEO CAROUSEL INICIO *********************** */
+
+.texto-abajo-carousel-inicio {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.texto-abajo-carousel-inicio span {
+    text-transform: none;
+    font-size: 1.5rem;
+    padding: unset;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.texto-abajo-carousel-inicio2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 9rem;
+}
+
+.texto-abajo-carousel-inicio2 span {
+    text-transform: none;
+    font-size: 1.5rem;
+    padding: unset;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.texto-abajo-carousel-inicio3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.texto-abajo-carousel-inicio3 span {
+    text-transform: none;
+    font-size: 1.5rem;
+    padding: unset;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 4rem;
+}
 
 @media only screen and (min-width:768px) {
     .texto-abajo-carousel-inicio {
@@ -1524,7 +1577,7 @@ video {
         font-size: 2.5rem;
         padding: 2.5rem;
         color: #000000;
-        font-weight: 300;
+        font-weight: 400;
         text-align: center;
     }
     .titulo-sectores-funciones {
@@ -2697,6 +2750,28 @@ video {
 .fa-whatsapp {
     margin-bottom: 9% !important;
 }
+
+.icono-whatsapp {
+    /* position: fixed; */
+    bottom: 40px;
+    /* background-color: #25d366; */
+    color: #25d366;
+    /* border-radius: 10px; */
+    text-align: center;
+}
+
+.name-whatsapp {
+    color: white !important;
+}
+
+
+/* .whatsapp-tecnico {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 110px;
+    right: 10px !important;
+} */
 
 
 /********* CONTENIDO INSTRUCCIONES *********/
