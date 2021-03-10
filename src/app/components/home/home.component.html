@@ -342,7 +342,7 @@
 
 <section class="galeria animated fadeIn" id="galeria" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
     <a href="#image1">
-        <img src="assets/img/galeria7.png" alt="">
+        <img src="assets/img/grafica-easy.png" alt="">
     </a>
     <a href="#image2">
         <img src="assets/img/galeria2.png" alt="">
@@ -351,7 +351,7 @@
         <img src="assets/img/multiplataforma.png" alt="">
     </a>
     <a href="#image4">
-        <img src="assets/img/galeria6.jpg" alt="">
+        <img src="assets/img/menu-easy.png" alt="">
     </a>
     <a href="#image5">
         <img src="assets/img/galeria5.jpg" alt="">
@@ -360,16 +360,18 @@
         <img src="assets/img/Informacion-medianteQR.png" alt="">
     </a>
 
+
 </section>
 
 <article class="light-box" id="image1">
 
     <a href="#image6" class="siguiente fa-2x"><i class="fas fa-arrow-left"></i></a>
-    <img src="assets/img/galeria7.png" alt="">
+    <img src="assets/img/grafica-easy.png" alt="">
     <a href="#image2" class="siguiente fa-2x"><i class="fas fa-arrow-right"></i></a>
     <a href="#/galeria" class="cerrar">X</a>
 
 </article>
+
 
 <article class="light-box" id="image2">
     <a href="#image1" class="siguiente fa-2x"><i class="fas fa-arrow-left"></i></a>
@@ -387,10 +389,11 @@
 
 <article class="light-box" id="image4">
     <a href="#image3" class="siguiente fa-2x"><i class="fas fa-arrow-left"></i></a>
-    <img src="assets/img/galeria6.jpg" alt="">
+    <img src="assets/img/menu-easy.png" alt="">
     <a href="#image5" class="siguiente fa-2x"><i class="fas fa-arrow-right"></i></a>
     <a href="#/galeria" class="cerrar">X</a>
 </article>
+
 
 <article class="light-box" id="image5">
     <a href="#image4" class="siguiente fa-2x"><i class="fas fa-arrow-left"></i></a>
@@ -419,10 +422,14 @@
 
         <div class=" ">
             <img src="assets/img/iconEAhd.png " class="imga-banner-descargarapp" alt="imagen-nosotros " [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
-            <div class="app-descarga" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'200px'}">
-                <!-- <h1 class="centrar-texto">¡Descarga easyaccess!</h1> -->
-                <a href="assets/descargar-aplicacion/EA_1.4.3_PD.apk" download> <img src="assets/img/google-play.png " width="450 " height="200 " alt="Imagen-google-play "></a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img class="img-encima-descargas1" src="assets/img/google-play.png " alt="Imagen-google-play "></a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img class="img-encima-descargas2" src="assets/img/ios-icon.svg" alt="Imagen-google-play "></a>
+            <!-- <div class="app-descarga app-descarga-1" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'200px'}">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img src="assets/img/google-play.png " alt="Imagen-google-play "></a>
             </div>
+            <div class="app-descarga app-descarga-1" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'200px'}">
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img src="assets/img/ios-icon.svg" alt="Imagen-IOS "></a>
+            </div> -->
         </div>
 
         <div class="texto-descarga ">
@@ -433,8 +440,6 @@
 
     </div>
 </section>
-
-
 
 
 
@@ -522,22 +527,26 @@
     <i class="fab fa-whatsapp fa-2x icono-whatsapp "></i>
 </div> -->
 
-<!-- <div class="dropdown  dropup" style="position: fixed; bottom: 100px;">
-    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="fab fa-whatsapp fa-2x "></i> 
+<div class="dropdown  dropup btn-wasap" animated fadeIn>
+    <button class="btn btn-success " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fab fa-whatsapp  "></i> ¿Cómo te puedo ayudar?
         
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item name-whatsapp"><i class="fab fa-whatsapp fa-2x icono-whatsapp"></i> Ventas</a>
-        <a class="dropdown-item name-whatsapp"><i class="fab fa-whatsapp fa-2x icono-whatsapp"></i> Técnico</a>
-        <a class="dropdown-item name-whatsapp">
-            <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button>
-
-        </a>
 
 
-    </div>
-</div> -->
+    <ul class="dropdown-menu animated fadeIn" aria-labelledby="dropdownMenuButton">
+        <li>
+            <a class="dropdown-item name-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+529981283127 Ventas Easyaccess&text=Hola, me interesa su servicio"><i class="fab fa-whatsapp fa-2x icono-whatsapp"></i> Ventas</a>
+        </li>
+
+        <li>
+            <a class="dropdown-item name-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+529982181129 Técnico Easyaccess&text=Hola,tengo un problema con el servicio"><i class="fab fa-whatsapp fa-2x icono-whatsapp"></i> Técnico</a>
+        </li>
+
+
+
+    </ul>
+</div>
 
 
 
@@ -545,5 +554,5 @@
 
     <!-- <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phonetecnico" class="ngx-whatsapp-button-float whatsapp-tecnico" [ngx_whatsapp_text]="titletecnico">Técnico</jjva-ngx-whatsapp-button> -->
     <!-- <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phonetecnico" class="ngx-whatsapp-button-float whatsapp-tecnico" [ngx_whatsapp_text]="titletecnico">Técnico</jjva-ngx-whatsapp-button> -->
-    <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" class="ngx-whatsapp-button-float " [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button>
+    <!-- <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" class="ngx-whatsapp-button-float " [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button> -->
 </div>

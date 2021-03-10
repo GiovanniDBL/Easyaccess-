@@ -819,7 +819,49 @@ video {
 .app-descarga img {
     padding-top: 2rem;
     display: block;
-    margin: auto;
+    margin: 0 auto;
+    width: 450px;
+    height: 200px;
+}
+
+@media(min-width:768px) {
+    .img-encima-descargas1 {
+        position: absolute;
+        width: 300px;
+        height: 110px;
+        left: 3%;
+        top: 55%;
+    }
+    .img-encima-descargas2 {
+        position: absolute;
+        width: 20%;
+        height: 100px;
+        left: 26%;
+        top: 55%;
+    }
+}
+
+@media(min-width: 1400px) {
+    .img-encima-descargas1 {
+        position: absolute;
+        width: 300px;
+        height: 150px;
+        left: 6%;
+        top: 65%;
+    }
+    .img-encima-descargas2 {
+        position: absolute;
+        width: 300px;
+        height: 150px;
+        left: 26%;
+        top: 65%;
+    }
+}
+
+.app-descarga-1 {
+    float: left;
+    width: 320px;
+    text-align: center;
 }
 
 .texto-descarga {
@@ -836,7 +878,7 @@ video {
 @media(min-width:768px) {
     .contenido-banner-descargarapp {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 50% 50%;
         margin-bottom: 2rem;
     }
     .texto-descarga h1 {
@@ -2764,14 +2806,11 @@ video {
     color: white !important;
 }
 
-
-/* .whatsapp-tecnico {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 110px;
+.btn-wasap {
+    position: fixed !important;
+    bottom: 40px;
     right: 10px !important;
-} */
+}
 
 
 /********* CONTENIDO INSTRUCCIONES *********/
