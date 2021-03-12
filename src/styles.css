@@ -500,23 +500,24 @@ video {
     }
     .video {
         position: relative;
-        max-height: 48rem;
+        max-height: 100vh !important;
         overflow: hidden;
     }
 }
 
-@media (min-width: 1125px) {
+
+/* @media (min-width: 987px) {
     .video {
         position: relative;
-        max-height: 43.5rem;
+        max-height: 41.5rem !important;
         overflow: hidden;
     }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 992px) {
     .video {
         position: relative;
-        max-height: 60.3rem;
+        max-height: 43.4rem !important;
         overflow: hidden;
     }
 }
@@ -524,10 +525,26 @@ video {
 @media (min-width: 1400px) {
     .video {
         position: relative;
-        max-height: 63rem;
+        max-height: 63rem !important;
         overflow: hidden;
     }
 }
+
+@media (min-width: 1800px) {
+    .video {
+        position: relative;
+        max-height: 60.3rem !important;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 2000px) {
+    .video {
+        position: relative;
+        max-height: 62.5rem !important;
+        overflow: hidden;
+    }
+} */
 
 
 /********* BANNER SECCION SERVICIOS ESCUELA, RESIDENCIAL ETC 2.0 *********/
@@ -2804,7 +2821,7 @@ video {
 
 @media(min-width:768px) {
     .imagen-comofunciona {
-        width: 80%;
+        width: 70%;
         float: right;
     }
     .texto-arriba-comofunciona {
