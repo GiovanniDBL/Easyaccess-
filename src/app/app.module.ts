@@ -37,6 +37,7 @@ import { from } from 'rxjs';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { ReportesComponent } from './components/departamentoReportes/reportes/reportes.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { RegistroComponent } from './components/registro/registro.component';
     CorporativoComponent,
     ConstruccionComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    ReportesComponent
   ],
   imports: [
     BrowserModule,

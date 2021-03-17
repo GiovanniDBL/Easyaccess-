@@ -9,6 +9,7 @@ import { CorporativoComponent } from './components/corporativo/corporativo.compo
 import { ConstruccionComponent } from './components/construccion/construccion.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
+import { ReportesComponent } from './components/departamentoReportes/reportes/reportes.component';
 
 const APP_ROUTES: Routes = [
     { path: 'inicio', component: HomeComponent },
@@ -20,7 +21,8 @@ const APP_ROUTES: Routes = [
     { path: 'construccion', component: ConstruccionComponent },
     { path: 'login', component: LoginComponent },
     { path: 'registro', component: RegistroComponent },
-    { path: '**', pathMatch:'full', redirectTo: 'inicio' }
+    { path: 'reportes', component: ReportesComponent },
+    { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 
-export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, {useHash:true});
+export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, {useHash: true});

@@ -1,0 +1,79 @@
+<section id="login" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}" class="bottom-login">
+    <div class="container ">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="col-md-12">
+
+
+
+
+                    <form class="container top-ques " (ngSubmit)="reportForm(formReportes)" #formReportes="ngForm" onsubmit="return submitUserForm();">
+                        <img src="assets/img/iconoEA.png" class="icono-login">
+                        <h3 class="text-center">Reporte</h3>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="No.Cuenta" name="cuenta" ngModel required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nombre y Apellido" name="nombre" ngModel required>
+                        </div>
+                        <div class="form-group">
+                            <select class=" form-control" aria-label="Default select example" name="departamento" required>
+                                <option selected disabled>Departamento</option>
+                                <option value="1">Ventas</option>
+                                <option value="2">Soporte</option>
+                                <option value="3">Pagos</option>
+                                <option value="3">Facturación</option>
+                              </select>
+                        </div>
+                        <!-- <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-danger">El mensaje es obligatorio - Ingrese más de 5 letras</span> -->
+                        <div class="form-group">
+                            <select class="form-select form-control" aria-label="Default select example" name="prioridad" required>
+                                <option selected disabled>Prioridad</option>
+                                <option value="1">Bajo</option>
+                                <option value="2">Medio</option>
+                                <option value="3">Alto</option>
+                                <option value="3">Urgente</option>
+                              </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Asunto" name="asunto" id="" ngModel required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" name="mensaje" placeholder="Mensaje del reporte" style="height: 200px" ngModel required></textarea>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="formFile" class="form-label">Imagen/Video</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+
+
+
+
+                        <div id="loadcaptcha" class="g-recaptcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();  ">
+                            Favor de resolver el reCAPTCHA, en caso de que no aparezca presione el botón de recargar.
+                        </div>
+                        <!-- <div class="g-recaptcha " id="loadcaptcha" style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();">
+                            Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
+                        </div> -->
+                        <div id="g-recaptcha-error"></div>
+
+
+                        <div class="centrar-texto seccion">
+                            <!-- <button type="submit" id="btn1" name="submit" value="submit" class="btn  btn-primary btn-lg btn-block" disabled> Envíar </button> -->
+                            <button type="submit" id="btn1" value="submit" name="submit" class="btn btn-primary btn-block boton-login" disabled>Envíar</button>
+                        </div>
+
+
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
