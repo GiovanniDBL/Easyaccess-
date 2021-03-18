@@ -1,7 +1,10 @@
+<div class="color-reportes-top">
+
+</div>
 <section id="login" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}" class="bottom-login">
     <div class="container ">
         <div id="login-row" class="row justify-content-center align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <div class="col-md-12">
 
 
@@ -10,44 +13,92 @@
                     <form class="container top-ques " (ngSubmit)="reportForm(formReportes)" #formReportes="ngForm" onsubmit="return submitUserForm();">
                         <img src="assets/img/iconoEA.png" class="icono-login">
                         <h3 class="text-center">Reporte</h3>
-                        <div class="form-group">
+
+                        <!-- MENSAJE DE ERROR -->
+                        <div *ngIf="formReportes.submitted && formReportes.controls['cuenta'].errors" class="alert alert-danger" role="alert">
+                            Ingrese número de cuenta
+                        </div>
+
+                        <div class="input-group  form-group">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
                             <input type="text" class="form-control" placeholder="No.Cuenta" name="cuenta" ngModel required>
+
                         </div>
-                        <div class="form-group">
+                        <!-- MENSAJE DE ERROR -->
+                        <!-- <div *ngIf="formReportes.submitted && formReportes.controls['nombre'].errors" class="alert alert-danger" role="alert">
+                            Ingrese su nombre y apellido
+                        </div>
+
+                        <div class="input-group form-group">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-circle"></i></span>
                             <input type="text" class="form-control" placeholder="Nombre y Apellido" name="nombre" ngModel required>
+                        </div> -->
+                        <!-- MENSAJE DE ERROR -->
+                        <div *ngIf="formReportes.submitted && formReportes.controls['departamento'].errors" class="alert alert-danger" role="alert">
+                            Seleccione un departamento
                         </div>
-                        <div class="form-group">
-                            <select class=" form-control" aria-label="Default select example" name="departamento" required>
-                                <option selected disabled>Departamento</option>
-                                <option value="1">Ventas</option>
-                                <option value="2">Soporte</option>
-                                <option value="3">Pagos</option>
-                                <option value="3">Facturación</option>
-                              </select>
+                        <!-- FIN MENSAJE DE ERROR -->
+
+
+                        <div class=" form-group">
+
+                            <div class="input-group">
+                                <!-- <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-cog"></i></span> -->
+                                <span class="input-group-text" id="basic-addon1">Departamento</span>
+                                <select class=" form-control" aria-label="Default select example" name="departamento" ngModel required>
+                                    <option selected disabled>Departamento</option>
+                                    <option value="1">Ventas</option>
+                                    <option value="2">Desarrollo</option>
+                                    <option value="3">Pagos</option>
+                                    <option value="3">Facturación</option>
+                                  </select>
+
+                            </div>
+
                         </div>
-                        <!-- <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-danger">El mensaje es obligatorio - Ingrese más de 5 letras</span> -->
-                        <div class="form-group">
-                            <select class="form-select form-control" aria-label="Default select example" name="prioridad" required>
-                                <option selected disabled>Prioridad</option>
-                                <option value="1">Bajo</option>
-                                <option value="2">Medio</option>
-                                <option value="3">Alto</option>
-                                <option value="3">Urgente</option>
-                              </select>
+                        <!-- MENSAJE DE ERROR -->
+                        <div *ngIf="formReportes.submitted && formReportes.controls['prioridad'].errors" class="alert alert-danger" role="alert">
+                            Selecciona una prioridad
+                        </div>
+                        <!-- FIN MENSAJE DE ERROR -->
+                        <div class=" form-group">
+                            <div class="input-group">
+
+                                <span class="input-group-text" id="basic-addon1"> Prioridad</span>
+                                <select class="form-select form-control" aria-label="Default select example" name="prioridad" ngModel required>
+                                    <option selected disabled>Prioridad</option>
+                                    <option value="1">Bajo</option>
+                                    <option value="2">Medio</option>
+                                    <option value="3">Alto</option>
+                                    <option value="3">Urgente</option>
+                                  </select>
+                            </div>
+
                         </div>
 
 
-                        <div class="form-group">
+                        <div *ngIf="formReportes.submitted && formReportes.controls['asunto'].errors" class="alert alert-danger" role="alert">
+                            Ingrese asunto del mensaje
+                        </div>
+                        <div class="input-group form-group">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
                             <input type="text" class="form-control" placeholder="Asunto" name="asunto" id="" ngModel required>
                         </div>
 
-                        <div class="form-group">
-                            <textarea class="form-control" name="mensaje" placeholder="Mensaje del reporte" style="height: 200px" ngModel required></textarea>
-
+                        <div *ngIf="formReportes.submitted && formReportes.controls['mensaje'].errors" class="alert alert-danger" role="alert">
+                            Escriba el mensaje del reporte
                         </div>
                         <div class="form-group">
-                            <label for="formFile" class="form-label">Imagen/Video</label>
-                            <input class="form-control" type="file" id="formFile">
+
+                            <textarea class="form-control" name="mensaje" placeholder="Escribir mensaje del reporte..." style="height: 200px" ngModel required></textarea>
+
+                        </div>
+                        <div class="input-group form-group">
+
+                            <!-- <label for="formFileDisabled" class="form-label">Disabled file input example</label> -->
+
+                            <input class="form-control" type="file" id="formFileDisabled">
+
                         </div>
 
 
@@ -66,7 +117,7 @@
                             <!-- <button type="submit" id="btn1" name="submit" value="submit" class="btn  btn-primary btn-lg btn-block" disabled> Envíar </button> -->
                             <button type="submit" id="btn1" value="submit" name="submit" class="btn btn-primary btn-block boton-login" disabled>Envíar</button>
                         </div>
-
+                        <!-- <button class="btn btn-success"> prueba</button> -->
 
                     </form>
 

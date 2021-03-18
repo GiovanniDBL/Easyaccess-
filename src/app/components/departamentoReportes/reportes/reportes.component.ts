@@ -20,11 +20,14 @@ export class ReportesComponent implements OnInit {
 
   // tslint:disable-next-line:typedef
   reportForm(form: NgForm) {
+console.log(form);
 
-    if (form.invalid) {
+
+if (form.invalid) {
       Swal.fire({
         icon: 'error',
-        title: 'Todos los campos del formulario son obligatorios',
+        title: 'Error al envíar reporte',
+        text: 'Todos los campos del formulario son obligatorios',
         backdrop: `rgba(0,0,0,0.7)`
 
       }
