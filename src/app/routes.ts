@@ -10,6 +10,8 @@ import { ConstruccionComponent } from './components/construccion/construccion.co
 import { LoginComponent } from './components/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { ReportesComponent } from './components/departamentoReportes/reportes/reportes.component';
+import { ReportesDesarrolloComponent } from './components/departamentoReportes/reportes-desarrollo/reportes-desarrollo.component';
+import { ReportesVentasComponent } from './components/departamentoReportes/reportes-ventas/reportes-ventas.component';
 
 const APP_ROUTES: Routes = [
     { path: 'inicio', component: HomeComponent },
@@ -22,6 +24,8 @@ const APP_ROUTES: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'registro', component: RegistroComponent },
     { path: 'reportes', component: ReportesComponent },
+    { path: 'reportesDesarrollo', component: ReportesDesarrolloComponent },
+    { path: 'reportesVentas', component: ReportesVentasComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

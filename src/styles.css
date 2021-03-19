@@ -301,10 +301,11 @@ hr {
 
 .texto-abajo-carousel-inicio {
     text-transform: uppercase;
-    font-size: 2rem;
+    padding: 1rem;
+    font-size: 1.8rem;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 7.5rem;
 }
 
 .texto-abajo-carousel-inicio span {
@@ -318,10 +319,11 @@ hr {
 
 .texto-abajo-carousel-inicio2 {
     text-transform: uppercase;
-    font-size: 2rem;
+    padding: 4.2px;
+    font-size: 1.8rem;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 9rem;
+    margin-bottom: 9.8rem;
 }
 
 .texto-abajo-carousel-inicio2 span {
@@ -335,10 +337,11 @@ hr {
 
 .texto-abajo-carousel-inicio3 {
     text-transform: uppercase;
-    font-size: 2rem;
+    padding: 1rem;
+    font-size: 1.8rem;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 2.7rem;
 }
 
 .texto-abajo-carousel-inicio3 span {
@@ -347,7 +350,7 @@ hr {
     padding: unset;
     color: #ffffff;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: unset;
 }
 
 @media only screen and (min-width:768px) {
@@ -881,6 +884,18 @@ video {
         left: 26%;
         top: 65%;
     }
+} */
+
+
+/* .descarga1 {
+    margin-top: 1rem;
+    width: 300px;
+}
+
+.descarga2 {
+    width: 245px;
+    margin-top: 2.2rem;
+    margin-left: 2rem;
 } */
 
 @media(min-width: 768px) {
@@ -1880,6 +1895,11 @@ video {
 .contenido-banner-escolar {
     display: grid;
 }
+
+
+/* .imga-banner-escolar {
+    height: 62vh;
+} */
 
 @media(min-width:768px) {
     .imga-banner-escolar {
