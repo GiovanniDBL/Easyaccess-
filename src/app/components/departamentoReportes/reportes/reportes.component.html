@@ -21,36 +21,25 @@
 
                         <div class="input-group  form-group">
                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
-                            <input type="text" class="form-control" placeholder="No.Cuenta" name="cuenta" ngModel required>
+                            <input type="text" class="form-control" placeholder="No.Cuenta" name="cuenta" ngModel required [(ngModel)]="reportUser.cuenta">
 
                         </div>
-                        <!-- MENSAJE DE ERROR -->
-                        <!-- <div *ngIf="formReportes.submitted && formReportes.controls['nombre'].errors" class="alert alert-danger" role="alert">
-                            Ingrese su nombre y apellido
-                        </div>
 
-                        <div class="input-group form-group">
-                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-circle"></i></span>
-                            <input type="text" class="form-control" placeholder="Nombre y Apellido" name="nombre" ngModel required>
-                        </div> -->
-                        <!-- MENSAJE DE ERROR -->
                         <div *ngIf="formReportes.submitted && formReportes.controls['departamento'].errors" class="alert alert-danger" role="alert">
                             Seleccione un departamento
                         </div>
-                        <!-- FIN MENSAJE DE ERROR -->
-
 
                         <div class=" form-group">
 
                             <div class="input-group">
                                 <!-- <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-cog"></i></span> -->
                                 <span class="input-group-text" id="basic-addon1">Departamento</span>
-                                <select class=" form-control" aria-label="Default select example" name="departamento" ngModel required>
+                                <select class=" form-control" aria-label="Default select example" name="departamento" ngModel required [(ngModel)]="reportUser.departamento">
                                     <option selected disabled>Departamento</option>
-                                    <option value="1">Ventas</option>
-                                    <option value="2">Desarrollo</option>
-                                    <option value="3">Pagos</option>
-                                    <option value="3">Facturación</option>
+                                    <option value="Ventas">Ventas</option>
+                                    <option value="Desarrollo">Desarrollo</option>
+                                    <option value="Pagos">Pagos</option>
+                                    <option value="facturación">Facturación</option>
                                   </select>
 
                             </div>
@@ -65,12 +54,12 @@
                             <div class="input-group">
 
                                 <span class="input-group-text" id="basic-addon1"> Prioridad</span>
-                                <select class="form-select form-control" aria-label="Default select example" name="prioridad" ngModel required>
+                                <select class="form-select form-control" aria-label="Default select example" name="prioridad" ngModel required [(ngModel)]="reportUser.prioridad">
                                     <option selected disabled>Prioridad</option>
-                                    <option value="1">Bajo</option>
-                                    <option value="2">Medio</option>
-                                    <option value="3">Alto</option>
-                                    <option value="3">Urgente</option>
+                                    <option value="Bajo">Bajo</option>
+                                    <option value="Medio">Medio</option>
+                                    <option value="Alto">Alto</option>
+                                    <option value="Urgente">Urgente</option>
                                   </select>
                             </div>
 
@@ -82,7 +71,7 @@
                         </div>
                         <div class="input-group form-group">
                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope"></i></span>
-                            <input type="text" class="form-control" placeholder="Asunto" name="asunto" id="" ngModel required>
+                            <input type="text" class="form-control" placeholder="Asunto" name="asunto" id="" ngModel required [(ngModel)]="reportUser.asunto">
                         </div>
 
                         <div *ngIf="formReportes.submitted && formReportes.controls['mensaje'].errors" class="alert alert-danger" role="alert">
@@ -90,7 +79,7 @@
                         </div>
                         <div class="form-group">
 
-                            <textarea class="form-control" name="mensaje" placeholder="Escribir mensaje del reporte..." style="height: 200px" ngModel required></textarea>
+                            <textarea class="form-control" name="mensaje" placeholder="Escribir mensaje del reporte..." style="height: 200px" ngModel required [(ngModel)]="reportUser.reporte"></textarea>
 
                         </div>
                         <div class="input-group form-group">

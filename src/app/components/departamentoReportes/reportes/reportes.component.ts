@@ -3,6 +3,9 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 import { HttpClient } from '@angular/common/http';
 import {NgForm} from '@angular/forms';
 import Swal from 'sweetalert2';
+import { ReportUser } from '../../../models/reports.model';
+import { EasyaccessService } from '../../../services/easyaccess.service';
+
 
 @Component({
   selector: 'app-reportes',
@@ -14,27 +17,26 @@ export class ReportesComponent implements OnInit {
   protected aFormGroup: FormGroup | undefined;
   recaptcha = new FormControl('');
 
+  reportUser: ReportUser = new ReportUser();
 
-  constructor(private formBuilder: FormBuilder, private _renderer: Renderer2, private _http: HttpClient) { }
+
+
+  // tslint:disable-next-line: max-line-length
+  constructor(private formBuilder: FormBuilder, private _renderer: Renderer2, private easyacces: EasyaccessService) { }
+
+
 
 
   // tslint:disable-next-line:typedef
   reportForm(form: NgForm) {
-console.log(form);
 
+    if ( form.invalid ){ return }
 
-if (form.invalid) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Error al envíar reporte',
-        text: 'Todos los campos del formulario son obligatorios',
-        backdrop: `rgba(0,0,0,0.7)`
+    console.log(this.reportUser);
 
-      }
-        );
+    this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
 
-      return;
-     }else{
+      console.log(response);
       Swal.fire({
         icon: 'success',
         title: 'Reporte enviado con éxito',
@@ -42,7 +44,21 @@ if (form.invalid) {
 
       }
         );
-     }
+
+    }, (err: any) =>{
+      Swal.fire({
+        icon: 'error',
+        title: 'Error al envíar reporte',
+        text: err.error.message,
+        backdrop: `rgba(0,0,0,0.7)`
+
+      });
+
+
+
+
+    });
+
 
 
   }
