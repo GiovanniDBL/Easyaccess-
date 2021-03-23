@@ -39,7 +39,7 @@ export class ReportesComponent implements OnInit {
       console.log(response);
       Swal.fire({
         icon: 'success',
-        title: 'Reporte enviado con éxito',
+        title: 'REPORTE ENVÍADO CON ÉXITO',
         backdrop: `rgba(0,0,0,0.7)`
 
       }
@@ -48,7 +48,7 @@ export class ReportesComponent implements OnInit {
     }, (err: any) =>{
       Swal.fire({
         icon: 'error',
-        title: 'Error al envíar reporte',
+        title: 'ERROR AL ENVÍAR REPORTE',
         text: err.error.message,
         backdrop: `rgba(0,0,0,0.7)`
 

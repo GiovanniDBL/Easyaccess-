@@ -26,7 +26,7 @@ export class EasyaccessService {
        } ));
   }
 
-  
+
 
 
   // getQuery( query: string  ){
