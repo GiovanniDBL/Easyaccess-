@@ -10,9 +10,9 @@
 
 
 
-                    <form class="container top-ques " (ngSubmit)="reportForm(formReportes)" #formReportes="ngForm" onsubmit="return submitUserForm();">
-                        <img src="assets/img/iconoEA.png" class="icono-login">
-                        <h3 class="text-center titulo-reporte ">Reporte</h3>
+                    <form class="container top-ques diseño-form-report" (ngSubmit)="reportForm(formReportes)" #formReportes="ngForm" onsubmit="return submitUserForm();">
+                        <img src="assets/img/iconoEA.png" class="icono-reportes">
+                        <h3 class="text-center titulo-reporte ">Ticket de Reporte</h3>
 
                         <!-- MENSAJE DE ERROR -->
                         <div *ngIf="formReportes.submitted && formReportes.controls['cuenta'].errors" class="alert alert-danger" role="alert">

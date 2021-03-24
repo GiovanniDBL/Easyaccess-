@@ -21,7 +21,7 @@ export class ReportesComponent implements OnInit {
 
 
 
-  // tslint:disable-next-line: max-line-length
+
   constructor(private formBuilder: FormBuilder, private _renderer: Renderer2, private easyacces: EasyaccessService) { }
 
 
