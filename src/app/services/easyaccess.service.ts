@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ReportUser } from '../models/reports.model';
-import { map } from 'rxjs/operators';
+import { catchError, map } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
+import { UserResponse, User } from '../models/user.model';
 
 @Injectable({
   providedIn: 'root'
@@ -25,6 +27,26 @@ export class EasyaccessService {
         return response;
        } ));
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
