@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ReportUser } from '../models/reports.model';
+
 import { catchError, map } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
-import { UserResponse, User } from '../models/user.model';
+import { LoginUser } from '../models/user.model';
+
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +26,11 @@ export class EasyaccessService {
 
    newReport( userModel: ReportUser ): any{
     return this.postQuery('reportes', userModel ).pipe( map( ( response: any ) => {
+        return response;
+       } ));
+  }
+   newlogin( userModel: LoginUser ): any{
+    return this.postQuery('login', userModel ).pipe( map( ( response: any ) => {
         return response;
        } ));
   }

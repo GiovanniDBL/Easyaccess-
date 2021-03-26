@@ -1,8 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, from } from 'rxjs';
 import { AuthService } from '../../services/auth.service';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
+import { EasyaccessService } from '../../services/easyaccess.service';
+import { LoginUser } from '../../models/user.model';
+
+
 
 
 @Component({
@@ -12,30 +17,50 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  loginForm = this.fb.group({
-    cuenta: [''],
-    pass: [''],
-  });
 
-  constructor(private authSvc: AuthService, private fb: FormBuilder, private router: Router) { }
+loginUser: LoginUser = new LoginUser();
+
+
+  constructor(private formbuilder: FormBuilder, private easyacces: EasyaccessService) { }
+
+  // tslint:disable-next-line:typedef
+  loginForm(form: NgForm){
+    if ( form.invalid ){ return }
+
+    console.log(this.loginUser);
+
+    this.easyacces.newlogin(this.loginUser).subscribe( (response: any) => {
+
+      console.log(response);
+      Swal.fire({
+        icon: 'success',
+        title: 'REPORTE ENVÍADO CON ÉXITO',
+        backdrop: `rgba(0,0,0,0.7)`
+
+      }
+        );
+
+    }, (err: any) =>{
+      Swal.fire({
+        icon: 'error',
+        title: 'USUARIO NO VALIDO',
+        text: err.error.message,
+        backdrop: `rgba(0,0,0,0.7)`
+
+      });
+
+
+
+
+    });
+
+
+
+  }
 
   ngOnInit(): void {
-    const userData = {
-      cuenta: '12345',
-      pass: 'danybl'
-    };
 
-    // tslint:disable-next-line: deprecation
-    this.authSvc.login(userData).subscribe( res => console.log('login'));
-  }
+    }
 
-  onLogin(): void{
-    const formValue = this.loginForm.value;
-    // tslint:disable-next-line: deprecation
-    this.authSvc.login(formValue).subscribe(res => {
-      if (res) {
-        this.router.navigate(['']);
-      }
-    });
-  }
+
 }

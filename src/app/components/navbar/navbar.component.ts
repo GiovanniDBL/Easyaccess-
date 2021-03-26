@@ -105,6 +105,9 @@ export class NavbarComponent implements OnInit {
   toLogin(){
     document.getElementById('login')?.scrollIntoView({behavior: 'smooth'});
   }
+  toReporte(){
+    document.getElementById('reporte')?.scrollIntoView({behavior: 'smooth'});
+  }
   
 
 
