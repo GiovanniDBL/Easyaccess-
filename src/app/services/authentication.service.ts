@@ -18,8 +18,8 @@ export class AuthenticationService {
     const url = `${this.urleasyaccess}${query}`;
     return this.http.post(url, object);
   }
-  AuthController(userModel: LoginUser): any{
-    return this.postQuery('login', userModel).pipe(map((response: any) => {
+  AuthController(loginModel: LoginUser): any{
+    return this.postQuery('login', loginModel).pipe(map((response: any) => {
 
       return response;
     }));

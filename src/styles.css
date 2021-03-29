@@ -6,6 +6,7 @@ body {
 
 /********* ANIMACIÓN FADE IN *********/
 
+@import '~animate.css/animate.min';
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
