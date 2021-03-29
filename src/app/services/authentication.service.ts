@@ -1,0 +1,27 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { LoginUser } from '../models/user.model';
+import { map } from 'rxjs/operators';
+
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthenticationService {
+
+  private urleasyaccess = 'http://localhost:3000/user1/';
+
+  constructor(private http: HttpClient) { }
+
+  postQuery(query: string, object: any): any{
+
+    const url = `${this.urleasyaccess}${query}`;
+    return this.http.post(url, object);
+  }
+  AuthController(userModel: LoginUser): any{
+    return this.postQuery('login', userModel).pipe(map((response: any) => {
+
+      return response;
+    }));
+  }
+}

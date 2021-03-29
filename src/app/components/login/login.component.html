@@ -7,14 +7,14 @@
         <div id="login-row" class="row justify-content-center align-items-center">
             <div class="col-md-6">
                 <div class="col-md-12">
-                    <form class="container top-ques" (ngSubmit)="loginForm(formReportes)" #formReportes="ngForm">
+                    <form class="container top-ques" (ngSubmit)="loginForm(formAuth)" #formAuth="ngForm">
                         <img src="assets/img/iconoEA.png" class="icono-login">
                         <h3 class="text-center">INICIAR SESIÓN</h3>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="No.Cuenta" name="cuenta" id="" ngModel [(ngModel)]="loginUser.cuenta">
+                            <input type="text" class="form-control" placeholder="No.Cuenta" name="cuenta" id="" ngModel required [(ngModel)]="loginUser.cuenta">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Contraseña" name="pass" ngModel [(ngModel)]="loginUser.pass" id="exampleInputPassword1">
+                            <input type="password" class="form-control" placeholder="Contraseña" name="pass" ngModel required [(ngModel)]="loginUser.pass" id="exampleInputPassword1">
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-block boton-login">Ingresar</button>

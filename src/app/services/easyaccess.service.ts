@@ -29,11 +29,7 @@ export class EasyaccessService {
         return response;
        } ));
   }
-   newlogin( userModel: LoginUser ): any{
-    return this.postQuery('login', userModel ).pipe( map( ( response: any ) => {
-        return response;
-       } ));
-  }
+  
 
 
 
