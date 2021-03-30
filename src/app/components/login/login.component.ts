@@ -3,6 +3,7 @@ import { FormBuilder, NgForm } from '@angular/forms';
 import Swal from 'sweetalert2';
 import { AuthenticationService } from '../../services/authentication.service';
 import { LoginUser } from '../../models/user.model';
+import { Router } from '@angular/router';
 
 
 
@@ -19,7 +20,7 @@ export class LoginComponent implements OnInit {
 loginUser: LoginUser = new LoginUser();
 
 
-  constructor(private formbuilder: FormBuilder, private autheasyacces: AuthenticationService) { }
+  constructor(private formbuilder: FormBuilder, private autheasyacces: AuthenticationService, private router: Router) { }
 
  // tslint:disable-next-line: typedef
  loginForm(form: NgForm){
@@ -29,9 +30,10 @@ loginUser: LoginUser = new LoginUser();
 
    this.autheasyacces.AuthController(this.loginUser).subscribe((response: any) => {
 
-    console.log(response);
-
-    Swal.fire({
+    if (response) {
+       console.log(response);
+       this.router.navigate(['reportes']);
+       Swal.fire({
       icon: 'success',
       title: 'USUARIO CORRECTO',
       text: 'DATOS CORRECTOS',
@@ -44,13 +46,10 @@ loginUser: LoginUser = new LoginUser();
       }
 
     });
-    // Swal.fire({
-    //   icon: 'success',
-    //   title: 'USUARIO OK',
-    //   backdrop: `rgba(0,0,0,0.7)`
+    }
 
-    // }
-    //   );
+
+
 
   }, (err: any) =>{
     Swal.fire({

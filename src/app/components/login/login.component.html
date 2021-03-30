@@ -16,6 +16,15 @@
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="No.Cuenta" name="cuenta" id="" ngModel required [(ngModel)]="loginUser.cuenta">
                         </div>
+
+                        <div *ngIf="formAuth.submitted && formAuth.controls['nombre'].errors" class="alert alert-danger" role="alert">
+                            Ingrese su nombre
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="" ngModel required [(ngModel)]="loginUser.nombre">
+                        </div>
+
+
                         <div *ngIf="formAuth.submitted && formAuth.controls['pass'].errors" class="alert alert-danger" role="alert">
                             Ingrese su contraseña
                         </div>
