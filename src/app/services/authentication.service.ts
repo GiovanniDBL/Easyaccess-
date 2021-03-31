@@ -9,6 +9,8 @@ import { map } from 'rxjs/operators';
 })
 export class AuthenticationService {
 
+  userToken: string | undefined;
+
   private urleasyaccess = 'http://localhost:3000/user1/';
 
   constructor(private http: HttpClient) { }
@@ -24,4 +26,8 @@ export class AuthenticationService {
       return response;
     }));
   }
+
+
+
+
 }

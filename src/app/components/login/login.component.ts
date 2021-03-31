@@ -24,15 +24,19 @@ loginUser: LoginUser = new LoginUser();
 
  // tslint:disable-next-line: typedef
  loginForm(form: NgForm){
+
+
+
    if (form.invalid) { return; }
 
-   console.log(this.loginUser);
+  //  console.log(this.loginUser);
 
    this.autheasyacces.AuthController(this.loginUser).subscribe((response: any) => {
 
     if (response) {
        console.log(response);
-       this.router.navigate(['reportes']);
+
+      //  this.router.navigate(['reportes']);
        Swal.fire({
       icon: 'success',
       title: 'USUARIO CORRECTO',
@@ -46,6 +50,7 @@ loginUser: LoginUser = new LoginUser();
       }
 
     });
+
     }
 
 

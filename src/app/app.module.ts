@@ -40,6 +40,7 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { ReportesComponent } from './components/departamentoReportes/reportes/reportes.component';
 import { ReportesVentasComponent } from './components/departamentoReportes/reportes-ventas/reportes-ventas.component';
 import { ReportesDesarrolloComponent } from './components/departamentoReportes/reportes-desarrollo/reportes-desarrollo.component';
+import { AuthenticationService } from './services/authentication.service';
 
 
 @NgModule({
@@ -72,7 +73,7 @@ import { ReportesDesarrolloComponent } from './components/departamentoReportes/r
   RecaptchaModule, RecaptchaFormsModule
 
   ],
-  providers: [MessageService, {
+  providers: [MessageService, AuthenticationService, {
     provide: LOCALE_ID,
     useValue: 'es'
   }],
