@@ -36,7 +36,7 @@ loginUser: LoginUser = new LoginUser();
     if (response) {
        console.log(response);
 
-      //  this.router.navigate(['reportes']);
+       this.router.navigate(['reportes']);
        Swal.fire({
       icon: 'success',
       title: 'USUARIO CORRECTO',

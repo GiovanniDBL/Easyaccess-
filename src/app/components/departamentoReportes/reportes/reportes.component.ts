@@ -40,17 +40,29 @@ export class ReportesComponent implements OnInit {
       Swal.fire({
         icon: 'success',
         title: 'REPORTE ENVÍADO CON ÉXITO',
-        backdrop: `rgba(0,0,0,0.7)`
+        backdrop: `rgba(0,0,0,0.7)`,
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
 
       }
         );
 
-    }, (err: any) =>{
+    }, (err: any) => {
       Swal.fire({
         icon: 'error',
         title: 'ERROR AL ENVÍAR REPORTE',
         text: err.error.message,
-        backdrop: `rgba(0,0,0,0.7)`
+        backdrop: `rgba(0,0,0,0.7)`,
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
 
       });
 
