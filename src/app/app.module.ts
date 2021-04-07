@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { APP_ROUTING } from './routes';
-import { ContactoComponent } from './components/contacto/contacto.component';
+
 
 
 
@@ -36,10 +36,7 @@ import { from } from 'rxjs';
 // import {NgsRevealModule} from 'ngx-scrollreveal';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 import { LoginComponent } from './components/login/login.component';
-import { RegistroComponent } from './components/registro/registro.component';
 import { ReportesComponent } from './components/departamentoReportes/reportes/reportes.component';
-import { ReportesVentasComponent } from './components/departamentoReportes/reportes-ventas/reportes-ventas.component';
-import { ReportesDesarrolloComponent } from './components/departamentoReportes/reportes-desarrollo/reportes-desarrollo.component';
 import { AuthenticationService } from './services/authentication.service';
 
 
@@ -48,17 +45,13 @@ import { AuthenticationService } from './services/authentication.service';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ContactoComponent,
     FuncionesComponent,
     ResidencialComponent,
     EscolarComponent,
     CorporativoComponent,
     ConstruccionComponent,
     LoginComponent,
-    RegistroComponent,
     ReportesComponent,
-    ReportesVentasComponent,
-    ReportesDesarrolloComponent
   ],
   imports: [
     BrowserModule,

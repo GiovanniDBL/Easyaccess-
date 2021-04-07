@@ -1,5 +1,4 @@
 import { RouterModule, Routes } from '@angular/router';
-import { ContactoComponent } from './components/contacto/contacto.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FuncionesComponent } from './components/funciones/funciones.component';
@@ -8,24 +7,18 @@ import { EscolarComponent } from './components/escolar/escolar.component';
 import { CorporativoComponent } from './components/corporativo/corporativo.component';
 import { ConstruccionComponent } from './components/construccion/construccion.component';
 import { LoginComponent } from './components/login/login.component';
-import { RegistroComponent } from './components/registro/registro.component';
+
 import { ReportesComponent } from './components/departamentoReportes/reportes/reportes.component';
-import { ReportesDesarrolloComponent } from './components/departamentoReportes/reportes-desarrollo/reportes-desarrollo.component';
-import { ReportesVentasComponent } from './components/departamentoReportes/reportes-ventas/reportes-ventas.component';
 
 const APP_ROUTES: Routes = [
     { path: 'inicio', component: HomeComponent },
     { path: 'funciones', component: FuncionesComponent },
-    { path: 'contacto', component: ContactoComponent },
     { path: 'residencial', component: ResidencialComponent },
     { path: 'escolar', component: EscolarComponent },
     { path: 'corporativo', component: CorporativoComponent },
     { path: 'construccion', component: ConstruccionComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'registro', component: RegistroComponent },
     { path: 'reportes', component: ReportesComponent },
-    { path: 'reportesDesarrollo', component: ReportesDesarrolloComponent },
-    { path: 'reportesVentas', component: ReportesVentasComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

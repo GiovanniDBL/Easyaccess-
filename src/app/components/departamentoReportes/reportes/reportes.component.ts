@@ -5,6 +5,7 @@ import {NgForm} from '@angular/forms';
 import Swal from 'sweetalert2';
 import { ReportUser } from '../../../models/reports.model';
 import { EasyaccessService } from '../../../services/easyaccess.service';
+import { AuthenticationService } from '../../../services/authentication.service';
 
 
 @Component({
@@ -22,7 +23,8 @@ export class ReportesComponent implements OnInit {
 
 
 
-  constructor(private formBuilder: FormBuilder, private _renderer: Renderer2, private easyacces: EasyaccessService) { }
+  // tslint:disable-next-line:max-line-length
+  constructor(private formBuilder: FormBuilder, private _renderer: Renderer2, private easyacces: EasyaccessService, public autheasyaccess: AuthenticationService) { }
 
 
 

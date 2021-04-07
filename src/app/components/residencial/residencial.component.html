@@ -3,12 +3,12 @@
     <div class="contenido-banner-escolar banner-escolar" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
         <img src="assets/img/fondo-residencial.png " class="imga-banner-escolar" alt="imagen-nosotros ">
 
-        <!-- <p class="titulo-sectores-residencial" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'400px'}">Residencial</p> -->
+
         <img class="img-encima-sectores" src="assets/img/icono-sectores-residencial.png" alt="" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'400px'}">
         <p class="texto-abajo-sectores" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">Mayor seguridad interna <span>para los habitantes</span><br>
             <span>Menor carga en</span> puntos de acceso <br> Mayor control <span>de visitas</span>
         </p>
-        <!-- <div class="centrado">Centrado</div> -->
+
     </div>
 
 
@@ -64,7 +64,7 @@
 
     <div class=" banner-escolar">
         <img src="assets/img/laptop2.png " class="imagen-comofunciona" alt="imagen-nosotros laptop.png">
-        <!-- <img src="assets/img/laptop.png " class=" img-encima-comofunciona" alt="imagen-nosotros "> -->
+
 
         <h1 class="texto-arriba-comofunciona" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'400px'}">¿Cómo funciona?</h1>
         <p class="texto-arriba-comofunciona-subtitulo" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'400px'}">
@@ -99,44 +99,43 @@
 
         <form (ngSubmit)="contactForm(form)" class="col-md-10 colores-contacto" #form="ngForm" method="post" onsubmit="return submitUserForm();" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'400px'}">
 
-            <!-- <span *ngIf="form.submitted && form.controls['nombre'].errors" class="text-danger">El nombre es obligatorio</span> -->
+
             <div class="form-goup">
                 <label for=""><i class="fas fa-coloricon-contacto fa-user-edit"></i> Nombre</label>
                 <input id="inputform" type="text" class="form-control" name="nombre" ngModel required minlength="5">
             </div>
-            <!-- <span *ngIf="form.submitted && form.controls['asunto'].errors" class="text-danger">El asunto es obligatorio</span> -->
+
             <div class="form-goup">
                 <label for=""><i class="fas fa-coloricon-contacto fa-exclamation-circle"></i> Asunto</label>
                 <input id="inputform" type="text" class="form-control" name="asunto" ngModel required minlength="5">
             </div>
-            <!-- <span *ngIf="form.submitted && form.controls['email'].errors" class="text-danger">El correo es obligatorio</span> -->
+
             <div class="form-goup">
                 <label for=""><i class="far fa-coloricon-contacto fa-envelope"></i> Correo Electrónico</label>
                 <input id="inputform" type="email" class="form-control" name="email" ngModel required email>
             </div>
-            <!-- <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-danger">El mensaje es obligatorio - Ingrese más de 5 letras</span> -->
+
             <div class="form-goup">
                 <label for=""> <i class="fas fa-coloricon-contacto fa-feather-alt"></i> Mensaje</label>
                 <textarea class="form-control" id="inputform" name="mensaje" ngModel required minlength="5"></textarea>
             </div>
-            <!-- CAPTACH -->
+
             <hr>
+            <!--  *CAPTCHA LOCAL PARA PRUEBAS* -->
             <!-- <div id="loadcaptcha" class="g-recaptcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();  ">
                 Favor de resolver el reCAPTCHA, en caso de que no aparezca presione el botón de recargar.
             </div> -->
+            <!--  *CAPTCHA EN PRODUCCIÓN* -->
             <div class="g-recaptcha " id="loadcaptcha" style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();">
                 Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
             </div>
 
 
             <div id="g-recaptcha-error"></div>
-            <!-- <form>
-                <ngx-recaptcha2 #captchaElem [siteKey]="siteKey"></ngx-recaptcha2>
-            </form> -->
-            <!-- CAPTCHA -->
+
             <div class="form-goup centrar-texto seccion">
                 <button type="submit" id="btn1" name="submit" value="submit" class="btn btn-primary btn-lg btn-block" disabled>Envíar</button>
-                <!-- <input type="button" value="refrescar" class="btn btn-primary" onclick="javascript:window.location.reload();" /> -->
+
             </div>
         </form>
     </div>

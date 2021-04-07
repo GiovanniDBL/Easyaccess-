@@ -13,7 +13,7 @@
                     <form class="container top-ques diseño-form-report" (ngSubmit)="reportForm(formReportes)" #formReportes="ngForm" onsubmit="return submitUserForm();">
                         <img src="assets/img/iconoEA.png" class="icono-reportes">
                         <h3 class="text-center titulo-reporte ">Ticket de Reporte</h3>
-
+                        <!-- <h1 *ngIf="autheasyaccess.isLogged | async"> que onda</h1> -->
                         <!-- MENSAJE DE ERROR -->
                         <div *ngIf="formReportes.submitted && formReportes.controls['cuenta'].errors" class="alert alert-danger" role="alert">
                             Ingrese número de cuenta

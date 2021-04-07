@@ -1,6 +1,13 @@
 body {
-    /* font-family: 'Oswald', sans-serif !important; */
+    /** TIPO DE LETRA */
     font-family: 'Roboto', sans-serif !important;
+}
+
+
+/** OCULTAR BARRA DE SCROLL DE LA PÁGINA **/
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -177,20 +184,7 @@ hr {
     background-color: #5574da;
     margin-top: 25px;
     margin-bottom: 80px;
-    /* border: 0;
-    width: 0; */
-    /* animation: separator-width 3s ease-out forwards; */
 }
-
-
-/* @keyframes separator-width {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-} */
 
 .firma {
     visibility: hidden;
@@ -236,7 +230,7 @@ hr {
 }
 
 
-/******************* H O M E - C O N T E N I D O  ******************** */
+/******************* HOME - CONTENIDO  ******************** */
 
 
 /* ******************* CAROUSEL INICIO **************** */
@@ -487,12 +481,6 @@ hr {
     }
 }
 
-
-/* .texto-abajo-sectores-funciones span {
-    color: #ffffff;
-    font-weight: bold;
-} */
-
 video {
     display: block;
     width: 180vh;
@@ -509,47 +497,6 @@ video {
         overflow: hidden;
     }
 }
-
-
-/* @media (min-width: 987px) {
-    .video {
-        position: relative;
-        max-height: 41.5rem !important;
-        overflow: hidden;
-    }
-}
-
-@media (min-width: 992px) {
-    .video {
-        position: relative;
-        max-height: 43.4rem !important;
-        overflow: hidden;
-    }
-}
-
-@media (min-width: 1400px) {
-    .video {
-        position: relative;
-        max-height: 63rem !important;
-        overflow: hidden;
-    }
-}
-
-@media (min-width: 1800px) {
-    .video {
-        position: relative;
-        max-height: 60.3rem !important;
-        overflow: hidden;
-    }
-}
-
-@media (min-width: 2000px) {
-    .video {
-        position: relative;
-        max-height: 62.5rem !important;
-        overflow: hidden;
-    }
-} */
 
 
 /********* BANNER SECCION SERVICIOS ESCUELA, RESIDENCIAL ETC 2.0 *********/

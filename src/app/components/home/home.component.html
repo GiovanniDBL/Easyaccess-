@@ -1,119 +1,48 @@
-<!-- **************CAROUSEL*********** -->
+<!-- ************** CAROUSEL *********** -->
 <section id="home">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade  " data-ride="carousel">
-        <!-- <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-
-        </ol> -->
         <div class="carousel-inner ">
-
             <div class="carousel-item  active   video carousel-item-inicio parallax">
-
-                <!-- <video autoplay loop muted class="d-block" name="media">
-
-                    <source src="assets/videos/celular.mp4" type="video/mp4" >
-                </video> -->
-
                 <video src="assets/videos/celular.mp4" class="d-block" [muted]="'muted'" autoplay loop></video>
-
-
                 <div class="carousel-caption carousel-caption-inicio header-imagen-fondos  d-md-block" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'400px'}">
                     <h5>seguridad y control de acceso <br> para tu sitio</h5>
-                    <!-- <p>Controla la seguridad</p> -->
                     <hr>
                 </div>
             </div>
             <div class="carousel-item header-imagen carousel-item-inicio  fondo-banners-funciones-color parallax">
-
-
                 <img src="assets/img/Funcionalidades-fondo.png " class="imga-banner-escolar " alt="imagen-nosotros ">
                 <h1 class="texto-abajo-carousel-inicio">
                     ¡Tú controlas quien entra a tu sitio! <br>
                     <span>Por medio de la app, controlas quién puede visitarte.</span>
                 </h1>
-
             </div>
-
-            <!-- <div class="carousel-item header-imagen carousel-item-inicio  contenedor-video  ">
-                <img src="assets/img/Seguridad1.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption carousel-caption-inicio  d-md-block">
-
-
-                </div>
-
-            </div> -->
             <div class="carousel-item header-imagen carousel-item-inicio  fondo-banners-funciones-color parallax">
-
-
                 <img src="assets/img/qr-fondo2.png" class="imga-banner-escolar" alt="imagen-nosotros ">
                 <h1 class="texto-abajo-carousel-inicio2">
                     ¡Acceso rápido! <br>
                     <span>Tu invitado recibe un código QR y lo presenta en la entrada del sitio.</span>
                 </h1>
-
             </div>
-            <!-- <div class="carousel-item header-imagen carousel-item-inicio ">
-                <img src="assets/img/Seguridad2.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption carousel-caption-inicio    d-md-block">
-
-                </div>
-            </div> -->
-            <!-- <div class="carousel-item header-imagen carousel-item-inicio parallax">
-                <img src="assets/img/Seguridad3.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption carousel-caption-inicio   d-md-block">
-
-                </div>
-            </div> -->
-
-
             <div class="carousel-item header-imagen carousel-item-inicio  fondo-banners-funciones-color parallax">
-
-
                 <img src="assets/img/seguridad-slider-2.png " class="imga-banner-escolar " alt="imagen-nosotros ">
                 <h1 class="texto-abajo-carousel-inicio3">
                     ¡Códigos de entrada únicos! <br>
                     <span>El vigilante escanea el código que presenta el invitado y si es correcto el invitado podrá ingresar al sitio.</span>
                 </h1>
-
             </div>
-
-
-
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-
             <span class="visually-hidden"></span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-
             <span class="visually-hidden"></span>
         </a>
-
     </div>
 </section>
 
-<!-- <video id="video" autoplay="autoplay" loop="loop" controls="controls">
-<source src="assets/videos/celular.mp4" type="video/mp4">
-</video> -->
 
-<!-- SECCION INICIO 2.0 -->
+<!-- ***** SECTION ¿QUÉ ES EASYACCESS? ***** -->
 
-<!-- <section class="fondo-banners-entrada-salida6 top-ques animated fadeIn  " [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
-
-    <div class="contenido-banner-escolar banner-escolar">
-        <img src="assets/img/handeasy2.png " class="imga-banner-escolar" alt="imagen-nosotros ">
-
-        <h1 class="texto-titulo-encima-Quees" [ngsReveal]="{reset:true, duration:1000, origin:'top', distance:'100px'}">¿Qué es easyaccess?</h1>
-        <p class="texto-abajo-Quees" [ngsReveal]="{reset:true, duration:1000, origin:'bottom', distance:'400px'}"><span class="easyaccess">easy</span>Access es una aplicación de información para control de acceso, basado en la captura de información y registro en puntos de control <span>¡Fácil de usar!</span> utilizado para visitantes, proveedores e internos
-            que no requieren de una tarjeta de control o mecanismo fijo de autenticación.</p>
-    
-    </div>
-
-
-</section> -->
 <section [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
 
     <div class="contenido-grid-quees fondo-banners-entrada-salida6-2">
@@ -122,101 +51,59 @@
             <h1 [ngsReveal]="{reset:true, duration:1000, origin:'top', distance:'100px'}">¿Qué es easyaccess?</h1>
             <p [ngsReveal]="{reset:true, duration:1000, origin:'bottom', distance:'400px'}">Es una plataforma para control de acceso, creada para mejorar la seguridad y los tiempos de ingreso a sus instalaciones por medio de la captura de información en un código QR. ¡Muy fácil de usar! utilizado para visitantes, proveedores e internos.
             </p>
-            <!-- <p [ngsReveal]="{reset:true, duration:1000, origin:'bottom', distance:'400px'}"><span class="easyaccess">easy</span>Access es una aplicación de información para control de acceso, basado en la captura de información y registro en puntos de control <span>¡Fácil de usar!</span> utilizado para visitantes, proveedores e internos
-                que no requieren de una tarjeta de control o mecanismo fijo de autenticación.</p> -->
         </div>
     </div>
 </section>
 
 
-
-
-
-
-<!-- ******************** SECTION INICIO ********************* -->
-
-
-
-<!-- <h1 class="titulo centrar-texto seccion animated fadeIn">Controla la seguridad de una manera sencilla</h1> -->
-
-<!-- SECCION INFORMACION DE CONTROL 2.0 -->
+<!-- ***** ¿QUÉ OFRECEMOS? ***** -->
 
 
 <section id="services" class="icon-servicios   banner-servicios2">
     <h1 class="servicios2-titulo" [ngsReveal]="{ reset: true, duration: 2000}">¿Qué ofrecemos?</h1>
-
     <div class="servicios2 ">
-
-
         <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
-
-
             <div class="iconos-service ">
                 <img src="assets/img/toque.png" alt="">
             </div>
-
             <P>Registro de entradas y salidas</P>
         </div>
-
         <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'200px'}">
-
-
             <div class="iconos-service ">
                 <img src="assets/img/datos-reales.png" alt="">
             </div>
-
             <p>Registro de acceso con datos reales</p>
         </div>
-
         <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
-
-
             <div class="iconos-service ">
                 <img src="assets/img/stop.png" alt="">
             </div>
-
             <p>Registro de incidencias</p>
         </div>
-
         <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'200px'}">
-
-
             <div class="iconos-service ">
                 <img src="assets/img/coche.png" alt="">
             </div>
-
             <p>Información vehicular</p>
         </div>
         <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
-
-
             <div class="iconos-service ">
                 <img src="assets/img/qr.png" alt="">
             </div>
-
             <p>Información completa <br> mediante código QR</p>
         </div>
         <div class="servicio2" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'200px'}">
-
-
             <div class="iconos-service ">
                 <img src="assets/img/codigo-qr-visitas.png" alt="">
             </div>
-
             <p>Visitas pre-autorizadas</p>
         </div>
-
-
     </div>
-
-
-
     <br>
 </section>
 
 
-<!-- ************************ BENEFICIOS ********************* -->
-<!-- <h1 class="titulo seccion centrar-texto">SLIDER BENEFICIOS EN PROCESO...</h1> -->
+<!-- ***** BENEFICIOS *****-->
 
 <div id="beneficios" class="colore-prueba-beneficio animated fadeIn" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
     <h1 class="titulo-beneficios">Beneficios</h1>
@@ -298,12 +185,11 @@
 
 
 
-<!-- SECCION CATEGORIAS ESCUELA, RESIDENCIAS ETC... -->
+<!-- ***** SECTORES DE SERVICIO(RESIDENCIAL, ESCOLAR, CORPORATIVO Y CONSTRUCCIÓN)... ***** -->
+
 <section class="icon-servicios   banner-servicios" [ngsReveal]="{reset:true, duration:1000, origin:'left', distance:'400px'}">
     <h1 class="servicios-titulo" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">Sectores de servicio</h1>
     <div class="servicios ">
-
-
         <div class="servicio " [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
             <h3>Residencial</h3>
             <a [routerLink]="['/residencial']" target="_blank">
@@ -313,7 +199,6 @@
             </a>
             <P>Mayor registro de visitas</P>
         </div>
-
         <div class="servicio" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
             <h3>Escolar</h3>
             <a [routerLink]="['/escolar']" target="_blank">
@@ -323,7 +208,6 @@
             </a>
             <p>Incrementa la seguridad en tu punto de acceso</p>
         </div>
-
         <div class="servicio" [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
             <h3>Corporativo</h3>
             <a [routerLink]="['/corporativo']" target="_blank">
@@ -333,7 +217,6 @@
             </a>
             <p>Credencialización de empleados</p>
         </div>
-
         <div class="servicio " [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
             <h3>Construcción</h3>
             <a [routerLink]="['/construccion']" target="_blank">
@@ -343,14 +226,13 @@
             </a>
             <p>Agilidad en ingresos de visitantes, obreros y proveedores</p>
         </div>
-
     </div>
     <br>
 </section>
 
 
 
-<!-- ************************ GALERIA ********************* -->
+<!-- ***** GALERIA ***** -->
 
 
 <section class="galeria animated fadeIn" id="galeria" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
@@ -372,17 +254,13 @@
     <a href="#image6">
         <img src="assets/img/Informacion-medianteQR.png" alt="">
     </a>
-
-
 </section>
 
 <article class="light-box" id="image1">
-
     <a href="#image6" class="siguiente fa-2x"><i class="fas fa-arrow-left"></i></a>
     <img src="assets/img/grafica-easy.png" alt="">
     <a href="#image2" class="siguiente fa-2x"><i class="fas fa-arrow-right"></i></a>
     <a href="#/galeria" class="cerrar">X</a>
-
 </article>
 
 
@@ -428,21 +306,12 @@
 
 
 
-<!-- SECCIÓN BANNNER DE DESCARGA 2.0 -->
+<!-- ***** DESCARGA LA APLICACIÓN ***** -->
 
 <section class=" banner-descargarapp fondo-banner-descarga animated fadeIn " [ngsReveal]="{reset:true, duration:1000, origin:'top', distance:'200px'}">
     <div class="contenido-banner-descargarapp ">
-
         <div class=" ">
             <img src="assets/img/iconEAhd.png " class="imga-banner-descargarapp" alt="imagen-nosotros " [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
-            <!-- <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img class="img-encima-descargas1" src="assets/img/google-play.png " alt="Imagen-google-play "></a> -->
-            <!-- <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img class="img-encima-descargas2" src="assets/img/ios-icon.svg" alt="Imagen-google-play "></a> -->
-            <!-- <div class="app-descarga app-descarga-1" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'200px'}">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img src="assets/img/google-play.png " alt="Imagen-google-play "></a>
-            </div>
-            <div class="app-descarga app-descarga-1" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'200px'}">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img src="assets/img/ios-icon.svg" alt="Imagen-IOS "></a>
-            </div> -->
             <div class="contenido-iconos-descarga">
                 <div>
                     <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img class="img-encima-descargas1 descarga1 descarga1-90" src="assets/img/google-play.png " alt="Imagen-google-play "></a>
@@ -452,103 +321,52 @@
                 </div>
             </div>
         </div>
-
         <div class="texto-descarga ">
             <h1 class=" centrar-texto seccion ">¡Easyaccess en tu celular!</h1>
             <p>Descarga nuestra aplicación móvil, cuenta con todas las funciones necesarias para utilizar y disfrutar de los servicios de <span class="easyaccess">easy</span>Access
             </p>
         </div>
-
     </div>
 </section>
 
-
-<!-- <div class="contenido-banner-descargarapp fondo-banner-descarga">
-    <div>
-
-        <img src="assets/img/iconEAhd.png " class="imga-banner-descargarapp" alt="imagen-nosotros " [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'200px'}">
-        <div>
-            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img class="img-encima-descargas1 descarga1 " src="assets/img/google-play.png " alt="Imagen-google-play "></a>
-            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.sisec.secure"> <img class="img-encima-descargas2 descarga2 " src="assets/img/ios-icon.svg" alt="Imagen-google-play "></a>
-        </div>
-    </div>
-
-    <div class="texto-descarga ">
-        <h1 class=" centrar-texto seccion ">¡Easyaccess en tu celular!</h1>
-        <p>Descarga nuestra aplicación móvil, cuenta con todas las funciones necesarias para utilizar y disfrutar de los servicios de <span class="easyaccess">easy</span>Access
-        </p>
-    </div>
-</div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ************************ CONTACTO ********************* -->
+<!-- ***** FORMULARIO CONTACTO ***** -->
 
 <section id="contacto" class=" banner-contacto2 fondo-banner-contacto2 animated fadeIn ">
     <div class="contenido-banner-cotacto2 ">
-
-
         <div class="texto-contacto2">
             <h1 class="  seccion " [ngsReveal]="{reset:true, duration:2000, origin:'top', distance:'400px'}">¿Estás interesado en Easyaccess?</h1>
             <p class=" seccion" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'400px'}">Nuestra aplicación móvil cuenta con todas las funciones necesarias para utilizar y <br> disfrutar de los servicios de <span class="easyaccess"> Easy</span>Access
             </p>
-
         </div>
-
         <form (ngSubmit)="contactForm(form)" class="col-md-10 colores-contacto" #form="ngForm" method="post" onsubmit="return submitUserForm();" [ngsReveal]="{reset:true, duration:2000, origin:'bottom', distance:'400px'}">
-
-            <!-- <span *ngIf="form.submitted && form.controls['nombre'].errors" class="text-danger">El nombre es obligatorio</span> -->
             <div class="form-group">
                 <label for=""><i class="fas fa-coloricon-contacto fa-user-edit"></i> Nombre</label>
                 <input id="inputform" type="text" class="form-control" name="nombre" ngModel required minlength="5">
             </div>
-            <!-- <span *ngIf="form.submitted && form.controls['asunto'].errors" class="text-danger">El asunto es obligatorio</span> -->
             <div class="form-group">
                 <label for=""><i class="fas fa-coloricon-contacto fa-exclamation-circle"></i> Asunto</label>
                 <input id="inputform" type="text" class="form-control" name="asunto" ngModel required minlength="5">
             </div>
-            <!-- <span *ngIf="form.submitted && form.controls['email'].errors" class="text-danger">El correo es obligatorio</span> -->
             <div class="form-group">
                 <label for=""><i class="far fa-coloricon-contacto fa-envelope"></i> Correo Electrónico</label>
                 <input id="inputform" type="email" class="form-control" name="email" ngModel required email>
             </div>
-            <!-- <span *ngIf="form.submitted && form.controls['mensaje'].errors" class="text-danger">El mensaje es obligatorio - Ingrese más de 5 letras</span> -->
             <div class="form-group">
                 <label for=""> <i class="fas fa-coloricon-contacto fa-feather-alt"></i> Mensaje</label>
                 <textarea class="form-control" id="inputform" name="mensaje" ngModel required minlength="5"></textarea>
             </div>
-            <!-- CAPTACH -->
             <hr>
+            <!--  *CAPTCHA LOCAL PARA PRUEBAS* -->
             <!-- <div id="loadcaptcha" class="g-recaptcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();  ">
                 Favor de resolver el reCAPTCHA, en caso de que no aparezca presione el botón de recargar.
             </div> -->
+            <!--  *CAPTCHA EN PRODUCCIÓN* -->
             <div class="g-recaptcha " id="loadcaptcha" style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();">
                 Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
             </div>
-
-
             <div id="g-recaptcha-error"></div>
-            <!-- <form>
-                <ngx-recaptcha2 #captchaElem [siteKey]="siteKey"></ngx-recaptcha2>
-            </form> -->
-            <!-- CAPTCHA -->
             <div class="form-goup centrar-texto seccion">
                 <button type="submit" id="btn1" name="submit" value="submit" class="btn  btn-primary btn-lg btn-block" disabled> Envíar </button>
-                <!-- <input type="button" value="refrescar" class="btn btn-primary" onclick="javascript:window.location.reload();" /> -->
             </div>
         </form>
     </div>
@@ -558,38 +376,19 @@
 
 
 
-<!-- ********************BOTÓN DE WHATSAPP************************ -->
-<!-- <div class="dropdown">
+<!-- ***** BOTÓN DE WHATSAPP ***** -->
 
-    <i class="fab fa-whatsapp fa-2x icono-whatsapp "></i>
-</div> -->
 
 <div class="dropdown  dropup btn-wasap" animated fadeIn>
     <button class="btn btn-success " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fab fa-whatsapp  "></i> ¿Cómo te puedo ayudar?
-        
     </button>
-
-
     <ul class="dropdown-menu animated fadeIn" aria-labelledby="dropdownMenuButton">
         <li>
             <a class="dropdown-item name-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+529981283127 Ventas Easyaccess&text=Hola, me interesa su servicio"><i class="fab fa-whatsapp fa-2x icono-whatsapp"></i> Ventas</a>
         </li>
-
         <li>
             <a class="dropdown-item name-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=+529982181129 Técnico Easyaccess&text=Hola,tengo un problema con el servicio"><i class="fab fa-whatsapp fa-2x icono-whatsapp"></i> Técnico</a>
         </li>
-
-
-
     </ul>
-</div>
-
-
-
-<div>
-
-    <!-- <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phonetecnico" class="ngx-whatsapp-button-float whatsapp-tecnico" [ngx_whatsapp_text]="titletecnico">Técnico</jjva-ngx-whatsapp-button> -->
-    <!-- <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phonetecnico" class="ngx-whatsapp-button-float whatsapp-tecnico" [ngx_whatsapp_text]="titletecnico">Técnico</jjva-ngx-whatsapp-button> -->
-    <!-- <jjva-ngx-whatsapp-button [ngx_whatsapp_phone]="phone" class="ngx-whatsapp-button-float " [ngx_whatsapp_text]="title"></jjva-ngx-whatsapp-button> -->
 </div>

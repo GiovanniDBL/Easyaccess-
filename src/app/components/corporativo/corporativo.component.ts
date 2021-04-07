@@ -26,7 +26,13 @@ export class CorporativoComponent implements OnInit {
             icon: 'warning',
             title: 'Todos los campos del formulario son obligatorios',
             text: '*Todos los campos deben tener más de 5 letras*',
-            backdrop: `rgba(0,0,0,0.7)`
+            backdrop: `rgba(0,0,0,0.7)`,
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
 
           }
             );
@@ -38,7 +44,13 @@ export class CorporativoComponent implements OnInit {
           Swal.fire({
              icon: 'success',
               title: 'Mensaje enviado correctamente',
-              backdrop: `rgba(0,0,0,0.7)`
+              backdrop: `rgba(0,0,0,0.7)`,
+              showClass: {
+                popup: 'animate__animated animate__fadeInDown'
+              },
+              hideClass: {
+                popup: 'animate__animated animate__fadeOutUp'
+              }
           }
           );
         });
@@ -53,7 +65,7 @@ export class CorporativoComponent implements OnInit {
       recaptcha: ['', Validators.required]
     });
 
-    // add te script
+ // *LLAMADO DEL GOOGLE RECAPTCHA PARA QUE NO DESAPAREZCA AL CAMBIAR DE PÁGINA
     const script = this._renderer.createElement('script');
     script.defer = true;
     script.async = true;

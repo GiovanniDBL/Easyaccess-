@@ -12,9 +12,10 @@ import { LoginUser } from '../models/user.model';
 })
 export class EasyaccessService {
 
+// *URL DE LA API DE NUESTO SERVIDOR EXPRESS
   private urleasyaccess = 'http://localhost:3000/user2/';
 
-
+// *LLamando la función de reportes de nuestra API
   constructor(private http: HttpClient) { }
 
   postQuery( query: string, object: any ): any{

@@ -1,3 +1,5 @@
+// *MODELO CON LOS DATOS QUE SE NECESITAN PARA HACER UN REPORTE
+
 export class ReportUser{
 
     id_reporte: string | undefined;
