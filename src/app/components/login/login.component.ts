@@ -34,7 +34,7 @@ loginUser: LoginUser = new LoginUser();
    this.autheasyacces.AuthController(this.loginUser).subscribe((response: any) => {
 
     if (response) {
-       console.log(response);
+      //  console.log(response);
 
        this.router.navigate(['reportes']);
        Swal.fire({

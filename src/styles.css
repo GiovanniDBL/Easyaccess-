@@ -112,6 +112,7 @@ body {
 }
 
 .empezar {
+    margin-left: 1rem;
     font-weight: 800;
     letter-spacing: 1.6px;
     text-transform: uppercase;

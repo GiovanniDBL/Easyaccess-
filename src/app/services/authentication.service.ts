@@ -16,14 +16,12 @@ export class AuthenticationService {
 
   private loggedIn = new BehaviorSubject<boolean>(false);
 
+
 // *URL DE LA API DE NUESTO SERVIDOR EXPRESS
   private urleasyaccess = 'http://localhost:3000/user1/';
 
 
-  constructor(private http: HttpClient) {
-
-    this.checkToken();
-   }
+  constructor(private http: HttpClient) { }
 
    get isLogged(): Observable<boolean>{
      return this.loggedIn.asObservable();
@@ -42,7 +40,7 @@ export class AuthenticationService {
    this.saveToken(response.token);
    this.loggedIn.next(true);
 
-      return response;
+   return response;
     }));
   }
 
@@ -59,19 +57,9 @@ logout(): void{
   this.loggedIn.next(false);
 }
 
-// *LEER TOKEN
+estaAutenticado(): boolean {
 
-private checkToken(): void {
-  const userToken = localStorage.getItem('token');
-  const isExpired =  helper.isTokenExpired(userToken); // *QUITAR COMILLAS
-  console.log('isExpired->', isExpired);
-
-  isExpired ? this.logout() : this.loggedIn.next(true);
-  // if (isExpired) {
-  //   this.logout();
-  // }else{
-  //   this.loggedIn.next(true);
-  // }
+return this.saveToken.length > 2;
 }
 
 
