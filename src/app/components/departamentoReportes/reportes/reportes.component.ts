@@ -32,7 +32,24 @@ export class ReportesComponent implements OnInit {
   // tslint:disable-next-line:typedef
   reportForm(form: NgForm) {
 
-    if ( form.invalid ){ return }
+    // if ( form.invalid ){ return }
+    if (form.invalid) {
+      Swal.fire({
+        icon: 'info',
+        title: 'Todos los campos del formulario son obligatorios',
+        text: 'Verifique que todos los campos estén llenos',
+        backdrop: `rgba(0,0,0,0.7)`,
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      }
+        );
+
+      return;
+}
 
     console.log(this.reportUser);
 
