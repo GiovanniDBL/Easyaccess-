@@ -9,7 +9,7 @@ import { ConstruccionComponent } from './components/construccion/construccion.co
 import { LoginComponent } from './components/login/login.component';
 
 import { ReportesComponent } from './components/departamentoReportes/reportes/reportes.component';
-import { AuthGuard } from './guards/auth.guard';
+
 
 const APP_ROUTES: Routes = [
     { path: 'inicio', component: HomeComponent },
@@ -19,7 +19,7 @@ const APP_ROUTES: Routes = [
     { path: 'corporativo', component: CorporativoComponent },
     { path: 'construccion', component: ConstruccionComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'reportes', component: ReportesComponent, canActivate: [AuthGuard] },
+    { path: 'reportes', component: ReportesComponent},
     { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 
