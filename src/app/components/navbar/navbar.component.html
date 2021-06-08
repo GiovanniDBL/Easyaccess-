@@ -1,103 +1,95 @@
-<header class="header-navbar scrolling-navbar  img-nav " class="itemset" [ngsRevealSet]="{ reset:true, duration:2000, origin:'top', distance:'100px'}" [ngsSelector]="'.navbar'">
+<header class="header-navbar scrolling-navbar  img-nav " class="itemset">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top  " [class.header_change]="header_variable">
+        <div class="container-fluid">
+            <a class="navbar-brand  h1-upercase easy-title">
+                <img src="assets/img/iconoEA.png" alt="" width="50" height="50" class="d-inline-block align-center">
 
-    <nav class="  navbar navbar-expand-lg navbar-dark fixed-top  " [class.header_change]="header_variable">
+                <span class="easy-span"> Easy</span> <span class="easy-span2">Access</span>
+            </a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item espacio-li" (click)="toInicio()" routerLinkActive="active">
 
-        <a class="navbar-brand  h1-upercase easy-title">
-            <img src="assets/img/iconoEA.png" alt="" width="50" height="50" class="d-inline-block align-center">
+                        <a class="nav-link active" routerLink='inicio'>Inicio</a>
+                    </li>
 
-            <span class="easy-span"> Easy</span> <span class="easy-span2">Access</span>
-        </a>
-
-
-
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav ms-auto ">
-                <li class="nav-item espacio-li" (click)="toInicio()" routerLinkActive="active">
-
-                    <a class="nav-link active" routerLink='inicio'>Inicio</a>
-                </li>
-
-                <li class="nav-item espacio-li" (click)="toBeneficio()" routerLinkActive="active">
-                    <a class="nav-link " routerLink='inicio'>Beneficios</a>
-                </li>
+                    <li class="nav-item espacio-li" (click)="toBeneficio()" routerLinkActive="active">
+                        <a class="nav-link " routerLink='inicio'>Beneficios</a>
+                    </li>
 
 
-                <li class="nav-item dropdown" routerLinkActive="active">
+                    <li class="nav-item dropdown" routerLinkActive="active">
 
 
-                    <a class="nav-link dropdown-toggle " id="navbarDropdown" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle " id="navbarDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">
                           Sectores
                         </a>
 
-                    <ul class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
-                        <li (click)="toSector1()"><a routerLink='residencial' class="dropdown-item ">Residencial</a></li>
-                        <li (click)="toSector2()"><a routerLink='escolar' class="dropdown-item ">Escolar</a></li>
-                        <li (click)="toSector3()"><a routerLink='corporativo' class="dropdown-item ">Corporativo</a></li>
-                        <li (click)="toSector4()"><a routerLink='construccion' class="dropdown-item ">Construcción</a></li>
-                    </ul>
+                        <ul class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
+                            <li (click)="toSector1()"><a routerLink='residencial' class="dropdown-item ">Residencial</a></li>
+                            <li (click)="toSector2()"><a routerLink='escolar' class="dropdown-item ">Escolar</a></li>
+                            <li (click)="toSector3()"><a routerLink='corporativo' class="dropdown-item ">Corporativo</a></li>
+                            <li (click)="toSector4()"><a routerLink='construccion' class="dropdown-item ">Construcción</a></li>
+                        </ul>
 
-                </li>
-
-
-                <li class="nav-item espacio-li" (click)="toGaleria()" routerLinkActive="active">
-                    <a class="nav-link " routerLink='inicio'>Galeria</a>
-                </li>
+                    </li>
 
 
-                <li class="nav-item dropdown" routerLinkActive="active">
-                    <div (click)="toInicio2()">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" (click)="toInicio2()" data-toggle="dropdown" routerLink='funciones' role="button" aria-expanded="true">
+                    <li class="nav-item espacio-li" (click)="toGaleria()" routerLinkActive="active">
+                        <a class="nav-link " routerLink='inicio'>Galeria</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown" routerLinkActive="active">
+                        <div (click)="toInicio2()">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" (click)="toInicio2()" data-bs-toggle="dropdown" routerLink='funciones' role="button" aria-expanded="true">
                           Funciones
                         </a>
-                    </div>
-                    <ul class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
-                        <li (click)="toFunction1()"><a routerLink='funciones' class="dropdown-item ">Entradas y salidas</a></li>
-                        <li (click)="toFunction2()"><a routerLink='funciones' class="dropdown-item ">Gestion de usuarios</a></li>
-                        <li (click)="toFunction4()"><a routerLink='funciones' class="dropdown-item ">Información vehicular</a></li>
-                        <li (click)="toFunction3()"><a routerLink='funciones' class="dropdown-item ">Control de incidencias</a></li>
-                        <li (click)="toFunction5()"><a routerLink='funciones' class="dropdown-item ">Visitas programadas</a></li>
-                        <li (click)="toFunction6()"><a routerLink='funciones' class="dropdown-item ">Control de visitas</a></li>
-                        <!-- <li (click)="toFunction3()"><a class="dropdown-item ">Información QR</a></li>
+                        </div>
+                        <ul class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
+                            <li (click)="toFunction1()"><a routerLink='funciones' class="dropdown-item ">Entradas y salidas</a></li>
+                            <li (click)="toFunction2()"><a routerLink='funciones' class="dropdown-item ">Gestion de usuarios</a></li>
+                            <li (click)="toFunction4()"><a routerLink='funciones' class="dropdown-item ">Información vehicular</a></li>
+                            <li (click)="toFunction3()"><a routerLink='funciones' class="dropdown-item ">Control de incidencias</a></li>
+                            <li (click)="toFunction5()"><a routerLink='funciones' class="dropdown-item ">Visitas programadas</a></li>
+                            <li (click)="toFunction6()"><a routerLink='funciones' class="dropdown-item ">Control de visitas</a></li>
+                            <!-- <li (click)="toFunction3()"><a class="dropdown-item ">Información QR</a></li>
                         <li (click)="toFunction5()"><a class="dropdown-item ">Programar una visita</a></li>
                         <li (click)="toFunction7()"><a class="dropdown-item ">Información de visitantes</a></li> -->
 
 
 
-                    </ul>
+                        </ul>
 
-                </li>
-
-
-
-                <li class="nav-item espacio-li" (click)="toInstructions()" routerLinkActive="active">
-                    <a class="nav-link active " routerLink='funciones'>Instrucciones </a>
-                </li>
-                <li class="nav-item espacio-li" (click)="toContacto()" routerLinkActive="active">
-                    <a class="nav-link active " routerLink='inicio'>Contacto</a>
-                </li>
-                <li class="nav-item espacio-li" (click)="toLogin()" routerLinkActive="active">
-                    <a class="nav-link active " routerLink='login'>Soporte</a>
-                </li>
+                    </li>
 
 
 
+                    <li class="nav-item espacio-li" (click)="toInstructions()" routerLinkActive="active">
+                        <a class="nav-link active " routerLink='funciones'>Instrucciones </a>
+                    </li>
+                    <li class="nav-item espacio-li" (click)="toContacto()" routerLinkActive="active">
+                        <a class="nav-link active " routerLink='inicio'>Contacto</a>
+                    </li>
+                    <li class="nav-item espacio-li" (click)="toLogin()" routerLinkActive="active">
+                        <a class="nav-link active " routerLink='login'>Soporte</a>
+                    </li>
 
 
-                <li class="nav-item" class="empezar empezar-shadow">
-                    <a class="nav-link active" target="_blank" href="https://easyaccess.com.mx/">Acceder</a>
-                </li>
 
-            </ul>
 
+
+                    <li class="nav-item" class="empezar empezar-shadow">
+                        <a class="nav-link active" target="_blank" href="https://easyaccess.com.mx/">Acceder</a>
+                    </li>
+                </ul>
+
+            </div>
         </div>
     </nav>
-
-
 </header>

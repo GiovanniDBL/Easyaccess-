@@ -43,15 +43,26 @@ body {
 
 /********* NAVBAR *********/
 
-.header_change {
-    background-color: rgba(0, 0, 0, .9) !important;
-    transition: all .7s ease-in-out;
+.navbar {
+    background-color: #000000;
 }
 
-.navbar-nav {
+@media(min-width:768px) {
+    .navbar {
+        background-color: unset;
+    }
+}
+
+.header_change {
+    background-color: rgba(0, 0, 0, .9) !important;
+    transition: all .9s ease-in-out;
+}
+
+
+/* .navbar-nav {
     background-color: rgba(0, 0, 0, .1);
     border-radius: 1%;
-}
+} */
 
 @media(min-width:768px) {
     .navbar-nav {
@@ -71,9 +82,9 @@ body {
 }
 
 @media(min-width: 992px) {
-    .dropdown:hover .dropdown-menu {
+    /* .dropdown:hover .dropdown-menu {
         display: block;
-    }
+    } */
 }
 
 .navbar-nav a:hover {
@@ -3181,6 +3192,7 @@ video {
 
 .boton-login {
     text-transform: uppercase;
+    width: 100%;
 }
 
 .notienescuenta {
@@ -3226,6 +3238,38 @@ video {
     justify-content: center !important;
     width: 100%;
     background-color: #0068e0;
+}
+
+
+/* *UTILIDADES NUEVAS  */
+
+.floating-campo-margin {
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+}
+
+.card-reportes-margin {
+    margin-top: 2rem;
+    border: 0 !important;
+}
+
+.card-reportes-body p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card-reportes-body h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    font-size: 2rem;
+}
+
+.fa-cogs {
+    margin-top: 1rem;
+    color: #000000;
 }
 
 

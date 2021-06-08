@@ -126,8 +126,19 @@
 <!--? ************************************* -->
 <div class="color-reportes-top"></div>
 
+<div class="container ">
 
-<div id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}">
+    <div class="card card-reportes-margin">
+        <div class="card-body card-reportes-body">
+            <h1>Bienvenido al soporte de easyaccess</h1>
+            <p>Contamos con un sistema de tickets para nuestros usuarios, comunícate con nuestros diferentes departamentos para aclarar dudas o reportar alguna queja.
+            </p>
+            <p><i class="fas fa-cogs fa-7x"></i></p>
+        </div>
+    </div>
+</div>
+
+<div id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" [ngsReveal]="{reset:false, duration:2000, origin:'left', distance:'400px'}">
     <div class="modal-dialog ">
         <div class="modal-content modal-syle">
             <div class="modal-header titulo-ticket">
@@ -138,7 +149,7 @@
                 <form (ngSubmit)="reportForm(formReportes)" #formReportes="ngForm" onsubmit="return submitUserForm();">
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="cuenta" ngModel required [(ngModel)]="reportUser.cuenta">
+                        <input type="email" class="form-control floating-campo-margin " id="floatingInput" placeholder="name@example.com" name="cuenta" ngModel required [(ngModel)]="reportUser.cuenta">
                         <label for="floatingInput" class="text-muted">Número de cuenta</label>
 
                     </div>
@@ -147,7 +158,7 @@
                     <div class="row g-2 mb-3">
                         <div class="col-md">
                             <div class="form-floating">
-                                <select class="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example" name="departamento" ngModel required [(ngModel)]="reportUser.departamento">
+                                <select class="form-select form-control floating-campo-margin " id="floatingSelectGrid" aria-label="Floating label select example" name="departamento" ngModel required [(ngModel)]="reportUser.departamento">
                                     <option selected disabled>Seleccionar departamento</option>
                                     <option value="Ventas">Ventas</option>
                                     <option value="Desarrollo">Desarrollo</option>
@@ -159,7 +170,7 @@
                         </div>
                         <div class="col-md">
                             <div class="form-floating">
-                                <select class="form-select form-control" id="floatingSelectGrid" aria-label="Floating label select example" name="prioridad" ngModel required [(ngModel)]="reportUser.prioridad">
+                                <select class="form-select form-control floating-campo-margin " id="floatingSelectGrid" aria-label="Floating label select example" name="prioridad" ngModel required [(ngModel)]="reportUser.prioridad">
                                     <option selected disabled>Seleccionar prioridad</option>
                                     <option value="Bajo">Bajo</option>
                                     <option value="Medio">Medio</option>
@@ -175,16 +186,16 @@
 
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="asunto" ngModel required [(ngModel)]="reportUser.asunto">
+                        <input type="email" class="form-control floating-campo-margin " id="floatingInput" placeholder="name@example.com" name="asunto" ngModel required [(ngModel)]="reportUser.asunto">
                         <label for="floatingInput" class="text-muted">Asunto</label>
                     </div>
 
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="reporte" style="height: 100px" ngModel required [(ngModel)]="reportUser.reporte"></textarea>
+                        <textarea class="form-control floating-campo-margin " placeholder="Leave a comment here" id="floatingTextarea2" name="reporte" style="height: 100px" ngModel required [(ngModel)]="reportUser.reporte"></textarea>
                         <label for="floatingTextarea2" class="text-muted">Escribir mensaje</label>
                     </div>
 
-                    <div class="mb-3 file-margin">
+                    <div class="mb-3 file-margin ">
                         <input class="form-control" type="file" id="formFile">
                     </div>
 
@@ -194,9 +205,9 @@
                         Favor de resolver el reCAPTCHA, en caso de que no aparezca presione el botón de recargar.
                     </div>
                     <!--  *CAPTCHA EN PRODUCCIÓN* -->
-                    <!-- <div class="g-recaptcha " id="loadcaptcha" style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();">
-    Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
-</div> -->
+                    <!-- <div class="g-recaptcha margin-captcha" id="loadcaptcha" style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();">
+                        Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
+                    </div> -->
                     <div id="g-recaptcha-error"></div>
 
                     <div class="modal-footer modal-footer-ticket ">
@@ -210,3 +221,83 @@
         </div>
     </div>
 </div>
+
+
+
+
+<section class="container">
+    <div class="card">
+        <div class="card-body">
+            <form (ngSubmit)="reportForm(formReportes)" #formReportes="ngForm" onsubmit="return submitUserForm();">
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control floating-campo-margin " id="floatingInput" placeholder="name@example.com" name="cuenta" ngModel required [(ngModel)]="reportUser.cuenta">
+                    <label for="floatingInput" class="text-muted">Número de cuenta</label>
+
+                </div>
+
+
+                <div class="row g-2 mb-3">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <select class="form-select form-control floating-campo-margin " id="floatingSelectGrid" aria-label="Floating label select example" name="departamento" ngModel required [(ngModel)]="reportUser.departamento">
+                                <option selected disabled>Seleccionar departamento</option>
+                                <option value="Ventas">Ventas</option>
+                                <option value="Desarrollo">Desarrollo</option>
+                                <option value="Pagos">Pagos</option>
+                                <option value="facturación">Facturación</option>
+                        </select>
+                            <label for="floatingSelect">Departamento</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <select class="form-select form-control floating-campo-margin " id="floatingSelectGrid" aria-label="Floating label select example" name="prioridad" ngModel required [(ngModel)]="reportUser.prioridad">
+                                <option selected disabled>Seleccionar prioridad</option>
+                                <option value="Bajo">Bajo</option>
+                                <option value="Medio">Medio</option>
+                                <option value="Alto">Alto</option>
+                                <option value="Urgente">Urgente</option>
+                        </select>
+
+
+                            <label for="floatingSelect">Prioridad</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control floating-campo-margin " id="floatingInput" placeholder="name@example.com" name="asunto" ngModel required [(ngModel)]="reportUser.asunto">
+                    <label for="floatingInput" class="text-muted">Asunto</label>
+                </div>
+
+                <div class="form-floating">
+                    <textarea class="form-control floating-campo-margin " placeholder="Leave a comment here" id="floatingTextarea2" name="reporte" style="height: 100px" ngModel required [(ngModel)]="reportUser.reporte"></textarea>
+                    <label for="floatingTextarea2" class="text-muted">Escribir mensaje</label>
+                </div>
+
+                <div class="mb-3 file-margin ">
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+
+
+                <!--  *CAPTCHA LOCAL PARA PRUEBAS* -->
+                <div id="loadcaptcha" class="g-recaptcha margin-captcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();  ">
+                    Favor de resolver el reCAPTCHA, en caso de que no aparezca presione el botón de recargar.
+                </div>
+                <!--  *CAPTCHA EN PRODUCCIÓN* -->
+                <!-- <div class="g-recaptcha margin-captcha" id="loadcaptcha" style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();">
+                    Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
+                </div> -->
+                <div id="g-recaptcha-error"></div>
+
+                <div class="modal-footer modal-footer-ticket ">
+
+                    <button type="submit" id="btn1" value="submit" name="submit" class="btn btn-primary ticket-button" disabled>Envíar</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
