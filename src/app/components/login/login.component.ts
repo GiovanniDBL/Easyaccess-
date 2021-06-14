@@ -36,12 +36,16 @@ loginUser: LoginUser = new LoginUser();
     if (response) {
       //  console.log(response);
 
-       this.router.navigate(['reportes']);
+      //  this.router.navigate(['reportes']);
        Swal.fire({
+        allowOutsideClick: false,
       icon: 'success',
-      title: 'USUARIO CORRECTO',
-      text: 'DATOS CORRECTOS',
+      title: 'Bienvenido',
+      text: 'ACCESO CORRECTO',
       backdrop: `rgba(0,0,0,0.7)`,
+      timer: 1500,
+      showConfirmButton: false,
+      
       showClass: {
         popup: 'animate__animated animate__fadeInDown'
       },
@@ -49,7 +53,10 @@ loginUser: LoginUser = new LoginUser();
         popup: 'animate__animated animate__fadeOutUp'
       }
 
-    });
+    }).then(() => {
+ 
+      this.router.navigate(['reportes']);
+              });
 
     }
 

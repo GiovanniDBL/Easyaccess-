@@ -3213,6 +3213,8 @@ video {
 
 .margin-captcha {
     margin-bottom: 1rem;
+    display: grid !important;
+    justify-content: center !important;
 }
 
 .file-margin {
@@ -3229,8 +3231,17 @@ video {
     text-transform: uppercase;
     display: grid !important;
     justify-content: center !important;
-    background-color: #000;
-    color: #fff;
+    background-color: #f9f9fa;
+    /* color: #000000;
+    font-weight: 800;
+    font-size: 6rem !important; */
+}
+
+.titulo-ticket h5 {
+    color: #000000;
+    font-weight: 800;
+    font-size: 1.5rem !important;
+    letter-spacing: 5px;
 }
 
 .ticket-button {

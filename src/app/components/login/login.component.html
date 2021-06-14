@@ -10,16 +10,16 @@
                     <form class="container top-ques" (ngSubmit)="loginForm(formAuth)" #formAuth="ngForm">
                         <img src="assets/img/iconoEA.png" class="icono-login">
                         <h3 class="text-center">INICIAR SESIÓN</h3>
-                        <div *ngIf="formAuth.submitted && formAuth.controls['cuenta'].errors" class="alert alert-danger" role="alert">
+                        <!-- <div *ngIf="formAuth.submitted && formAuth.controls['cuenta'].errors" class="alert alert-danger" role="alert">
                             Ingrese su número de cuenta
-                        </div>
+                        </div> -->
                         <!-- <div class="form-group">
                             <input type="text" class="form-control" placeholder="No.Cuenta" name="cuenta" ngModel required [(ngModel)]="loginUser.cuenta">
                         </div> -->
-                        <div class="form-floating mb-3">
+                        <!-- <div class="form-floating mb-3">
                             <input type="text" class="form-control floating-campo-margin" id="floatingInput" placeholder="name@example.com" name="cuenta" ngModel required [(ngModel)]="loginUser.cuenta">
                             <label for="floatingInput" class="text-muted">Número de cuenta</label>
-                        </div>
+                        </div> -->
 
                         <div *ngIf="formAuth.submitted && formAuth.controls['nombre'].errors" class="alert alert-danger" role="alert">
                             Ingrese su nombre
