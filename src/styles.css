@@ -3283,6 +3283,23 @@ video {
     color: #000000;
 }
 
+.titulo-nombre-salir {
+    text-transform: uppercase;
+    /* color: #1f3d54; */
+    font-weight: bold;
+    /* font-size: 1.2rem !important; */
+}
+
+.titulo-nombre-salir a {
+    text-decoration: none !important;
+    color: coral !important;
+}
+
+.titulo-nombre-salir a:hover {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
 
 /* .diseño-form-report {
     border: 2px solid #ffffff;

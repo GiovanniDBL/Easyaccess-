@@ -20,7 +20,12 @@ export class LoginComponent implements OnInit {
 loginUser: LoginUser = new LoginUser();
 
 
-  constructor(private formbuilder: FormBuilder, private autheasyacces: AuthenticationService, private router: Router) { }
+  constructor(private formbuilder: FormBuilder, private autheasyacces: AuthenticationService, private router: Router) {
+
+
+  
+
+   }
 
  // tslint:disable-next-line: typedef
  loginForm(form: NgForm){
@@ -54,7 +59,9 @@ loginUser: LoginUser = new LoginUser();
       }
 
     }).then(() => {
- 
+ localStorage.setItem('token', response.token);
+ localStorage.setItem('nombre', response.nombre);
+
       this.router.navigate(['reportes']);
               });
 
@@ -87,6 +94,11 @@ loginUser: LoginUser = new LoginUser();
 
    });
  }
+
+
+
+ 
+
 
 
 

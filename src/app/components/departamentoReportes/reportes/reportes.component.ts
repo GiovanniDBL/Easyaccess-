@@ -6,6 +6,7 @@ import Swal from 'sweetalert2';
 import { ReportUser } from '../../../models/reports.model';
 import { EasyaccessService } from '../../../services/easyaccess.service';
 import { AuthenticationService } from '../../../services/authentication.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -20,14 +21,28 @@ export class ReportesComponent implements OnInit {
 
   reportUser: ReportUser = new ReportUser();
 
+     nombre = localStorage.getItem('nombre');
+     user = 1;
 
 
 
   // tslint:disable-next-line:max-line-length
-  constructor(private formBuilder: FormBuilder, private _renderer: Renderer2, private easyacces: EasyaccessService, public autheasyaccess: AuthenticationService) { }
+  constructor(private router: Router, private formBuilder: FormBuilder, private _renderer: Renderer2, private easyacces: EasyaccessService, public autheasyaccess: AuthenticationService) {
+    if (localStorage.getItem('token')) {
+
+      console.log("si existe");
+      // this.nombre = localStorage.getItem('nombre');
+      
+    } else {
+      this.router.navigate(['login']);
+    }
+   }
 
 
-
+   delete() {
+  localStorage.clear();
+  this.router.navigate(['login']);
+  }
 
   // tslint:disable-next-line:typedef
   reportForm(form: NgForm) {
