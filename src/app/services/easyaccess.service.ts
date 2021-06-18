@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ReportUser } from '../models/reports.model';
+import { ReportUser, Departamentos } from '../models/reports.model';
 
 import { catchError, map } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
@@ -14,6 +14,8 @@ export class EasyaccessService {
 
 // *URL DE LA API DE NUESTO SERVIDOR EXPRESS
   private urleasyaccess = 'http://localhost:3000/user2/';
+  private urldepartamentos = 'http://localhost:3000/select/';
+
 
 // *LLamando la función de reportes de nuestra API
   constructor(private http: HttpClient) { }
@@ -24,11 +26,26 @@ export class EasyaccessService {
     return this.http.post( url, object );
   }
 
+  getQuery( query: string, object: any ): any{
+
+    const url = `${ this.urldepartamentos }${query}`;
+    return this.http.get( url, object );
+  }
+
 
    newReport( userModel: ReportUser ): any{
     return this.postQuery('reportes', userModel ).pipe( map( ( response: any ) => {
         return response;
        } ));
+  }
+  //  getDepartamento( userModel: Departamentos ): any{
+  //   return this.getQuery('departamento', userModel ).pipe( map( ( response: any ) => {
+  //       return response;
+  //      } ));
+  // }
+  // tslint:disable-next-line:typedef
+  getDepartamento(){
+    return this.http.get(`${this.urldepartamentos}departamento`);
   }
 
 

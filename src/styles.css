@@ -3229,20 +3229,19 @@ video {
 
 .titulo-ticket {
     text-transform: uppercase;
-    display: grid !important;
-    justify-content: center !important;
     background-color: #f9f9fa;
     /* color: #000000;
     font-weight: 800;
     font-size: 6rem !important; */
 }
 
-.titulo-ticket h5 {
+
+/* .titulo-ticket h5 {
     color: #000000;
     font-weight: 800;
     font-size: 1.5rem !important;
     letter-spacing: 5px;
-}
+} */
 
 .ticket-button {
     display: grid !important;
@@ -3278,7 +3277,7 @@ video {
     font-size: 2rem;
 }
 
-.fa-cogs {
+.fa-users-cog {
     margin-top: 1rem;
     color: #000000;
 }
@@ -3292,12 +3291,14 @@ video {
 
 .titulo-nombre-salir a {
     text-decoration: none !important;
-    color: coral !important;
+    color: rgb(247, 66, 0) !important;
 }
 
 .titulo-nombre-salir a:hover {
     text-decoration: none !important;
     cursor: pointer;
+    color: coral !important;
+    transition: all .3s ease-in-out;
 }
 
 

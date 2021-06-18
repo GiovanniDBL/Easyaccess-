@@ -2,7 +2,8 @@
 
 export class ReportUser{
 
-    id_reporte: string | undefined;
+    // tslint:disable-next-line:variable-name
+    id_usuario = localStorage.getItem('id');
     usuario: string | undefined;
     departamento: string | undefined;
     prioridad: string | undefined;
@@ -11,4 +12,7 @@ export class ReportUser{
     asunto: string | undefined;
     created: string | undefined;
 
+}
+export class Departamentos{
+    departamentos: string | undefined;
 }

@@ -61,8 +61,9 @@ loginUser: LoginUser = new LoginUser();
     }).then(() => {
  localStorage.setItem('token', response.token);
  localStorage.setItem('nombre', response.nombre);
+ localStorage.setItem('id', response.id[0].id_usuario);
 
-      this.router.navigate(['reportes']);
+ this.router.navigate(['reportes']);
               });
 
     }

@@ -1,128 +1,3 @@
-<!-- <div class="color-reportes-top">
-
-</div>
-<section id="reporte" [ngsReveal]="{reset:true, duration:2000, origin:'left', distance:'400px'}" class="bottom-login">
-    <div class="container ">
-        <div id="login-row" class="row justify-content-center align-items-center">
-            <div class="col-md-7">
-                <div class="col-md-12">
-
-
-
-
-                    <form class="container top-ques diseño-form-report" (ngSubmit)="reportForm(formReportes)" #formReportes="ngForm" onsubmit="return submitUserForm();">
-                        <img src="assets/img/iconoEA.png" class="icono-reportes">
-                        <h3 class="text-center titulo-reporte ">Ticket de Reporte</h3> -->
-<!-- <h1 *ngIf="autheasyaccess.isLogged | async"> que onda</h1> -->
-<!-- MENSAJE DE ERROR -->
-<!-- <div *ngIf="formReportes.submitted && formReportes.controls['cuenta'].errors" class="alert alert-danger" role="alert">
-                            Ingrese número de cuenta
-                        </div>
-
-                        <div class="input-group  form-group">
-
-                            <span class="input-group-text span-label" id="basic-addon1">Número de cuenta</span>
-                            <input type="text" class="form-control" name="cuenta" ngModel required [(ngModel)]="reportUser.cuenta">
-
-                        </div>
-
-                        <div *ngIf="formReportes.submitted && formReportes.controls['departamento'].errors" class="alert alert-danger" role="alert">
-                            Seleccione un departamento
-                        </div>
-
-                        <div class=" form-group">
-
-                            <div class="input-group"> -->
-<!-- <span class="input-group-text span-label" id="basic-addon1"><i class="fas fa-user-cog"></i></span> -->
-<!-- <span class="input-group-text span-label" id="basic-addon1">Departamento</span>
-                                <select class=" form-control" aria-label="Default select example" name="departamento" ngModel required [(ngModel)]="reportUser.departamento">
-                                    <option selected disabled>Departamento</option>
-                                    <option value="Ventas">Ventas</option>
-                                    <option value="Desarrollo">Desarrollo</option>
-                                    <option value="Pagos">Pagos</option>
-                                    <option value="facturación">Facturación</option>
-                                  </select>
-
-
-                            </div>
-
-                        </div> -->
-<!-- MENSAJE DE ERROR -->
-<!-- <div *ngIf="formReportes.submitted && formReportes.controls['prioridad'].errors" class="alert alert-danger" role="alert">
-                            Selecciona una prioridad
-                        </div> -->
-<!-- FIN MENSAJE DE ERROR -->
-<!-- <div class=" form-group">
-                            <div class="input-group">
-
-                                <span class="input-group-text span-label" id="basic-addon1"> Prioridad</span>
-                                <select class="form-select form-control" aria-label="Default select example" name="prioridad" ngModel required [(ngModel)]="reportUser.prioridad">
-                                    <option selected disabled>Prioridad</option>
-                                    <option value="Bajo">Bajo</option>
-                                    <option value="Medio">Medio</option>
-                                    <option value="Alto">Alto</option>
-                                    <option value="Urgente">Urgente</option>
-                                  </select>
-                            </div>
-
-                        </div>
-
-
-                        <div *ngIf="formReportes.submitted && formReportes.controls['asunto'].errors" class="alert alert-danger" role="alert">
-                            Ingrese asunto del mensaje
-                        </div>
-                        <div class="input-group form-group">
-                    
-                            <span class="input-group-text span-label" id="basic-addon1">Asunto</span>
-                            <input type="text" class="form-control" name="asunto" id="" ngModel required [(ngModel)]="reportUser.asunto">
-                        </div>
-
-                        <div *ngIf="formReportes.submitted && formReportes.controls['mensaje'].errors" class="alert alert-danger" role="alert">
-                            Escriba el mensaje del reporte
-                        </div>
-                        <div class="form-group">
-
-                            <textarea class="form-control" name="mensaje" placeholder="Escribir mensaje del reporte..." style="height: 200px" ngModel required [(ngModel)]="reportUser.reporte"></textarea>
-
-                        </div>
-                        <div class="input-group form-group">
-
-                        
-
-                            <input class="form-control" type="file" id="formFileDisabled">
-
-                        </div> -->
-
-
-
-
-<!--  *CAPTCHA LOCAL PARA PRUEBAS* -->
-<!-- <div id="loadcaptcha" class="g-recaptcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();  ">
-                            Favor de resolver el reCAPTCHA, en caso de que no aparezca presione el botón de recargar.
-                        </div> -->
-<!--  *CAPTCHA EN PRODUCCIÓN* -->
-<!-- <div class="g-recaptcha " id="loadcaptcha" style="color:cornsilk;" data-sitekey="6LeOrSkaAAAAAPNEOGMB5AkWCJ_IDywCIh4zGKmb" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();">
-                            Favor de resolver el reCAPTCHA, en caso de que no aparezca vuelva a recargar la página.
-                        </div>
-                        <div id="g-recaptcha-error"></div>
-
-
-                        <div class="centrar-texto seccion">
-                           
-                            <button type="submit" id="btn1" value="submit" name="submit" class="btn btn-primary btn-block boton-login" disabled>Envíar</button>
-                        </div>
-                    
-
-                    </form>
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-
 <!--? ************************************* -->
 <div class="color-reportes-top"></div>
 
@@ -130,12 +5,13 @@
 
     <div class="card card-reportes-margin text-center">
         <div class="card-body card-reportes-body">
-            <p class="titulo-nombre-salir text-muted">{{nombre}} <span> | </span> <a (click)="delete()">Salir</a></p>
+            <p class="titulo-nombre-salir text-muted">{{nombre}} <span> | </span> <a (click)="delete()">Cerrar Sesión</a></p>
 
             <h1>Bienvenido al soporte de easyaccess</h1>
             <p>Contamos con un sistema de tickets para nuestros usuarios, comunícate con nuestros diferentes departamentos para aclarar dudas o reportar alguna queja.
             </p>
-            <p><i class="fas fa-cogs fa-7x"></i></p>
+            <p><i class="fas fa-users-cog fa-7x"></i></p>
+
 
             <button type="button" class="btn btn-primary botton-modal" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Realizar un Ticket</button>
         </div>
@@ -143,68 +19,35 @@
 </div>
 
 
-
-
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Send message</button>
-            </div>
-        </div>
-    </div>
-</div> -->
+<!-- ******** MODAL ********* -->
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" [ngsReveal]="{reset:false, duration:2000, origin:'left', distance:'400px'}">
     <div class="modal-dialog ">
         <div class="modal-content modal-syle">
             <div class="modal-header titulo-ticket">
                 <h5 class="modal-title text-muted">Ticket</h5>
-
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form (ngSubmit)="reportForm(formReportes)" #formReportes="ngForm" onsubmit="return submitUserForm();">
 
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control floating-campo-margin " id="floatingInput" placeholder="name@example.com" name="usuario" ngModel required [(ngModel)]="reportUser.usuario">
-                        <label for="floatingInput" class="text-muted">Usuario</label>
 
-                    </div>
-
+                    <input type="text" class="form-control invisible" name="usuario" ngModel required [(ngModel)]="reportUser.id_usuario">
 
                     <div class="row g-2 mb-3">
                         <div class="col-md">
                             <div class="form-floating">
-                                <select class="form-select form-control floating-campo-margin " id="floatingSelectGrid" aria-label="Floating label select example" name="departamento" ngModel required [(ngModel)]="reportUser.departamento">
+                                <select class="form-select form-control floating-campo-margin " id="floatingSelectGrid1" aria-label="Floating label select example" name="departamento" ngModel required [(ngModel)]="reportUser.departamento">
                                     <option selected disabled>Seleccionar departamento</option>
-                                    <option value="1">Ventas</option>
-                                    <option value="2">Desarrollo</option>
-                                    <!-- <option value="Pagos">Pagos</option>
-                                    <option value="facturación">Facturación</option> -->
+                                    <option *ngFor="let departame of departamento" [value]='departame.id_departamento' >{{departame.departamento}}</option>
+                                  
                             </select>
                                 <label for="floatingSelect">Departamento</label>
                             </div>
                         </div>
                         <div class="col-md">
                             <div class="form-floating">
-                                <select class="form-select form-control floating-campo-margin " id="floatingSelectGrid" aria-label="Floating label select example" name="prioridad" ngModel required [(ngModel)]="reportUser.prioridad">
+                                <select class="form-select form-control floating-campo-margin " id="floatingSelectGrid2" aria-label="Floating label select example" name="prioridad" ngModel required [(ngModel)]="reportUser.prioridad">
                                     <option selected disabled>Seleccionar prioridad</option>
                                     <option value="Bajo">Bajo</option>
                                     <option value="Medio">Medio</option>
@@ -220,7 +63,7 @@
 
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control floating-campo-margin " id="floatingInput" placeholder="name@example.com" name="asunto" ngModel required [(ngModel)]="reportUser.asunto">
+                        <input type="email" class="form-control floating-campo-margin " id="floatingInput2" placeholder="name@example.com" name="asunto" ngModel required [(ngModel)]="reportUser.asunto">
                         <label for="floatingInput" class="text-muted">Asunto</label>
                     </div>
 
@@ -230,9 +73,12 @@
                     </div>
 
                     <div class="mb-3 file-margin ">
-                        <input class="form-control" type="file" id="formFile">
+                        <input class="form-control" type="file" name="image" accept="image/*" (change)="selectimage($event)">
                     </div>
+                    <div class="card" style="width: 5rem;">
+                        <img [src]="imgURL" class="card-img-top" alt="imagen">
 
+                    </div>
 
                     <!--  *CAPTCHA LOCAL PARA PRUEBAS* -->
                     <div id="loadcaptcha" class="g-recaptcha margin-captcha" style="color:cornsilk;" data-sitekey="6LdX_yEaAAAAAPNF3LIK63eRAGDXwiiHdvEtaFqw" data-callback="verifyCaptcha" href="javascript:reloadCaptcha();  ">

@@ -3,10 +3,11 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 import { HttpClient } from '@angular/common/http';
 import {NgForm} from '@angular/forms';
 import Swal from 'sweetalert2';
-import { ReportUser } from '../../../models/reports.model';
+import { ReportUser} from '../../../models/reports.model';
 import { EasyaccessService } from '../../../services/easyaccess.service';
 import { AuthenticationService } from '../../../services/authentication.service';
 import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -18,37 +19,70 @@ export class ReportesComponent implements OnInit {
 
   protected aFormGroup: FormGroup | undefined;
   recaptcha = new FormControl('');
-
   reportUser: ReportUser = new ReportUser();
 
      nombre = localStorage.getItem('nombre');
-     user = 1;
+     // tslint:disable-next-line:variable-name
+     id_usuario = localStorage.getItem('id');
+
+   departamento: any = [];
+
+   image = '';
+   imgURL = 'assets/img/cheque.png';
+
+   
 
 
 
   // tslint:disable-next-line:max-line-length
-  constructor(private router: Router, private formBuilder: FormBuilder, private _renderer: Renderer2, private easyacces: EasyaccessService, public autheasyaccess: AuthenticationService) {
+  constructor(private router: Router, private formBuilder: FormBuilder, private _renderer: Renderer2, private easyacces: EasyaccessService, public autheasyaccess: AuthenticationService, private http:HttpClient) {
+
+// *Si existe en el localstorage el token, entonces el usuario puede entrar a la página reportes
+// * de lo contrario, lo regresará el login.
+
     if (localStorage.getItem('token')) {
 
-      console.log("si existe");
-      // this.nombre = localStorage.getItem('nombre');
-      
     } else {
       this.router.navigate(['login']);
     }
    }
-
-
+// * Borrar token de local storage
+   // tslint:disable-next-line:typedef
    delete() {
   localStorage.clear();
   this.router.navigate(['login']);
   }
 
   // tslint:disable-next-line:typedef
+  selectimage(event: any){
+
+    if (event.target.files.length > 0) {
+
+      const file = event.target.files[0];
+      const reader = new FileReader();
+
+      reader.readAsDataURL(file);
+
+      reader.onload = (event: any) =>{
+
+        this.imgURL = event.target.result;
+      };
+      this.image = file;
+      console.log(this.image);
+    }
+
+
+
+
+  }
+
+
+  // tslint:disable-next-line:typedef
   reportForm(form: NgForm) {
+console.log(form);
 
     // if ( form.invalid ){ return }
-    if (form.invalid) {
+if (form.invalid) {
       Swal.fire({
         icon: 'info',
         title: 'Todos los campos del formulario son obligatorios',
@@ -68,7 +102,7 @@ export class ReportesComponent implements OnInit {
 
     console.log(this.reportUser);
 
-    this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
+this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
 
       console.log(response);
       Swal.fire({
@@ -100,6 +134,11 @@ export class ReportesComponent implements OnInit {
 
       });
 
+      // RESETEAR EL FORMULARIO DESPUES DE UNA ACCIÓN
+      // .then(() => {
+      //   form.reset();
+      //                });
+
 
 
 
@@ -124,6 +163,12 @@ export class ReportesComponent implements OnInit {
     script.async = true;
     script.src = 'https://www.google.com/recaptcha/api.js';
     this._renderer.appendChild(document.body, script);
+
+    this.easyacces.getDepartamento().subscribe( resp =>{
+      // console.log(resp);
+      this.departamento = resp;
+      
+    });
   }
 
 }

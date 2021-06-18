@@ -36,31 +36,12 @@ export class AuthenticationService {
   }
   AuthController(loginModel: LoginUser): any{
     return this.postQuery('login', loginModel).pipe(map((response: any) => {
-   console.log('Res->', response);
-  //  this.saveToken(response.token);
-  //  this.loggedIn.next(true);
+  //  console.log('Res->', response);
+
 
    return response;
     }));
   }
-
-// *GUARDAR TOKEN EN LOCAL STORAGE
-
-// private saveToken(token: string): void{
-//   localStorage.setItem('token', token);
-// }
-
-// *CERRAR SESIÓN, ELIMINANDO TOKEN
-
-// logout(): void{
-//   localStorage.removeItem('token');
-//   this.loggedIn.next(false);
-// }
-
-// estaAutenticado(): boolean {
-
-// return this.saveToken.length > 2;
-// }
 
 
 
