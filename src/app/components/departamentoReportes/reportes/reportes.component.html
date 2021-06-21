@@ -73,9 +73,9 @@
                     </div>
 
                     <div class="mb-3 file-margin ">
-                        <input class="form-control" type="file" name="image" accept="image/*" (change)="selectimage($event)">
+                        <input class="form-control" type="file" name="image" accept="image/png, image/jpeg" (change)="selectimage($event)">
                     </div>
-                    <div class="card" style="width: 5rem;">
+                    <div class="card" style="width: 10rem;">
                         <img [src]="imgURL" class="card-img-top" alt="imagen">
 
                     </div>

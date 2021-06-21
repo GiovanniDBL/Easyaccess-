@@ -81,6 +81,23 @@ export class ReportesComponent implements OnInit {
   reportForm(form: NgForm) {
 console.log(form);
 
+const formData = new FormData();
+formData.append('file', this.image);
+
+// const formData = new FormData();
+// formData.append('file', this.image);
+// this.http.post<any>("http://localhost:3000/user2/reportes", formData);
+  //  (res) =>(Swal.fire({
+  //    icon: 'success',
+  //    title: 'imagen cargada',
+  //    text: 'La imagen se subió correctamente'
+  //  }).then((result) =>{
+  //    if (result) {
+  //      location.reload();
+  //    }
+  //  })
+  //  )
+
     // if ( form.invalid ){ return }
 if (form.invalid) {
       Swal.fire({
@@ -117,7 +134,9 @@ this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
         }
 
       }
-        );
+        ).then(() =>{
+          this.http.post('http://localhost:3000/user2/reportes', formData).subscribe();
+        });
 
     }, (err: any) => {
       Swal.fire({
