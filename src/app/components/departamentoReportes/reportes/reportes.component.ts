@@ -28,7 +28,7 @@ export class ReportesComponent implements OnInit {
    departamento: any = [];
 
    image = '';
-   imgURL = 'assets/img/cheque.png';
+   imgURL = 'assets/img/subir-img.png';
 
    
 
@@ -53,6 +53,8 @@ export class ReportesComponent implements OnInit {
   this.router.navigate(['login']);
   }
 
+
+  // *funcion para los files imagen
   // tslint:disable-next-line:typedef
   selectimage(event: any){
 
@@ -63,7 +65,7 @@ export class ReportesComponent implements OnInit {
 
       reader.readAsDataURL(file);
 
-      reader.onload = (event: any) =>{
+      reader.onload = (event: any) => {
 
         this.imgURL = event.target.result;
       };
@@ -81,24 +83,9 @@ export class ReportesComponent implements OnInit {
   reportForm(form: NgForm) {
 console.log(form);
 
-const formData = new FormData();
-formData.append('file', this.image);
 
-// const formData = new FormData();
-// formData.append('file', this.image);
-// this.http.post<any>("http://localhost:3000/user2/reportes", formData);
-  //  (res) =>(Swal.fire({
-  //    icon: 'success',
-  //    title: 'imagen cargada',
-  //    text: 'La imagen se subió correctamente'
-  //  }).then((result) =>{
-  //    if (result) {
-  //      location.reload();
-  //    }
-  //  })
-  //  )
 
-    // if ( form.invalid ){ return }
+
 if (form.invalid) {
       Swal.fire({
         icon: 'info',
@@ -117,14 +104,14 @@ if (form.invalid) {
       return;
 }
 
-    console.log(this.reportUser);
+console.log(this.reportUser);
 
 this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
 
       console.log(response);
       Swal.fire({
         icon: 'success',
-        title: 'REPORTE ENVÍADO CON ÉXITO',
+        title: 'TICKET ENVÍADO CON ÉXITO',
         backdrop: `rgba(0,0,0,0.7)`,
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
@@ -135,13 +122,19 @@ this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
 
       }
         ).then(() =>{
-          this.http.post('http://localhost:3000/user2/reportes', formData).subscribe();
+
+          const formData = new FormData();
+          formData.append('file', this.image);
+          this.http.post('http://localhost:3000/user2/file', formData).subscribe();
+
+          // this.imgURL = 'assets/img/subir-img.png';
+          location.reload();
         });
 
     }, (err: any) => {
       Swal.fire({
         icon: 'error',
-        title: 'ERROR AL ENVÍAR REPORTE',
+        title: 'ERROR AL ENVÍAR TICKET',
         text: err.error.message,
         backdrop: `rgba(0,0,0,0.7)`,
         showClass: {
