@@ -128,7 +128,7 @@ this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
           this.http.post('http://localhost:3000/user2/file', formData).subscribe();
 
           // this.imgURL = 'assets/img/subir-img.png';
-          location.reload();
+          // location.reload();
         });
 
     }, (err: any) => {

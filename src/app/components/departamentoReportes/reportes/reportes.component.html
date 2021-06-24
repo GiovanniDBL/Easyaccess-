@@ -1,7 +1,7 @@
 <!--? ************************************* -->
 <div class="color-reportes-top"></div>
 
-<div class="container ">
+<div class="container " [ngsReveal]="{reset:true, duration:3000}">
 
     <div class="card card-reportes-margin text-center">
         <div class="card-body card-reportes-body">
@@ -73,7 +73,7 @@
                     </div>
 
                     <div class="mb-3 file-margin ">
-                        <input class="form-control" type="file" name="image" accept="image/png, image/jpeg" (change)="selectimage($event)">
+                        <input class="form-control" type="file" name="multimedia" accept="image/png, image/jpeg" (change)="selectimage($event)">
                     </div>
 
                     <div class="card" style="width: 10rem; border: 0; margin-bottom: 1rem;">
