@@ -103,3 +103,66 @@
         </div>
     </div>
 </div>
+
+
+
+<!--? ******************************************* -->
+
+
+<div class="container">
+    <p>ENVIAR TICKET</p>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <form action="">
+                <div class="mb-3">
+
+                    <label class="form-label">id_usuario</label>
+                    <input type="text" class="form-control" name="usuario" [(ngModel)]="ticket.usuario">
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Departamento</label>
+                    <input type="text" class="form-control" name="departamento" [(ngModel)]="ticket.departamento">
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Prioridad</label>
+                    <input type="text" class="form-control" name="prioridad" [(ngModel)]="ticket.prioridad">
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">Asunto</label>
+                    <input type="text" class="form-control" name="asunto" [(ngModel)]="ticket.asunto">
+                </div>
+
+                <div class="mb-3">
+
+                    <label for="exampleFormControlTextarea1" class="form-label">Reporte</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" name="reporte" [(ngModel)]="ticket.reporte" rows="3"></textarea>
+                </div>
+
+                <!-- <div class="mb-3">
+
+                    <label class="form-label">Multimedia</label>
+                    <input type="text" class="form-control" name="multimedia" [(ngModel)]="ticket.multimedia">
+                </div> -->
+
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Multimedia</label>
+                    <input class="form-control" name="multimedia" [(ngModel)]="ticket.multimedia" type="file" id="formFile">
+                </div>
+
+
+                <button (click)="agregar()" class="btn btn-primary">Enviar</button>
+
+            </form>
+        </div>
+
+
+    </div>
+
+</div>

@@ -82,9 +82,9 @@ body {
 }
 
 @media(min-width: 992px) {
-    /* .dropdown:hover .dropdown-menu {
+    .dropdown:hover .dropdown-menu {
         display: block;
-    } */
+    }
 }
 
 .navbar-nav a:hover {

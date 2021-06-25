@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import {NgForm} from '@angular/forms';
 import Swal from 'sweetalert2';
 import { ReportUser} from '../../../models/reports.model';
-import { EasyaccessService } from '../../../services/easyaccess.service';
+import { EasyaccessService, Ticket } from '../../../services/easyaccess.service';
 import { AuthenticationService } from '../../../services/authentication.service';
 import { Router } from '@angular/router';
 
@@ -22,7 +22,7 @@ export class ReportesComponent implements OnInit {
   reportUser: ReportUser = new ReportUser();
 
      nombre = localStorage.getItem('nombre');
-     // tslint:disable-next-line:variable-name
+     
      id_usuario = localStorage.getItem('id');
 
    departamento: any = [];
@@ -30,11 +30,21 @@ export class ReportesComponent implements OnInit {
    image = '';
    imgURL = 'assets/img/subir-img.png';
 
+
+   ticket: Ticket={
+    usuario:'',
+    departamento:'',
+    prioridad:'',
+    reporte:'',
+    multimedia:'',
+    asunto:''
+   };
+
    
 
 
 
-  // tslint:disable-next-line:max-line-length
+  
   constructor(private router: Router, private formBuilder: FormBuilder, private _renderer: Renderer2, private easyacces: EasyaccessService, public autheasyaccess: AuthenticationService, private http:HttpClient) {
 
 // *Si existe en el localstorage el token, entonces el usuario puede entrar a la página reportes
@@ -47,7 +57,7 @@ export class ReportesComponent implements OnInit {
     }
    }
 // * Borrar token de local storage
-   // tslint:disable-next-line:typedef
+  
    delete() {
   localStorage.clear();
   this.router.navigate(['login']);
@@ -55,7 +65,7 @@ export class ReportesComponent implements OnInit {
 
 
   // *funcion para los files imagen
-  // tslint:disable-next-line:typedef
+ 
   selectimage(event: any){
 
     if (event.target.files.length > 0) {
@@ -79,7 +89,6 @@ export class ReportesComponent implements OnInit {
   }
 
 
-  // tslint:disable-next-line:typedef
   reportForm(form: NgForm) {
 console.log(form);
 
@@ -161,6 +170,10 @@ this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
   }
 
 
+  agregar(){
+    this.easyacces.sendticket(this.ticket).subscribe();
+    this.router.navigate(['reportes']);
+  }
 
 
 
