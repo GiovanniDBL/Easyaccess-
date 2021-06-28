@@ -3,8 +3,8 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 import { HttpClient } from '@angular/common/http';
 import {NgForm} from '@angular/forms';
 import Swal from 'sweetalert2';
-import { ReportUser} from '../../../models/reports.model';
-import { EasyaccessService, Ticket } from '../../../services/easyaccess.service';
+import { ReportUser } from '../../../models/reports.model';
+import { EasyaccessService } from '../../../services/easyaccess.service';
 import { AuthenticationService } from '../../../services/authentication.service';
 import { Router } from '@angular/router';
 
@@ -31,14 +31,7 @@ export class ReportesComponent implements OnInit {
    imgURL = 'assets/img/subir-img.png';
 
 
-   ticket: Ticket={
-    usuario:'',
-    departamento:'',
-    prioridad:'',
-    reporte:'',
-    multimedia:'',
-    asunto:''
-   };
+
 
    
 
@@ -115,65 +108,70 @@ if (form.invalid) {
 
 console.log(this.reportUser);
 
-this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
+const formData = new FormData();
 
-      console.log(response);
-      Swal.fire({
-        icon: 'success',
-        title: 'TICKET ENVÍADO CON ÉXITO',
-        backdrop: `rgba(0,0,0,0.7)`,
-        showClass: {
-          popup: 'animate__animated animate__fadeInDown'
-        },
-        hideClass: {
-          popup: 'animate__animated animate__fadeOutUp'
-        }
-
-      }
-        ).then(() =>{
-
-          const formData = new FormData();
-          formData.append('file', this.image);
-          this.http.post('http://localhost:3000/user2/file', formData).subscribe();
-
-          // this.imgURL = 'assets/img/subir-img.png';
-          // location.reload();
-        });
-
-    }, (err: any) => {
-      Swal.fire({
-        icon: 'error',
-        title: 'ERROR AL ENVÍAR TICKET',
-        text: err.error.message,
-        backdrop: `rgba(0,0,0,0.7)`,
-        showClass: {
-          popup: 'animate__animated animate__fadeInDown'
-        },
-        hideClass: {
-          popup: 'animate__animated animate__fadeOutUp'
-        }
-
-      });
-
-      // RESETEAR EL FORMULARIO DESPUES DE UNA ACCIÓN
-      // .then(() => {
-      //   form.reset();
-      //                });
+formData.append('file', this.image);
+this.http.post('http://localhost:3000/user2/file', formData ).subscribe();
 
 
+// this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
+
+//       console.log(response);
+//       Swal.fire({
+//         icon: 'success',
+//         title: 'TICKET ENVÍADO CON ÉXITO',
+//         backdrop: `rgba(0,0,0,0.7)`,
+//         showClass: {
+//           popup: 'animate__animated animate__fadeInDown'
+//         },
+//         hideClass: {
+//           popup: 'animate__animated animate__fadeOutUp'
+//         }
+
+//       }
+//         ).then(() =>{
+
+//           const formData = new FormData();
+          
+//           formData.append('file', this.image);
+//           this.http.post('http://localhost:3000/user2/file', formData).subscribe();
+          
+
+//           this.imgURL = 'assets/img/subir-img.png';
+//           location.reload();
+//         });
+
+//     }, (err: any) => {
+//       Swal.fire({
+//         icon: 'error',
+//         title: 'ERROR AL ENVÍAR TICKET',
+//         text: err.error.message,
+//         backdrop: `rgba(0,0,0,0.7)`,
+//         showClass: {
+//           popup: 'animate__animated animate__fadeInDown'
+//         },
+//         hideClass: {
+//           popup: 'animate__animated animate__fadeOutUp'
+//         }
+
+//       });
+
+//       RESETEAR EL FORMULARIO DESPUES DE UNA ACCIÓN
+//       .then(() => {
+//         form.reset();
+//                      });
 
 
-    });
+
+
+//     });
 
 
 
   }
 
 
-  agregar(){
-    this.easyacces.sendticket(this.ticket).subscribe();
-    this.router.navigate(['reportes']);
-  }
+ 
 
 
 
