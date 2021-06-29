@@ -28,11 +28,22 @@ export class ReportesComponent implements OnInit {
    departamento: any = [];
 
    image = '';
+
    imgURL = 'assets/img/subir-img.png';
 
 
+   datosticket ={
+
+    usuario: localStorage.getItem('id'),
+    departamento: '',
+    prioridad: '',
+    reporte: '',
+    asunto: '',
+    multimedia: ''
+   }
 
 
+ 
    
 
 
@@ -106,12 +117,12 @@ if (form.invalid) {
       return;
 }
 
-console.log(this.reportUser);
+console.log('a', this.datosticket);
 
-const formData = new FormData();
+// const formData = new FormData();
 
-formData.append('file', this.image);
-this.http.post('http://localhost:3000/user2/file', formData ).subscribe();
+// formData.append('file', this.image);
+// this.http.post('http://localhost:3000/user2/file', formData ).subscribe();
 
 
 // this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
