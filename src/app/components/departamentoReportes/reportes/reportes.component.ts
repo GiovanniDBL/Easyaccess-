@@ -32,16 +32,7 @@ export class ReportesComponent implements OnInit {
    imgURL = 'assets/img/subir-img.png';
 
 
-   datosticket ={
-
-    usuario: localStorage.getItem('id'),
-    departamento: '',
-    prioridad: '',
-    reporte: '',
-    asunto: '',
-    multimedia: ''
-   }
-
+  
 
  
    
@@ -117,7 +108,7 @@ if (form.invalid) {
       return;
 }
 
-console.log('a', this.datosticket);
+
 
 // const formData = new FormData();
 
@@ -125,57 +116,57 @@ console.log('a', this.datosticket);
 // this.http.post('http://localhost:3000/user2/file', formData ).subscribe();
 
 
-// this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
+this.easyacces.newReport(this.reportUser).subscribe( (response: any) => {
 
-//       console.log(response);
-//       Swal.fire({
-//         icon: 'success',
-//         title: 'TICKET ENVÍADO CON ÉXITO',
-//         backdrop: `rgba(0,0,0,0.7)`,
-//         showClass: {
-//           popup: 'animate__animated animate__fadeInDown'
-//         },
-//         hideClass: {
-//           popup: 'animate__animated animate__fadeOutUp'
-//         }
+      console.log(response);
+      Swal.fire({
+        icon: 'success',
+        title: 'TICKET ENVÍADO CON ÉXITO',
+        backdrop: `rgba(0,0,0,0.7)`,
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
 
-//       }
-//         ).then(() =>{
+      }
+        ).then(() =>{
 
-//           const formData = new FormData();
+          // const formData = new FormData();
           
-//           formData.append('file', this.image);
-//           this.http.post('http://localhost:3000/user2/file', formData).subscribe();
+          // formData.append('file', this.image);
+          // this.http.post('http://localhost:3000/user2/file', formData).subscribe();
           
 
-//           this.imgURL = 'assets/img/subir-img.png';
-//           location.reload();
-//         });
+          // this.imgURL = 'assets/img/subir-img.png';
+          location.reload();
+        });
+      
+    }, (err: any) => {
+      Swal.fire({
+        icon: 'error',
+        title: 'ERROR AL ENVÍAR TICKET',
+        text: err.error.message,
+        backdrop: `rgba(0,0,0,0.7)`,
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
 
-//     }, (err: any) => {
-//       Swal.fire({
-//         icon: 'error',
-//         title: 'ERROR AL ENVÍAR TICKET',
-//         text: err.error.message,
-//         backdrop: `rgba(0,0,0,0.7)`,
-//         showClass: {
-//           popup: 'animate__animated animate__fadeInDown'
-//         },
-//         hideClass: {
-//           popup: 'animate__animated animate__fadeOutUp'
-//         }
+      });
 
-//       });
-
-//       RESETEAR EL FORMULARIO DESPUES DE UNA ACCIÓN
-//       .then(() => {
-//         form.reset();
-//                      });
-
-
+      // RESETEAR EL FORMULARIO DESPUES DE UNA ACCIÓN
+      // .then(() => {
+      //   form.reset();
+      //                });
 
 
-//     });
+
+
+    });
 
 
 
